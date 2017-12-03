@@ -1,0 +1,7 @@
+proxy
+txt
+murj
+modid
+mcversion
+url
+mod

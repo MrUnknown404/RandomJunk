@@ -1,0 +1,16 @@
+[
+{
+  "modid": "murj",
+  "name": "RandomJunk!",
+  "description": "Adds Random Junk!",
+  "version": "1.0-Alpha",
+  "mcversion": "1.11.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["-Unknown-"],
+  "credits": "I Need To Write This!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
