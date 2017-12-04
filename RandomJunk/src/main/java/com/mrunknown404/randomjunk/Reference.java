@@ -11,22 +11,45 @@ public class Reference {
 	public static final String CLIENT_PROXY_CLASS = "com.mrunknown404.randomjunk.proxy.ClientProxy";
 	public static final String SERVER_PROXY_CLASS = "com.mrunknown404.randomjunk.proxy.ServerProxy";
 	
-	//
+	//Blocks
+	public static enum RandomJunkBlocks {
+		//Items NAME			("",""),
+		OBSIDIANBLOCK		("ObsidianBlock",		"Block_ObsidianBlock");
+		
+		
+		private String unlocalizedName;
+		private String registryName;
+		
+		RandomJunkBlocks(String unlocalizedName, String registryName) {
+			this.unlocalizedName = unlocalizedName;
+			this.registryName = registryName;
+		}
+		
+		public String getUnlocalizedName() {
+			return unlocalizedName;
+		}
+		
+		public String getRegistryName() {
+			return registryName;
+		}
+	}
+	
+	//Items
 	public static enum RandomJunkItems {
 		//Items NAME("",""),
-		BLAZEAPPLE			("BlazeApple",		"ItemBlazeApple"),
-		COALAPPLE			("CoalApple",			"ItemCoalApple"),
-		DIAMONDAPPLE		("DiamondApple",		"ItemDiamondApple"),
-		EMERALDAPPLE		("EmeraldApple",		"ItemEmeraldApple"),
-		GUNPOWDERAPPLE	("GunpowderApple", 	"ItemGunpowderApple"),
-		IRONAPPLE			("IronApple",			"ItemIronApple"),
-		LAPISAPPLE 			("LapisApple",			"ItemLapisApple"),
-		PRISMARINEAPPLE 	("PrismarineApple",	"ItemPrismarineApple"),
-		QUARTZAPPLE		("QuartzApple",		"ItemQuartzApple"),
-		REDSTONEAPPLE 		("RedstoneApple",		"ItemRedstoneApple"),
-		SLIMEAPPLE			("SlimeApple", 		"ItemSlimeApple"),
+		BLAZEAPPLE			("BlazeApple",		"Item_BlazeApple"),
+		COALAPPLE			("CoalApple",			"Item_CoalApple"),
+		DIAMONDAPPLE		("DiamondApple",		"Item_DiamondApple"),
+		EMERALDAPPLE		("EmeraldApple",		"Item_EmeraldApple"),
+		GUNPOWDERAPPLE	("GunpowderApple", 	"Item_GunpowderApple"),
+		IRONAPPLE			("IronApple",			"Item_IronApple"),
+		LAPISAPPLE 			("LapisApple",			"Item_LapisApple"),
+		PRISMARINEAPPLE 	("PrismarineApple",	"Item_PrismarineApple"),
+		QUARTZAPPLE		("QuartzApple",		"Item_QuartzApple"),
+		REDSTONEAPPLE 		("RedstoneApple",		"Item_RedstoneApple"),
+		SLIMEAPPLE			("SlimeApple", 		"Item_SlimeApple"),
 		//Obsidian Things
-		OBSIDIANINGOT		("ObsidianIngot", 		"ItemObsidianIngot");
+		OBSIDIANINGOT		("ObsidianIngot", 		"Item_ObsidianIngot");
 		
 		
 		private String unlocalizedName;

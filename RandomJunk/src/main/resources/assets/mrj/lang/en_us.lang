@@ -1,17 +1,25 @@
-//Items
+//-//Items
+//Apples
 item.BlazeApple.name=Blazepowder Apple
 item.CoalApple.name=Coal Apple
 item.DiamondApple.name=Diamond Apple
 item.EmeraldApple.name=Emerald Apple
 item.GunpowderApple.name=Gunpowder Apple
 item.IronApple.name=Iron Apple
+item.LapisApple.name=Lapis Apple
+item.PrismarineApple.name=Prismarine Apple
+item.QuartzApple.name=Quartz Apple
+item.RedstoneApple.name=Redstone Apple
 item.SlimeApple.name=Slime Apple
-item.ObsidianIngot.name=Obsidian Ingot
 
-//Armor
+//Obsidian Stuff
+item.ObsidianIngot.name=Refined Obsidian Ingot
 
-//Blocks
+//-//Armor
 
-//GUI
+//-//Blocks
+tile.ObsidianBlock.name=Block of Refined Obsidian
+
+//-//GUI
 itemGroup.Tab_RandomJunkItems=RandomJunk Items
 itemGroup.Tab_RandomJunkBlocks=RandomJunk Blocks

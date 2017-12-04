@@ -6,9 +6,9 @@ import com.mrunknown404.randomjunk.Reference;
 import net.minecraft.item.Item;
 
 
-public class ItemObsidianIngot extends Item {
+public class Item_ObsidianIngot extends Item {
 	
-	public ItemObsidianIngot() {
+	public Item_ObsidianIngot() {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.OBSIDIANINGOT.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.OBSIDIANINGOT.getRegistryName());

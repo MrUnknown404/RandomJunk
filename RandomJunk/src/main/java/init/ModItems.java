@@ -1,17 +1,17 @@
 package init;
 
-import items.ItemBlazeApple;
-import items.ItemCoalApple;
-import items.ItemDiamondApple;
-import items.ItemEmeraldApple;
-import items.ItemGunpowderApple;
-import items.ItemIronApple;
-import items.ItemLapisApple;
-import items.ItemObsidianIngot;
-import items.ItemPrismarineApple;
-import items.ItemQuartzApple;
-import items.ItemRedstoneApple;
-import items.ItemSlimeApple;
+import items.Item_ObsidianIngot;
+import items.apples.Item_BlazeApple;
+import items.apples.Item_CoalApple;
+import items.apples.Item_DiamondApple;
+import items.apples.Item_EmeraldApple;
+import items.apples.Item_GunpowderApple;
+import items.apples.Item_IronApple;
+import items.apples.Item_LapisApple;
+import items.apples.Item_PrismarineApple;
+import items.apples.Item_QuartzApple;
+import items.apples.Item_RedstoneApple;
+import items.apples.Item_SlimeApple;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -37,23 +37,24 @@ public class ModItems {
 	
 	public static void init() {
 		//Apples
-		BlazeApple = new 		ItemBlazeApple();
-		CoalApple = new 		ItemCoalApple();
-		DiamondApple = new 	ItemDiamondApple();
-		EmeraldApple = new 	ItemEmeraldApple();
-		GunpowderApple = new ItemGunpowderApple();
-		IronApple = new 		ItemIronApple();
-		LapisApple = new		ItemLapisApple();
-		PrismarineApple = new  ItemPrismarineApple();
-		QuartzApple = new		ItemQuartzApple();
-		RedstoneApple = new	ItemRedstoneApple();
-		SlimeApple = new 		ItemSlimeApple();
+		BlazeApple = new 		Item_BlazeApple();
+		CoalApple = new 		Item_CoalApple();
+		DiamondApple = new 	Item_DiamondApple();
+		EmeraldApple = new 	Item_EmeraldApple();
+		GunpowderApple = new Item_GunpowderApple();
+		IronApple = new 		Item_IronApple();
+		LapisApple = new		Item_LapisApple();
+		PrismarineApple = new  Item_PrismarineApple();
+		QuartzApple = new		Item_QuartzApple();
+		RedstoneApple = new	Item_RedstoneApple();
+		SlimeApple = new 		Item_SlimeApple();
 		//Obsidian Stuff
-		ObsidianIngot = new 	ItemObsidianIngot();
+		ObsidianIngot = new 	Item_ObsidianIngot();
 	}
 	public static void register() {
 		//-//Register Items
 		//Apples
+		///*
 		GameRegistry.register(BlazeApple);
 		GameRegistry.register(CoalApple);
 		GameRegistry.register(DiamondApple);
@@ -67,6 +68,7 @@ public class ModItems {
 		GameRegistry.register(SlimeApple);
 		//Obsidian Stuff
 		GameRegistry.register(ObsidianIngot);
+		//*/
 	}
 	public static void registerRenders() {
 		//-//Register Render Items

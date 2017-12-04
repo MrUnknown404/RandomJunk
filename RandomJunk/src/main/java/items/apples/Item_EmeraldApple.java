@@ -1,4 +1,4 @@
-package items;
+package items.apples;
 
 import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
@@ -12,14 +12,14 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 
-public class ItemBlazeApple extends ItemFood {
+public class Item_EmeraldApple extends ItemFood {
 
-	public ItemBlazeApple() {
-		super(4, 0.4f, false);
+	public Item_EmeraldApple() {
+		super(6, 0.5f, false);
 		
 		//Get Names
-		setUnlocalizedName(Reference.RandomJunkItems.BLAZEAPPLE.getUnlocalizedName());
-		setRegistryName(Reference.RandomJunkItems.BLAZEAPPLE.getRegistryName());
+		setUnlocalizedName(Reference.RandomJunkItems.EMERALDAPPLE.getUnlocalizedName());
+		setRegistryName(Reference.RandomJunkItems.EMERALDAPPLE.getRegistryName());
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
 	}
 	
@@ -34,8 +34,8 @@ public class ItemBlazeApple extends ItemFood {
 		//Add Potion Effect
 		if (true) {
 			if (entity instanceof EntityLivingBase) {
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 120*20, 0)); //Time In Seconds * Tickspeed
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 120*20, 0)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.LUCK, 120*20, 1)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 120*20, 0)); //Time In Seconds * Tickspeed
 			}
 		}
 	}

@@ -1,42 +1,38 @@
-package items;
+package items.apples;
 
 import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
 
-import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.MobEffects;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 
-public class ItemEmeraldApple extends ItemFood {
+public class Item_GunpowderApple extends ItemFood {
 
-	public ItemEmeraldApple() {
-		super(6, 0.5f, false);
+	public Item_GunpowderApple() {
+		super(4, 0.4f, false);
 		
 		//Get Names
-		setUnlocalizedName(Reference.RandomJunkItems.EMERALDAPPLE.getUnlocalizedName());
-		setRegistryName(Reference.RandomJunkItems.EMERALDAPPLE.getRegistryName());
+		setUnlocalizedName(Reference.RandomJunkItems.GUNPOWDERAPPLE.getUnlocalizedName());
+		setRegistryName(Reference.RandomJunkItems.GUNPOWDERAPPLE.getRegistryName());
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {
 		super.onFoodEaten(itemStack, world, entity);
 		float var4 = 1.0F;
-		//Potion Effect Vars
+		//Explosion Vars
 		int i = (int) (entity.prevPosX + (entity.posX - entity.prevPosX) * (double) var4);
 		int j = (int) (entity.prevPosY + (entity.posY - entity.prevPosY) * (double) var4 + 1.62D - (double) entity.getYOffset());
 		int k = (int) (entity.prevPosZ + (entity.posZ - entity.prevPosZ) * (double) var4);
-
-		//Add Potion Effect
+		
+		//Create Explosion
 		if (true) {
-			if (entity instanceof EntityLivingBase) {
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.LUCK, 120*20, 1)); //Time In Seconds * Tickspeed
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 120*20, 0)); //Time In Seconds * Tickspeed
-			}
+			world.createExplosion((Entity) null, i, j, k, 5F, true);
 		}
 	}
 }

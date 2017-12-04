@@ -2,6 +2,7 @@ package com.mrunknown404.randomjunk;
 
 import com.mrunknown404.randomjunk.proxy.CommonProxy;
 
+import init.ModBlocks;
 import init.ModCrafting;
 import init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
@@ -30,6 +31,9 @@ public class RandomJunk {
 		//Items Init
 		ModItems.init();
 		ModItems.register();
+		
+		ModBlocks.init();
+		ModBlocks.register();
 	}
 	
 	@EventHandler
@@ -56,7 +60,7 @@ public class RandomJunk {
 		
 		@Override
 		public ItemStack getTabIconItem() {
-			return new ItemStack(Blocks.BARRIER);
+			return new ItemStack(ModBlocks.ObsidianBlock);
 		}
 	};
 }

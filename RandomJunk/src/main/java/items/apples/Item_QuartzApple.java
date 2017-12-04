@@ -1,4 +1,4 @@
-package items;
+package items.apples;
 
 import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
@@ -14,9 +14,9 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 
-public class ItemQuartzApple extends ItemFood {
+public class Item_QuartzApple extends ItemFood {
 
-	public ItemQuartzApple() {
+	public Item_QuartzApple() {
 		super(4, 0.4f, false);
 		
 		//Get Names

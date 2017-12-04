@@ -21,7 +21,11 @@ public class ModCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.QuartzApple),		"XXX", "XAX", "XXX", 'X',Items.QUARTZ,				'A',Items.APPLE );
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.RedstoneApple),		"XXX", "XAX", "XXX", 'X',Items.REDSTONE,				'A',Items.APPLE );
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.SlimeApple), 		"XXX", "XAX", "XXX", 'X',Items.SLIME_BALL,			'A',Items.APPLE );
+		
+		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.ObsidianBlock), 		"XXX", "XXX", "XXX", 'X',ModItems.ObsidianIngot);
 		//Shapeless
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ObsidianIngot, 9, 0), new ItemStack(ModBlocks.ObsidianBlock, 1, 0)); //Block Into Ingot
+		
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 1, 0), new ItemStack(Blocks.WOODEN_SLAB, 1, 0), new ItemStack(Blocks.WOODEN_SLAB, 1, 0)); //Oak
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 1, 1), new ItemStack(Blocks.WOODEN_SLAB, 1, 1), new ItemStack(Blocks.WOODEN_SLAB, 1, 1)); //Spruce
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 1, 2), new ItemStack(Blocks.WOODEN_SLAB, 1, 2), new ItemStack(Blocks.WOODEN_SLAB, 1, 2)); //Birch

@@ -1,4 +1,4 @@
-package items;
+package items.apples;
 
 import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
@@ -14,14 +14,14 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 
-public class ItemLapisApple extends ItemFood {
+public class Item_IronApple extends ItemFood {
 
-	public ItemLapisApple() {
+	public Item_IronApple() {
 		super(4, 0.4f, false);
 		
 		//Get Names
-		setUnlocalizedName(Reference.RandomJunkItems.LAPISAPPLE.getUnlocalizedName());
-		setRegistryName(Reference.RandomJunkItems.LAPISAPPLE.getRegistryName());
+		setUnlocalizedName(Reference.RandomJunkItems.IRONAPPLE.getUnlocalizedName());
+		setRegistryName(Reference.RandomJunkItems.IRONAPPLE.getRegistryName());
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
 	}
 	
@@ -31,8 +31,10 @@ public class ItemLapisApple extends ItemFood {
 		//Add Potion Effect
 		if (true) {
 			if (entity instanceof EntityLivingBase) {
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.HASTE, 240*20, 0)); //Time In Seconds * Tickspeed
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, 240*20, 0)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 120*20, 4)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 120*20, 4)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 120*20, 4)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 120*20, 4)); //Time In Seconds * Tickspeed
 			}
 		}
 	}
