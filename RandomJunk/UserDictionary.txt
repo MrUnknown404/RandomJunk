@@ -12,3 +12,4 @@ smelting
 cobblestone
 stonebrick
 netherbrick
+obsidian

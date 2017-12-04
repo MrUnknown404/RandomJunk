@@ -15,7 +15,9 @@ public class Reference {
 	public static enum RandomJunkItems {
 		//Items
 		GUNPOWDERAPPLE("GunpowderApple", "ItemGunpowderApple"),
-		SLIMEAPPLE("SlimeApple", "ItemSlimeApple");
+		SLIMEAPPLE("SlimeApple", "ItemSlimeApple"),
+		//Obsidian Things
+		OBSIDIANINGOT("ObsidianIngot", "ItemObsidianIngot");
 		
 		private String unlocalizedName;
 		private String registryName;
