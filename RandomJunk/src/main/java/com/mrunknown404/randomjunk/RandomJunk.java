@@ -5,6 +5,7 @@ import com.mrunknown404.randomjunk.proxy.CommonProxy;
 import init.ModCrafting;
 import init.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -55,7 +56,7 @@ public class RandomJunk {
 		
 		@Override
 		public ItemStack getTabIconItem() {
-			return new ItemStack(ModItems.GunpowderApple);
+			return new ItemStack(Blocks.BARRIER);
 		}
 	};
 }

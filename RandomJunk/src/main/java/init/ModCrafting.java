@@ -10,8 +10,17 @@ public class ModCrafting {
 	public static void register() {
 		//-//Add Recipe
 		//Shaped
-		GameRegistry.addShapedRecipe(new ItemStack(ModItems.SlimeApple), "SSS", "SAS", "SSS", 'S',Items.SLIME_BALL,'A',Items.APPLE );
-		GameRegistry.addShapedRecipe(new ItemStack(ModItems.GunpowderApple), "GGG", "GAG", "GGG", 'G',Items.GUNPOWDER,'A',Items.APPLE );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.BlazeApple), 		"XXX", "XAX", "XXX", 'X',Items.BLAZE_POWDER	,		'A',Items.APPLE );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.CoalApple),		 	"XXX", "XAX", "XXX", 'X',Items.COAL,					'A',Items.APPLE );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.DiamondApple),  	 	"XXX", "XAX", "XXX", 'X',Items.DIAMOND,				'A',Items.APPLE );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.EmeraldApple),	 	"XXX", "XAX", "XXX", 'X',Items.EMERALD,				'A',Items.APPLE );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.GunpowderApple),	"XXX", "XAX", "XXX", 'X',Items.GUNPOWDER,			'A',Items.APPLE );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.IronApple),			"XXX", "XAX", "XXX", 'X',Items.IRON_INGOT,			'A',Items.APPLE );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.LapisApple),			"XXX", "XAX", "XXX", 'X',new ItemStack(Items.DYE, 1, 4),	'A',Items.APPLE );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.PrismarineApple),		"XXX", "XAX", "XXX", 'X',Items.PRISMARINE_SHARD,		'A',Items.APPLE );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.QuartzApple),		"XXX", "XAX", "XXX", 'X',Items.QUARTZ,				'A',Items.APPLE );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.RedstoneApple),		"XXX", "XAX", "XXX", 'X',Items.REDSTONE,				'A',Items.APPLE );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.SlimeApple), 		"XXX", "XAX", "XXX", 'X',Items.SLIME_BALL,			'A',Items.APPLE );
 		//Shapeless
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 1, 0), new ItemStack(Blocks.WOODEN_SLAB, 1, 0), new ItemStack(Blocks.WOODEN_SLAB, 1, 0)); //Oak
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 1, 1), new ItemStack(Blocks.WOODEN_SLAB, 1, 1), new ItemStack(Blocks.WOODEN_SLAB, 1, 1)); //Spruce

@@ -7,5 +7,4 @@ public class ServerProxy implements CommonProxy {
 	public void init() {
 		
 	}
-
 }

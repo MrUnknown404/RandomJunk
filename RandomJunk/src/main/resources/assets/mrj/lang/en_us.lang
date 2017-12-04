@@ -1,0 +1,17 @@
+//Items
+item.BlazeApple.name=Blazepowder Apple
+item.CoalApple.name=Coal Apple
+item.DiamondApple.name=Diamond Apple
+item.EmeraldApple.name=Emerald Apple
+item.GunpowderApple.name=Gunpowder Apple
+item.IronApple.name=Iron Apple
+item.SlimeApple.name=Slime Apple
+item.ObsidianIngot.name=Obsidian Ingot
+
+//Armor
+
+//Blocks
+
+//GUI
+itemGroup.Tab_RandomJunkItems=RandomJunk Items
+itemGroup.Tab_RandomJunkBlocks=RandomJunk Blocks
