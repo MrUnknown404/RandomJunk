@@ -2,6 +2,8 @@ package com.mrunknown404.randomjunk;
 
 import com.mrunknown404.randomjunk.proxy.CommonProxy;
 
+import init.ModCrafting;
+import init.ModItems;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -22,12 +24,17 @@ public class RandomJunk {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		
+		//Items Init
+		ModItems.init();
+		ModItems.register();
 	}
 	
 	@EventHandler
 	public void Init(FMLInitializationEvent event) {
+		proxy.init();
 		
+		//Crafting Init
+		ModCrafting.register();
 	}
 	
 	@EventHandler

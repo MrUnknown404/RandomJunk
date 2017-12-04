@@ -10,4 +10,27 @@ public class Reference {
 	//Proxy
 	public static final String CLIENT_PROXY_CLASS = "com.mrunknown404.randomjunk.proxy.ClientProxy";
 	public static final String SERVER_PROXY_CLASS = "com.mrunknown404.randomjunk.proxy.ServerProxy";
+	
+	//
+	public static enum RandomJunkItems {
+		//Items
+		GUNPOWDERAPPLE("GunpowderApple", "ItemGunpowderApple"),
+		SLIMEAPPLE("SlimeApple", "ItemSlimeApple");
+		
+		private String unlocalizedName;
+		private String registryName;
+		
+		RandomJunkItems(String unlocalizedName, String registryName) {
+			this.unlocalizedName = unlocalizedName;
+			this.registryName = registryName;
+		}
+		
+		public String getUnlocalizedName() {
+			return unlocalizedName;
+		}
+		
+		public String getRegistryName() {
+			return registryName;
+		}
+	}
 }

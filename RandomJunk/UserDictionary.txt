@@ -5,3 +5,7 @@ modid
 mcversion
 url
 mod
+thirdperson
+firstperson
+init
+smelting
