@@ -17,3 +17,5 @@ misc
 vars
 potion
 tickspeed
+int
+enuma
