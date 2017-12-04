@@ -9,3 +9,6 @@ thirdperson
 firstperson
 init
 smelting
+cobblestone
+stonebrick
+netherbrick
