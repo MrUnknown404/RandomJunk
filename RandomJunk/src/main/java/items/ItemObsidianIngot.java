@@ -1,5 +1,6 @@
 package items;
 
+import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
 
 import net.minecraft.item.Item;
@@ -11,5 +12,6 @@ public class ItemObsidianIngot extends Item {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.OBSIDIANINGOT.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.OBSIDIANINGOT.getRegistryName());
+		setCreativeTab(RandomJunk.TabRandomJunkItems);
 	}
 }

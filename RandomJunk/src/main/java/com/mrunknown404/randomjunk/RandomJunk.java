@@ -4,6 +4,8 @@ import com.mrunknown404.randomjunk.proxy.CommonProxy;
 
 import init.ModCrafting;
 import init.ModItems;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -41,4 +43,19 @@ public class RandomJunk {
 	public void postInit(FMLPostInitializationEvent event) {
 		
 	}
+	
+	public static CreativeTabs TabRandomJunkItems = new CreativeTabs("Tab_RandomJunkItems") {
+		
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(ModItems.GunpowderApple);
+		}
+	};
+	public static CreativeTabs TabRandomJunkBlocks = new CreativeTabs("Tab_RandomJunkBlocks") {
+		
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(ModItems.GunpowderApple);
+		}
+	};
 }

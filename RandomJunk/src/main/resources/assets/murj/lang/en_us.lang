@@ -1,3 +1,10 @@
+//Items
 item.GunpowderApple.name=Gunpowder Apple
 item.SlimeApple.name=Slime Apple
 item.ObsidianIngot.name=Obsidian Ingot
+
+//Blocks
+
+//GUI
+itemGroup.Tab_RandomJunkItems=RandomJunk Items
+itemGroup.Tab_RandomJunkBlocks=RandomJunk Blocks

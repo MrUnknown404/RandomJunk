@@ -13,3 +13,7 @@ cobblestone
 stonebrick
 netherbrick
 obsidian
+misc
+vars
+potion
+tickspeed
