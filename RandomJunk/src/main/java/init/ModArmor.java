@@ -2,6 +2,10 @@ package init;
 
 import com.mrunknown404.randomjunk.Reference;
 
+import items.bonethings.Item_BoneBoots;
+import items.bonethings.Item_BoneChestplate;
+import items.bonethings.Item_BoneHelmet;
+import items.bonethings.Item_BoneLeggings;
 import items.obsidianthings.Item_ObsidianBoots;
 import items.obsidianthings.Item_ObsidianChestplate;
 import items.obsidianthings.Item_ObsidianHelmet;
@@ -25,30 +29,62 @@ public class ModArmor {
 	//durability * 13 for the boots
 	
 	public static ArmorMaterial ARMMAT_OBSIDIAN = EnumHelper.addArmorMaterial("ARMMAT_OBSIDIAN",  Reference.MOD_ID+":obsidian", 44 , new int[]{4, 6, 8, 4}, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0f); //Texture, Durability, Damage Reduction, Enchantability, SoundEvent, Toughness
+	public static ArmorMaterial ARMMAT_BONE = EnumHelper.addArmorMaterial("ARMMAT_BONE",  Reference.MOD_ID+":bone", 16 , new int[]{3, 5, 6, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f); //Texture, Durability, Damage Reduction, Enchantability, SoundEvent, Toughness
 	
 	//Items
+	//Obsidian
 	public static ItemArmor ObsidianHelmet;
 	public static ItemArmor ObsidianChestplate;
 	public static ItemArmor ObsidianLeggings;
 	public static ItemArmor ObsidianBoots;
 	
+	//Bone
+	public static ItemArmor BoneHelmet;
+	public static ItemArmor BoneChestplate;
+	public static ItemArmor BoneLeggings;
+	public static ItemArmor BoneBoots;
+	
 	public static void init() {
+		//Obsidian
 		ObsidianHelmet = new 		Item_ObsidianHelmet(ARMMAT_OBSIDIAN, 1, EntityEquipmentSlot.HEAD);
 		ObsidianChestplate = new 	Item_ObsidianChestplate(ARMMAT_OBSIDIAN, 1, EntityEquipmentSlot.CHEST);
 		ObsidianLeggings = new 	Item_ObsidianLeggings(ARMMAT_OBSIDIAN, 2, EntityEquipmentSlot.LEGS);
 		ObsidianBoots = new 		Item_ObsidianBoots(ARMMAT_OBSIDIAN, 1, EntityEquipmentSlot.FEET);
+		
+		//Bone
+		BoneHelmet = new 		Item_BoneHelmet(ARMMAT_BONE, 1, EntityEquipmentSlot.HEAD);
+		BoneChestplate = new 		Item_BoneChestplate(ARMMAT_BONE, 1, EntityEquipmentSlot.CHEST);
+		BoneLeggings = new 		Item_BoneLeggings(ARMMAT_BONE, 2, EntityEquipmentSlot.LEGS);
+		BoneBoots = new 			Item_BoneBoots(ARMMAT_BONE, 1, EntityEquipmentSlot.FEET);
+		
 	}
 	public static void register() {
+		//Obsidian
 		GameRegistry.register(ObsidianHelmet);
 		GameRegistry.register(ObsidianChestplate);
 		GameRegistry.register(ObsidianLeggings);
 		GameRegistry.register(ObsidianBoots);
+		
+		//Bone
+		GameRegistry.register(BoneHelmet);
+		GameRegistry.register(BoneChestplate);
+		GameRegistry.register(BoneLeggings);
+		GameRegistry.register(BoneBoots);
+		
 	}
 	public static void registerRenders() {
+		//Obsidian
 		registerRender(ObsidianHelmet);
 		registerRender(ObsidianChestplate);
 		registerRender(ObsidianLeggings);
 		registerRender(ObsidianBoots);
+		
+		//Bone
+		registerRender(BoneHelmet);
+		registerRender(BoneChestplate);
+		registerRender(BoneLeggings);
+		registerRender(BoneBoots);
+		
 	}
 	
 	private static void registerRender(Item item) {

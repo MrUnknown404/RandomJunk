@@ -23,13 +23,13 @@ import items.apples.Item_QuartzApple;
 import items.apples.Item_RedstoneApple;
 import items.apples.Item_RottenFleshApple;
 import items.apples.Item_SlimeApple;
+import items.bonethings.Item_BoneIngot;
+import items.bonethings.Item_BoneMix;
 import items.obsidianthings.Item_ObsidianIngot;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
@@ -61,6 +61,10 @@ public class ModItems {
 	//Obsidian Things
 	public static Item ObsidianIngot;
 	
+	//Bone
+	public static Item BoneIngot;
+	public static Item BoneMix;
+	
 	public static void init() {
 		//Apples
 		AppleApple = new  			Item_AppleApple();
@@ -85,8 +89,13 @@ public class ModItems {
 		RedstoneApple = new		Item_RedstoneApple();
 		RottenFleshApple = new 	Item_RottenFleshApple();
 		SlimeApple = new 			Item_SlimeApple();
+		
 		//Obsidian Things
 		ObsidianIngot = new 		Item_ObsidianIngot();
+		
+		//Bone Things
+		BoneIngot = new 			Item_BoneIngot();
+		BoneMix = new 			Item_BoneMix();
 		
 	}
 	public static void register() {
@@ -115,8 +124,13 @@ public class ModItems {
 		GameRegistry.register(RedstoneApple);
 		GameRegistry.register(RottenFleshApple);
 		GameRegistry.register(SlimeApple);
+		
 		//Obsidian Things
 		GameRegistry.register(ObsidianIngot);
+		
+		//Bone Things
+		GameRegistry.register(BoneIngot);
+		GameRegistry.register(BoneMix);
 		//*/
 		
 	}
@@ -145,8 +159,14 @@ public class ModItems {
 		registerRender(RedstoneApple);
 		registerRender(RottenFleshApple);
 		registerRender(SlimeApple);
+		
 		//Obsidian Things
 		registerRender(ObsidianIngot);
+		
+		//Bone Things
+		registerRender(BoneIngot);
+		registerRender(BoneMix);
+		
 	}
 	private static void registerRender(Item item) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));

@@ -34,7 +34,7 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModItems.RottenFleshApple), 		"XXX", "XAX", "XXX",	 'X',Items.ROTTEN_FLESH,			'A',Items.APPLE );
 		GameRegistry.addRecipe(new ItemStack(ModItems.SlimeApple), 			"XXX", "XAX", "XXX", 	'X',Items.SLIME_BALL,				'A',Items.APPLE );
 		
-		//Obsidian Things
+		//Obsidian
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianShovel), 		"OXX", "SXX", "SXX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianShovel), 		"XOX", "XSX", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianShovel), 		"XXO", "XXS", "XXS", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
@@ -42,11 +42,26 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianPickaxe), 		"OOO", "XSX", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianAxe), 			"OOX", "OS ", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianHoe), 			"OOX", "XSX", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
+		
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianSword), 		"OXX", "OXX", "SXX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianSword), 		"XOX", "XOX", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianSword), 		"XXO", "XXO", "XXS", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
 		
+		//Bone
+		GameRegistry.addRecipe(new ItemStack(ModTools.BoneShovel), 			"OXX", "SXX", "SXX", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.BoneShovel), 			"XOX", "XSX", "XSX", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.BoneShovel), 			"XXO", "XXS", "XXS", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
+		
+		GameRegistry.addRecipe(new ItemStack(ModTools.BonePickaxe), 			"OOO", "XSX", "XSX", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.BoneAxe), 			"OOX", "OS ", "XSX", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.BoneHoe), 			"OOX", "XSX", "XSX", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
+		
+		GameRegistry.addRecipe(new ItemStack(ModTools.BoneSword), 			"OXX", "OXX", "SXX", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.BoneSword), 			"XOX", "XOX", "XSX", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.BoneSword), 			"XXO", "XXO", "XXS", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
+		
 		//Armor
+		//Obsidian
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianHelmet), 		"OOO", "OXO", "XXX", 	'O',ModItems.ObsidianIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianHelmet), 		"XXX", "OOO", "OXO", 	'O',ModItems.ObsidianIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianChestplate), 	"OXO", "OOO", "OOO", 	'O',ModItems.ObsidianIngot);
@@ -54,12 +69,23 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianBoots), 		"OXO", "OXO", "XXX", 	'O',ModItems.ObsidianIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianBoots), 		"XXX", "OXO", "OXO", 	'O',ModItems.ObsidianIngot);
 		
+		//Bone
+		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneHelmet), 		"OOO", "OXO", "XXX", 	'O',ModItems.BoneIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneHelmet), 		"XXX", "OOO", "OXO", 	'O',ModItems.BoneIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneChestplate), 		"OXO", "OOO", "OOO", 	'O',ModItems.BoneIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneLeggings), 		"OOO", "OXO", "OXO", 	'O',ModItems.BoneIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneBoots), 			"OXO", "OXO", "XXX", 	'O',ModItems.BoneIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneBoots), 			"XXX", "OXO", "OXO", 	'O',ModItems.BoneIngot);
 		
 		//Blocks
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.ObsidianBlock), 		"XXX", "XXX", "XXX", 'X',ModItems.ObsidianIngot);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.ObsidianBlock, 1), 		"XXX", "XXX", "XXX", 'X',ModItems.ObsidianIngot);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.BoneBlock, 1), 		"XXX", "XXX", "XXX", 'X',ModItems.BoneIngot);
 		
 		//-//Shapeless
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ObsidianIngot, 9, 0), new ItemStack(ModBlocks.ObsidianBlock, 1, 0)); //Block Into Ingot
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneMix, 1),		new ItemStack(Items.BONE, 1), new ItemStack(Items.BONE, 1), new ItemStack(Items.BONE, 1)); //Block Into Ingot
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ObsidianIngot, 9), 	new ItemStack(ModBlocks.ObsidianBlock, 1)); //Block Into Ingot
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneIngot, 9), 		new ItemStack(ModBlocks.BoneBlock, 1)); //Block Into Ingot
 		
 		//Blocks
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 1, 0), new ItemStack(Blocks.WOODEN_SLAB, 1, 0), new ItemStack(Blocks.WOODEN_SLAB, 1, 0)); //Oak
@@ -69,14 +95,15 @@ public class ModCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 1, 4), new ItemStack(Blocks.WOODEN_SLAB, 1, 4), new ItemStack(Blocks.WOODEN_SLAB, 1, 4)); //Acacia
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 1, 5), new ItemStack(Blocks.WOODEN_SLAB, 1, 5), new ItemStack(Blocks.WOODEN_SLAB, 1, 5)); //Dark Oak
 		
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.STONE), new ItemStack(Blocks.STONE_SLAB, 1, 0), new ItemStack(Blocks.STONE_SLAB, 1, 0)); //Stone Slab
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.COBBLESTONE), new ItemStack(Blocks.STONE_SLAB, 1, 3), new ItemStack(Blocks.STONE_SLAB, 1, 3)); //Cobblestone Slab
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.BRICK_BLOCK), new ItemStack(Blocks.STONE_SLAB, 1, 4), new ItemStack(Blocks.STONE_SLAB, 1, 4)); //Brick Slab
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.NETHER_BRICK), new ItemStack(Blocks.STONE_SLAB, 1, 6), new ItemStack(Blocks.STONE_SLAB, 1, 6)); //Netherbrick Slab
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.STONE), 			new ItemStack(Blocks.STONE_SLAB, 1, 0), new ItemStack(Blocks.STONE_SLAB, 1, 0)); //Stone Slab
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.COBBLESTONE), 	new ItemStack(Blocks.STONE_SLAB, 1, 3), new ItemStack(Blocks.STONE_SLAB, 1, 3)); //Cobblestone Slab
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.BRICK_BLOCK), 	new ItemStack(Blocks.STONE_SLAB, 1, 4), new ItemStack(Blocks.STONE_SLAB, 1, 4)); //Brick Slab
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.NETHER_BRICK), 	new ItemStack(Blocks.STONE_SLAB, 1, 6), new ItemStack(Blocks.STONE_SLAB, 1, 6)); //Netherbrick Slab
 		
 		//-//Smelting
 		//Misc
-		GameRegistry.addSmelting(Items.ROTTEN_FLESH, new ItemStack(Items.LEATHER), 0.1f);
-		GameRegistry.addSmelting(Blocks.OBSIDIAN, new ItemStack(ModItems.ObsidianIngot), 0.3f);
+		GameRegistry.addSmelting(Items.ROTTEN_FLESH, 	new ItemStack(Items.LEATHER), 0.1f);
+		GameRegistry.addSmelting(Blocks.OBSIDIAN,		new ItemStack(ModItems.ObsidianIngot), 0.4f);
+		GameRegistry.addSmelting(ModItems.BoneMix, 	new ItemStack(ModItems.BoneIngot), 0.3f);
 	}
 }

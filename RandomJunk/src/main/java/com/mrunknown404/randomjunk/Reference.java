@@ -13,8 +13,9 @@ public class Reference {
 	
 	//Blocks
 	public static enum RandomJunkBlocks {
-		//Block NAME			("",""),
-		OBSIDIANBLOCK		("ObsidianBlock",		"Block_ObsidianBlock");
+		//Block NAME				("",""),
+		OBSIDIANBLOCK			("ObsidianBlock",		"Block_ObsidianBlock"),
+		BONEBLOCK				("BoneBlock",			"Block_BoneBlock");
 		
 		
 		private String unlocalizedName;
@@ -61,6 +62,7 @@ public class Reference {
 		SLIMEAPPLE				("SlimeApple", 		"Item_SlimeApple"),
 		//Obsidian Things shovel pickaxe axe hoe
 		OBSIDIANINGOT			("ObsidianIngot", 		"Item_ObsidianIngot"),
+		
 		OBSIDIANSHOVEL		("ObsidianShovel",		"Item_ObsidianShovel"),
 		OBSIDIANPICKAXE		("ObsidianPickaxe",	"Item_ObsidianPickaxe"),
 		OBSIDIANAXE			("ObsidianAxe",		"Item_ObsidianAxe"),
@@ -70,7 +72,21 @@ public class Reference {
 		OBSIDIANHELMET 		("ObsidianHelmet",	"Item_ObsidianHelmet"),
 		OBSIDIANCHESTPLATE 	("ObsidianChestplate",	"Item_ObsidianChestplate"),
 		OBSIDIANLEGGINGS 		("ObsidianLeggings",	"Item_ObsidianLeggings"),
-		OBSIDIANBOOTS			("ObsidianBoots",		"Item_ObsidianBoots");
+		OBSIDIANBOOTS			("ObsidianBoots",		"Item_ObsidianBoots"),
+		
+		BONEINGOT				("BoneIngot",			"Item_BoneIngot"),
+		BONEMIX				("BoneMix",			"Item_BoneMix"),
+		
+		BONESHOVEL			("BoneShovel",		"Item_BoneShovel"),
+		BONEPICKAXE			("BonePickaxe",		"Item_BonePickaxe"),
+		BONEAXE				("BoneAxe",			"Item_BoneAxe"),
+		BONEHOE				("BoneHoe",			"Item_BoneHoe"),
+		BONESWORD			("BoneSword",		"Item_BoneSword"),
+		
+		BONEHELMET 			("BoneHelmet",		"Item_BoneHelmet"),
+		BONECHESTPLATE 		("BoneChestplate",		"Item_BoneChestplate"),
+		BONELEGGINGS 			("BoneLeggings",		"Item_BoneLeggings"),
+		BONEBOOTS				("BoneBoots",			"Item_BoneBoots");
 		
 		private String unlocalizedName;
 		private String registryName;

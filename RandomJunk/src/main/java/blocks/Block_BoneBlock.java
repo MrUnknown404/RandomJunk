@@ -8,19 +8,19 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 
 
-public class Block_ObsidianBlock extends Block {
+public class Block_BoneBlock extends Block {
 
-	public Block_ObsidianBlock() {
+	public Block_BoneBlock() {
 		super(Material.IRON);
 		//
-		setHardness(20.0f);
-		setResistance(5000.0f);
-		setHarvestLevel("pickaxe", 3);
+		setHardness(10.0f);
+		setResistance(20.0f);
+		setHarvestLevel("pickaxe", 1);
 		setSoundType(SoundType.METAL);
 		
 		//Get Names
-		setUnlocalizedName(Reference.RandomJunkBlocks.OBSIDIANBLOCK.getUnlocalizedName());
-		setRegistryName(Reference.RandomJunkBlocks.OBSIDIANBLOCK.getRegistryName());
+		setUnlocalizedName(Reference.RandomJunkBlocks.BONEBLOCK.getUnlocalizedName());
+		setRegistryName(Reference.RandomJunkBlocks.BONEBLOCK.getRegistryName());
 		setCreativeTab(RandomJunk.TabRandomJunkBlocks);
 	}
 }

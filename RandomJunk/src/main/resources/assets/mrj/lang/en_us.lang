@@ -24,21 +24,37 @@ item.RottenFleshApple.name=Rotten Apple
 item.SlimeApple.name=Slime Apple
 
 //Obsidian Things
-item.ObsidianIngot.name=Refined Obsidian Ingot
-item.ObsidianShovel.name=Refined Obsidian Shovel
-item.ObsidianPickaxe.name=Refined Obsidian Pickaxe
-item.ObsidianAxe.name=Refined Obsidian Axe
-item.ObsidianHoe.name=Refined Obsidian Hoe
-item.ObsidianSword.name=Refined Obsidian Sword
+item.ObsidianIngot.name=Obsidian Ingot
+
+item.ObsidianShovel.name=Obsidian Shovel
+item.ObsidianPickaxe.name=Obsidian Pickaxe
+item.ObsidianAxe.name=Obsidian Axe
+item.ObsidianHoe.name=Obsidian Hoe
+item.ObsidianSword.name=Obsidian Sword
+
+//Bone Things
+item.BoneMix.name=Bone Mix
+item.BoneIngot.name=Bone Ingot
+
+item.BoneShovel.name=Bone Shovel
+item.BonePickaxe.name=Bone Pickaxe
+item.BoneAxe.name=Bone Axe
+item.BoneHoe.name=Bone Hoe
+item.BoneSword.name=Bone Sword
+item.BoneHelmet.name=Bone Helmet
+item.BoneChestplate.name=Bone Chestplate
+item.BoneLeggings.name=Bone Leggings
+item.BoneBoots.name=Bone Boots
 
 //-//Armor
-item.ObsidianHelmet.name=Refined Obsidian Helmet
-item.ObsidianChestplate.name=Refined Obsidian Chestplate
-item.ObsidianLeggings.name=Refined Obsidian Leggings
-item.ObsidianBoots.name=Refined Obsidian Boots
+item.ObsidianHelmet.name=Obsidian Helmet
+item.ObsidianChestplate.name=Obsidian Chestplate
+item.ObsidianLeggings.name=Obsidian Leggings
+item.ObsidianBoots.name=Obsidian Boots
 
 //-//Blocks
-tile.ObsidianBlock.name=Block of Refined Obsidian
+tile.ObsidianBlock.name=Block of Obsidian
+tile.BoneBlock.name=Block of Bone
 
 //-//GUI
 itemGroup.Tab_RandomJunkItems=RandomJunk Items
