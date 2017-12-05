@@ -32,6 +32,10 @@ item.ObsidianHoe.name=Refined Obsidian Hoe
 item.ObsidianSword.name=Refined Obsidian Sword
 
 //-//Armor
+item.ObsidianHelmet.name=Refined Obsidian Helmet
+item.ObsidianChestplate.name=Refined Obsidian Chestplate
+item.ObsidianLeggings.name=Refined Obsidian Leggings
+item.ObsidianBoots.name=Refined Obsidian Boots
 
 //-//Blocks
 tile.ObsidianBlock.name=Block of Refined Obsidian

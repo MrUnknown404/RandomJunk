@@ -1,6 +1,7 @@
 package init;
 
 import net.minecraftforge.common.util.EnumHelper;
+import items.obsidianthings.Item_ObsidianHelmet;
 import items.obsidianthings.Item_ObsidianAxe;
 import items.obsidianthings.Item_ObsidianHoe;
 import items.obsidianthings.Item_ObsidianIngot;
@@ -34,6 +35,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
@@ -103,6 +105,7 @@ public class ModItems {
 		ObsidianAxe = new 		Item_ObsidianAxe(MAT_OBSIDIAN, 9.0f, -3.2f); //Damage(+1), Attack Speed
 		ObsidianHoe = new 		Item_ObsidianHoe(MAT_OBSIDIAN);
 		ObsidianSword = new 		Item_ObsidianSword(MAT_OBSIDIAN);
+		
 	}
 	public static void register() {
 		//-//Register Items
@@ -138,6 +141,7 @@ public class ModItems {
 		GameRegistry.register(ObsidianHoe);
 		GameRegistry.register(ObsidianSword);
 		//*/
+		
 	}
 	public static void registerRenders() {
 		//-//Register Render Items

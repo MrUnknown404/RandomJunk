@@ -2,6 +2,7 @@ package com.mrunknown404.randomjunk;
 
 import com.mrunknown404.randomjunk.proxy.CommonProxy;
 
+import init.ModArmor;
 import init.ModBlocks;
 import init.ModCrafting;
 import init.ModItems;
@@ -34,6 +35,9 @@ public class RandomJunk {
 		
 		ModBlocks.init();
 		ModBlocks.register();
+		
+		ModArmor.init();
+		ModArmor.register();
 	}
 	
 	@EventHandler

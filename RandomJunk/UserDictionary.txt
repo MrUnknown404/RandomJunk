@@ -22,3 +22,5 @@ enuma
 blazepowder
 enchantability
 pickaxe
+chestplate
+renderindex
