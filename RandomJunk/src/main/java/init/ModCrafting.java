@@ -35,16 +35,16 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModItems.SlimeApple), 			"XXX", "XAX", "XXX", 	'X',Items.SLIME_BALL,				'A',Items.APPLE );
 		
 		//Obsidian Things
-		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianShovel), 		"OXX", "SXX", "SXX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
-		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianShovel), 		"XOX", "XSX", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
-		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianShovel), 		"XXO", "XXS", "XXS", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianShovel), 		"OXX", "SXX", "SXX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianShovel), 		"XOX", "XSX", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianShovel), 		"XXO", "XXS", "XXS", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
 		
-		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianPickaxe), 		"OOO", "XSX", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
-		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianAxe), 			"OOX", "OS ", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
-		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianHoe), 			"OOX", "XSX", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
-		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianSword), 		"OXX", "OXX", "SXX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
-		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianSword), 		"XOX", "XOX", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
-		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianSword), 		"XXO", "XXO", "XXS", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianPickaxe), 		"OOO", "XSX", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianAxe), 			"OOX", "OS ", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianHoe), 			"OOX", "XSX", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianSword), 		"OXX", "OXX", "SXX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianSword), 		"XOX", "XOX", "XSX", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianSword), 		"XXO", "XXO", "XXS", 	'O',ModItems.ObsidianIngot,			'S',Items.STICK );
 		
 		//Armor
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianHelmet), 		"OOO", "OXO", "XXX", 	'O',ModItems.ObsidianIngot);

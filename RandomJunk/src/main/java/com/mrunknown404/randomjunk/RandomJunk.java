@@ -6,6 +6,7 @@ import init.ModArmor;
 import init.ModBlocks;
 import init.ModCrafting;
 import init.ModItems;
+import init.ModTools;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
@@ -35,6 +36,9 @@ public class RandomJunk {
 		
 		ModBlocks.init();
 		ModBlocks.register();
+		
+		ModTools.init();
+		ModTools.register();
 		
 		ModArmor.init();
 		ModArmor.register();
