@@ -20,3 +20,5 @@ tickspeed
 int
 enuma
 blazepowder
+enchantability
+pickaxe

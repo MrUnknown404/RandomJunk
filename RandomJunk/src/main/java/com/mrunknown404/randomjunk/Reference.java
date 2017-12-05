@@ -59,8 +59,13 @@ public class Reference {
 		REDSTONEAPPLE 		("RedstoneApple",		"Item_RedstoneApple"),
 		ROTTENFLESHAPPLE	("RottenFleshApple",	"Item_RottenFleshApple"),
 		SLIMEAPPLE			("SlimeApple", 		"Item_SlimeApple"),
-		//Obsidian Things
-		OBSIDIANINGOT		("ObsidianIngot", 		"Item_ObsidianIngot");
+		//Obsidian Things shovel pickaxe axe hoe
+		OBSIDIANINGOT		("ObsidianIngot", 		"Item_ObsidianIngot"),
+		OBSIDIANSHOVEL	("ObsidianShovel",		"Item_ObsidianShovel"),
+		OBSIDIANPICKAXE	("ObsidianPickaxe",	"Item_ObsidianPickaxe"),
+		OBSIDIANAXE		("ObsidianAxe",		"Item_ObsidianAxe"),
+		OBSIDIANHOE		("ObsidianHoe",		"Item_ObsidianHoe"),
+		OBSIDIANSWORD	("ObsidianSword",		"Item_ObsidianSword");
 		
 		
 		private String unlocalizedName;

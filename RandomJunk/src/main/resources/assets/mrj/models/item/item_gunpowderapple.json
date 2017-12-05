@@ -1,7 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "mrj:items/apple_gunpowder"
+        "layer0": "mrj:items/apples/apple_gunpowder"
      },
 
     "display": {

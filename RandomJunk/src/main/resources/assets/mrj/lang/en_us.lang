@@ -23,8 +23,13 @@ item.RedstoneApple.name=Redstone Apple
 item.RottenFleshApple.name=Rotten Apple
 item.SlimeApple.name=Slime Apple
 
-//Obsidian Stuff
+//Obsidian Things
 item.ObsidianIngot.name=Refined Obsidian Ingot
+item.ObsidianShovel.name=Refined Obsidian Shovel
+item.ObsidianPickaxe.name=Refined Obsidian Pickaxe
+item.ObsidianAxe.name=Refined Obsidian Axe
+item.ObsidianHoe.name=Refined Obsidian Hoe
+item.ObsidianSword.name=Refined Obsidian Sword
 
 //-//Armor
 

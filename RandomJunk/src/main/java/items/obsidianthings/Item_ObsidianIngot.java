@@ -1,4 +1,4 @@
-package items;
+package items.obsidianthings;
 
 import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;

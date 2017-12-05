@@ -34,8 +34,16 @@ public class ModCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.RottenFleshApple), 	"XXX", "XAX", "XXX", 'X',Items.ROTTEN_FLESH,			'A',Items.APPLE );
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.SlimeApple), 		"XXX", "XAX", "XXX", 'X',Items.SLIME_BALL,			'A',Items.APPLE );
 		
+		//Obsidian Things
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.ObsidianShovel), 	"OXX", "SXX", "SXX", 	'O',ModItems.ObsidianIngot,		'S',Items.STICK );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.ObsidianShovel), 	"XOX", "XSX", "XSX", 	'O',ModItems.ObsidianIngot,		'S',Items.STICK );
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.ObsidianShovel), 	"XXO", "XXS", "XXS", 	'O',ModItems.ObsidianIngot,		'S',Items.STICK );
+		
+		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianPickaxe), 		"OOO", "XSX", "XSX", 	'O',ModItems.ObsidianIngot,		'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianAxe), 			"OOX", "OS ", "XSX", 	'O',ModItems.ObsidianIngot,		'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianHoe), 			"OOX", "XSX", "XSX", 	'O',ModItems.ObsidianIngot,		'S',Items.STICK );
 		//Blocks
-		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.ObsidianBlock), 		"XXX", "XXX", "XXX", 'X',ModItems.ObsidianIngot);
+		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.ObsidianBlock), 	"XXX", "XXX", "XXX", 'X',ModItems.ObsidianIngot);
 		
 		//-//Shapeless
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ObsidianIngot, 9, 0), new ItemStack(ModBlocks.ObsidianBlock, 1, 0)); //Block Into Ingot
