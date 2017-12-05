@@ -5,6 +5,7 @@ import com.mrunknown404.randomjunk.Reference;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
@@ -12,14 +13,14 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 
-public class Item_SlimeApple extends ItemFood {
+public class Item_EnderPearlApple extends ItemFood {
 
-	public Item_SlimeApple() {
-		super(2, 0.2f, false);
+	public Item_EnderPearlApple() {
+		super(1, 0.1f, false);
 		
 		//Get Names
-		setUnlocalizedName(Reference.RandomJunkItems.SLIMEAPPLE.getUnlocalizedName());
-		setRegistryName(Reference.RandomJunkItems.SLIMEAPPLE.getRegistryName());
+		setUnlocalizedName(Reference.RandomJunkItems.ENDERPEARLAPPLE.getUnlocalizedName());
+		setRegistryName(Reference.RandomJunkItems.ENDERPEARLAPPLE.getRegistryName());
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
 	}
 	
@@ -34,8 +35,7 @@ public class Item_SlimeApple extends ItemFood {
 		//Add Potion Effect
 		if (true) {
 			if (entity instanceof EntityLivingBase) {
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 60*20, 1)); //Time In Seconds * Tickspeed
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 60*20, 0)); //Time In Seconds * Tickspeed
+				//((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 120*20, 0)); //Time In Seconds * Tickspeed
 			}
 		}
 	}

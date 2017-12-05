@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 public class Item_QuartzApple extends ItemFood {
 
 	public Item_QuartzApple() {
-		super(4, 0.4f, false);
+		super(3, 0.3f, false);
 		
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.QUARTZAPPLE.getUnlocalizedName());

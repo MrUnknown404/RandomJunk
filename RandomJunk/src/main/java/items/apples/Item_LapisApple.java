@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 public class Item_LapisApple extends ItemFood {
 
 	public Item_LapisApple() {
-		super(4, 0.4f, false);
+		super(2, 0.6f, false);
 		
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.LAPISAPPLE.getUnlocalizedName());

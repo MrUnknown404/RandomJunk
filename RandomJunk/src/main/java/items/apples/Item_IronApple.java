@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 public class Item_IronApple extends ItemFood {
 
 	public Item_IronApple() {
-		super(4, 0.4f, false);
+		super(5, 0.2f, false);
 		
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.IRONAPPLE.getUnlocalizedName());

@@ -14,14 +14,14 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 
-public class Item_PrismarineApple extends ItemFood {
+public class Item_MagmaCreamApple extends ItemFood {
 
-	public Item_PrismarineApple() {
-		super(3, 0.3f, false);
+	public Item_MagmaCreamApple() {
+		super(5, 0.4f, false);
 		
 		//Get Names
-		setUnlocalizedName(Reference.RandomJunkItems.PRISMARINEAPPLE.getUnlocalizedName());
-		setRegistryName(Reference.RandomJunkItems.PRISMARINEAPPLE.getRegistryName());
+		setUnlocalizedName(Reference.RandomJunkItems.MAGMACREAMAPPLE.getUnlocalizedName());
+		setRegistryName(Reference.RandomJunkItems.MAGMACREAMAPPLE.getRegistryName());
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
 	}
 	
@@ -31,8 +31,7 @@ public class Item_PrismarineApple extends ItemFood {
 		//Add Potion Effect
 		if (true) {
 			if (entity instanceof EntityLivingBase) {
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 300*20, 0)); //Time In Seconds * Tickspeed
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.SATURATION, 300*20, 0)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 300*20, 1)); //Time In Seconds * Tickspeed
 			}
 		}
 	}
