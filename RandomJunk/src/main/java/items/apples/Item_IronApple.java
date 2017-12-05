@@ -31,10 +31,10 @@ public class Item_IronApple extends ItemFood {
 		//Add Potion Effect
 		if (true) {
 			if (entity instanceof EntityLivingBase) {
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 120*20, 4)); //Time In Seconds * Tickspeed
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 120*20, 4)); //Time In Seconds * Tickspeed
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 120*20, 4)); //Time In Seconds * Tickspeed
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 120*20, 4)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.ABSORPTION, 120*20, 2)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.STRENGTH, 120*20, 2)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, 120*20, 2)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 120*20, 2)); //Time In Seconds * Tickspeed
 			}
 		}
 	}
