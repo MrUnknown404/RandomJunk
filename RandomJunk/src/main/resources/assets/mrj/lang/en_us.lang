@@ -23,7 +23,7 @@ item.RedstoneApple.name=Redstone Apple
 item.RottenFleshApple.name=Rotten Apple
 item.SlimeApple.name=Slime Apple
 
-//Obsidian Things
+//Obsidian
 item.ObsidianIngot.name=Obsidian Ingot
 
 item.ObsidianShovel.name=Obsidian Shovel
@@ -32,7 +32,7 @@ item.ObsidianAxe.name=Obsidian Axe
 item.ObsidianHoe.name=Obsidian Hoe
 item.ObsidianSword.name=Obsidian Sword
 
-//Bone Things
+//Bone
 item.BoneMix.name=Bone Mix
 item.BoneIngot.name=Bone Ingot
 
@@ -41,20 +41,39 @@ item.BonePickaxe.name=Bone Pickaxe
 item.BoneAxe.name=Bone Axe
 item.BoneHoe.name=Bone Hoe
 item.BoneSword.name=Bone Sword
-item.BoneHelmet.name=Bone Helmet
-item.BoneChestplate.name=Bone Chestplate
-item.BoneLeggings.name=Bone Leggings
-item.BoneBoots.name=Bone Boots
+
+//Flint Things
+item.FlintIngot.name=Flint Ingot
+
+item.FlintShovel.name=Flint Shovel
+item.FlintPickaxe.name=Flint Pickaxe
+item.FlintAxe.name=Flint Axe
+item.FlintHoe.name=Flint Hoe
+item.FlintSword.name=Flint Sword
 
 //-//Armor
+//Obsidian
 item.ObsidianHelmet.name=Obsidian Helmet
 item.ObsidianChestplate.name=Obsidian Chestplate
 item.ObsidianLeggings.name=Obsidian Leggings
 item.ObsidianBoots.name=Obsidian Boots
 
+//Bone
+item.BoneHelmet.name=Bone Helmet
+item.BoneChestplate.name=Bone Chestplate
+item.BoneLeggings.name=Bone Leggings
+item.BoneBoots.name=Bone Boots
+
+//Flint
+item.FlintHelmet.name=Flint Helmet
+item.FlintChestplate.name=Flint Chestplate
+item.FlintLeggings.name=Flint Leggings
+item.FlintBoots.name=Flint Boots
+
 //-//Blocks
 tile.ObsidianBlock.name=Block of Obsidian
 tile.BoneBlock.name=Block of Bone
+tile.FlintBlock.name=Block of Flint
 
 //-//GUI
 itemGroup.Tab_RandomJunkItems=RandomJunk Items

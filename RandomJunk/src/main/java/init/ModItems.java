@@ -25,6 +25,7 @@ import items.apples.Item_RottenFleshApple;
 import items.apples.Item_SlimeApple;
 import items.bonethings.Item_BoneIngot;
 import items.bonethings.Item_BoneMix;
+import items.flintthings.Item_FlintIngot;
 import items.obsidianthings.Item_ObsidianIngot;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
@@ -61,9 +62,12 @@ public class ModItems {
 	//Obsidian Things
 	public static Item ObsidianIngot;
 	
-	//Bone
+	//Bone Things
 	public static Item BoneIngot;
 	public static Item BoneMix;
+	
+	//Flint Things
+	public static Item FlintIngot;
 	
 	public static void init() {
 		//Apples
@@ -96,6 +100,9 @@ public class ModItems {
 		//Bone Things
 		BoneIngot = new 			Item_BoneIngot();
 		BoneMix = new 			Item_BoneMix();
+		
+		//Flint Things
+		FlintIngot = new 			Item_FlintIngot();
 		
 	}
 	public static void register() {
@@ -131,6 +138,9 @@ public class ModItems {
 		//Bone Things
 		GameRegistry.register(BoneIngot);
 		GameRegistry.register(BoneMix);
+		
+		//Flint Things
+		GameRegistry.register(FlintIngot);
 		//*/
 		
 	}
@@ -166,6 +176,9 @@ public class ModItems {
 		//Bone Things
 		registerRender(BoneIngot);
 		registerRender(BoneMix);
+		
+		//Flint Things
+		registerRender(FlintIngot);
 		
 	}
 	private static void registerRender(Item item) {

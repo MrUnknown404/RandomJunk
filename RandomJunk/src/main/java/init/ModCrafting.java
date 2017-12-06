@@ -8,9 +8,9 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModCrafting {
 	
 	public static void register() {
-		//-//-//Add Recipe
-		//-//Shaped
-		//Items
+		//-//-//-//Add Recipe
+		//-//-//Shaped
+		//-//Items
 		GameRegistry.addRecipe(new ItemStack(ModItems.AppleApple), 			"XXX", "XAX", "XXX", 	'X',Items.APPLE,					'A',Items.APPLE);
 		GameRegistry.addRecipe(new ItemStack(ModItems.BlazeApple), 			"XXX", "XAX", "XXX", 	'X',Items.BLAZE_POWDER,			'A',Items.APPLE );
 		GameRegistry.addRecipe(new ItemStack(ModItems.ClayApple), 			"XXX", "XAX", "XXX", 	'X',Items.CLAY_BALL,				'A',Items.APPLE );
@@ -60,7 +60,7 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModTools.BoneSword), 			"XOX", "XOX", "XSX", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
 		GameRegistry.addRecipe(new ItemStack(ModTools.BoneSword), 			"XXO", "XXO", "XXS", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
 		
-		//Armor
+		//-//Armor
 		//Obsidian
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianHelmet), 		"OOO", "OXO", "XXX", 	'O',ModItems.ObsidianIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianHelmet), 		"XXX", "OOO", "OXO", 	'O',ModItems.ObsidianIngot);
@@ -77,17 +77,27 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneBoots), 			"OXO", "OXO", "XXX", 	'O',ModItems.BoneIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneBoots), 			"XXX", "OXO", "OXO", 	'O',ModItems.BoneIngot);
 		
+		//Flint
+		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintHelmet), 			"OOO", "OXO", "XXX", 	'O',ModItems.FlintIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintHelmet), 			"XXX", "OOO", "OXO", 	'O',ModItems.FlintIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintChestplate), 		"OXO", "OOO", "OOO", 	'O',ModItems.FlintIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintLeggings), 		"OOO", "OXO", "OXO", 	'O',ModItems.FlintIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintBoots), 			"OXO", "OXO", "XXX", 	'O',ModItems.FlintIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintBoots), 			"XXX", "OXO", "OXO", 	'O',ModItems.FlintIngot);
+		
 		//Blocks
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.ObsidianBlock, 1), 		"XXX", "XXX", "XXX", 'X',ModItems.ObsidianIngot);
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.BoneBlock, 1), 		"XXX", "XXX", "XXX", 'X',ModItems.BoneIngot);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.BoneBlock, 1), 	 	"XXX", "XXX", "XXX", 'X',ModItems.BoneIngot);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.FlintBlock, 1), 	 		"XXX", "XXX", "XXX", 'X',ModItems.FlintIngot);
 		
-		//-//Shapeless
+		//-//-//Shapeless
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneMix, 1),		new ItemStack(Items.BONE, 1), new ItemStack(Items.BONE, 1), new ItemStack(Items.BONE, 1)); //Block Into Ingot
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ObsidianIngot, 9), 	new ItemStack(ModBlocks.ObsidianBlock, 1)); //Block Into Ingot
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneIngot, 9), 		new ItemStack(ModBlocks.BoneBlock, 1)); //Block Into Ingot
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.FlintIngot, 9), 		new ItemStack(ModBlocks.FlintBlock, 1)); //Block Into Ingot
 		
-		//Blocks
+		//-//Blocks
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 1, 0), new ItemStack(Blocks.WOODEN_SLAB, 1, 0), new ItemStack(Blocks.WOODEN_SLAB, 1, 0)); //Oak
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 1, 1), new ItemStack(Blocks.WOODEN_SLAB, 1, 1), new ItemStack(Blocks.WOODEN_SLAB, 1, 1)); //Spruce
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.PLANKS, 1, 2), new ItemStack(Blocks.WOODEN_SLAB, 1, 2), new ItemStack(Blocks.WOODEN_SLAB, 1, 2)); //Birch
@@ -100,10 +110,12 @@ public class ModCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.BRICK_BLOCK), 	new ItemStack(Blocks.STONE_SLAB, 1, 4), new ItemStack(Blocks.STONE_SLAB, 1, 4)); //Brick Slab
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.NETHER_BRICK), 	new ItemStack(Blocks.STONE_SLAB, 1, 6), new ItemStack(Blocks.STONE_SLAB, 1, 6)); //Netherbrick Slab
 		
-		//-//Smelting
+		//-//-//Smelting
 		//Misc
 		GameRegistry.addSmelting(Items.ROTTEN_FLESH, 	new ItemStack(Items.LEATHER), 0.1f);
+		
 		GameRegistry.addSmelting(Blocks.OBSIDIAN,		new ItemStack(ModItems.ObsidianIngot), 0.4f);
 		GameRegistry.addSmelting(ModItems.BoneMix, 	new ItemStack(ModItems.BoneIngot), 0.3f);
+		GameRegistry.addSmelting(Items.FLINT, 			new ItemStack(ModItems.FlintIngot), 0.3f);
 	}
 }

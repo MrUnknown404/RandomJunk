@@ -15,8 +15,8 @@ public class Reference {
 	public static enum RandomJunkBlocks {
 		//Block NAME				("",""),
 		OBSIDIANBLOCK			("ObsidianBlock",		"Block_ObsidianBlock"),
-		BONEBLOCK				("BoneBlock",			"Block_BoneBlock");
-		
+		BONEBLOCK				("BoneBlock",			"Block_BoneBlock"),
+		FLINTBLOCK 				("FlintBlock",			"Block_FlintBlock");
 		
 		private String unlocalizedName;
 		private String registryName;
@@ -86,7 +86,21 @@ public class Reference {
 		BONEHELMET 			("BoneHelmet",		"Item_BoneHelmet"),
 		BONECHESTPLATE 		("BoneChestplate",		"Item_BoneChestplate"),
 		BONELEGGINGS 			("BoneLeggings",		"Item_BoneLeggings"),
-		BONEBOOTS				("BoneBoots",			"Item_BoneBoots");
+		BONEBOOTS				("BoneBoots",			"Item_BoneBoots"),
+		
+		//Flint
+		FLINTINGOT 				("FlintIngot",			"Item_FlintIngot"),
+		
+		FLINTSHOVEL			("FlintShovel",			"Item_FlintShovel"),
+		FLINTPICKAXE			("FlintPickaxe",		"Item_FlintPickaxe"),
+		FLINTAXE				("FlintAxe",			"Item_FlintAxe"),
+		FLINTHOE				("FlintHoe",			"Item_FlintHoe"),
+		FLINTSWORD			("FlintSword",			"Item_FlintSword"),
+		
+		FLINTHELMET 			("FlintHelmet",		"Item_FlintHelmet"),
+		FLINTCHESTPLATE 		("FlintChestplate",		"Item_FlintChestplate"),
+		FLINTLEGGINGS 			("FlintLeggings",		"Item_FlintLeggings"),
+		FLINTBOOTS				("FlintBoots",			"Item_FlintBoots");
 		
 		private String unlocalizedName;
 		private String registryName;

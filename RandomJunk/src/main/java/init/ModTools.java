@@ -7,6 +7,11 @@ import items.bonethings.Item_BoneHoe;
 import items.bonethings.Item_BonePickaxe;
 import items.bonethings.Item_BoneShovel;
 import items.bonethings.Item_BoneSword;
+import items.flintthings.Item_FlintAxe;
+import items.flintthings.Item_FlintHoe;
+import items.flintthings.Item_FlintPickaxe;
+import items.flintthings.Item_FlintShovel;
+import items.flintthings.Item_FlintSword;
 import items.obsidianthings.Item_ObsidianAxe;
 import items.obsidianthings.Item_ObsidianHoe;
 import items.obsidianthings.Item_ObsidianPickaxe;
@@ -23,6 +28,7 @@ public class ModTools {
 	
 	public static ToolMaterial MAT_OBSIDIAN = EnumHelper.addToolMaterial("MAT_OBSIDIAN", 4, 2341, 10.0f, 4.0f, 12); //HarvestLevel, Durability, Mining Speed, Damage, Enchantability
 	public static ToolMaterial MAT_BONE = EnumHelper.addToolMaterial("MAT_BONE", 2, 333, 6.0f, 2.0f, 8); //HarvestLevel, Durability, Mining Speed, Damage, Enchantability
+	public static ToolMaterial MAT_FLINT = EnumHelper.addToolMaterial("MAT_FLINT", 1, 188, 4.0f, 1.0f, 8); //HarvestLevel, Durability, Mining Speed, Damage, Enchantability
 	
 	//Items
 	public static Item ObsidianShovel;
@@ -37,6 +43,12 @@ public class ModTools {
 	public static Item BoneHoe;
 	public static Item BoneSword;
 	
+	public static Item FlintShovel;
+	public static Item FlintPickaxe;
+	public static Item FlintAxe;
+	public static Item FlintHoe;
+	public static Item FlintSword;
+	
 	public static void init() {
 		//Obsidian
 		ObsidianShovel = new 		Item_ObsidianShovel(MAT_OBSIDIAN);
@@ -48,9 +60,16 @@ public class ModTools {
 		//Bone
 		BoneShovel = new 			Item_BoneShovel(MAT_BONE);
 		BonePickaxe = new 		Item_BonePickaxe(MAT_BONE);
-		BoneAxe = new 			Item_BoneAxe(MAT_BONE, 5.0f, -3.2f); //Damage(+1), Attack Speed
+		BoneAxe = new 			Item_BoneAxe(MAT_BONE, 8.0f, -3.2f); //Damage(+1), Attack Speed
 		BoneHoe = new 			Item_BoneHoe(MAT_BONE);
 		BoneSword = new 			Item_BoneSword(MAT_BONE);
+		
+		//Flint
+		FlintShovel = new 			Item_FlintShovel(MAT_FLINT);
+		FlintPickaxe = new 		Item_FlintPickaxe(MAT_FLINT);
+		FlintAxe = new 			Item_FlintAxe(MAT_FLINT, 7.0f, -3.2f); //Damage(+1), Attack Speed
+		FlintHoe = new 			Item_FlintHoe(MAT_FLINT);
+		FlintSword = new 			Item_FlintSword(MAT_FLINT);
 	}
 	public static void register() {
 		//Obsidian
@@ -67,6 +86,13 @@ public class ModTools {
 		GameRegistry.register(BoneHoe);
 		GameRegistry.register(BoneSword);
 		
+		//Flint
+		GameRegistry.register(FlintShovel);
+		GameRegistry.register(FlintPickaxe);
+		GameRegistry.register(FlintAxe);
+		GameRegistry.register(FlintHoe);
+		GameRegistry.register(FlintSword);
+		
 	}
 	public static void registerRenders() {
 		//Obsidian
@@ -82,6 +108,13 @@ public class ModTools {
 		registerRender(BoneAxe);
 		registerRender(BoneHoe);
 		registerRender(BoneSword);
+		 
+		//Flint
+		registerRender(FlintShovel);
+		registerRender(FlintPickaxe);
+		registerRender(FlintAxe);
+		registerRender(FlintHoe);
+		registerRender(FlintSword);
 		
 	}
 	
