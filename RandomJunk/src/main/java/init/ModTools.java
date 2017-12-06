@@ -53,23 +53,23 @@ public class ModTools {
 		//Obsidian
 		ObsidianShovel = new 		Item_ObsidianShovel(MAT_OBSIDIAN);
 		ObsidianPickaxe = new 		Item_ObsidianPickaxe(MAT_OBSIDIAN);
-		ObsidianAxe = new 		Item_ObsidianAxe(MAT_OBSIDIAN, 9.0f, -3.2f); //Damage(+1), Attack Speed
-		ObsidianHoe = new 		Item_ObsidianHoe(MAT_OBSIDIAN);
+		ObsidianAxe = new 			Item_ObsidianAxe(MAT_OBSIDIAN, 9.0f, -3.2f); //Damage(+1), Attack Speed
+		ObsidianHoe = new 			Item_ObsidianHoe(MAT_OBSIDIAN);
 		ObsidianSword = new 		Item_ObsidianSword(MAT_OBSIDIAN);
 		
 		//Bone
-		BoneShovel = new 			Item_BoneShovel(MAT_BONE);
-		BonePickaxe = new 		Item_BonePickaxe(MAT_BONE);
-		BoneAxe = new 			Item_BoneAxe(MAT_BONE, 8.0f, -3.2f); //Damage(+1), Attack Speed
-		BoneHoe = new 			Item_BoneHoe(MAT_BONE);
-		BoneSword = new 			Item_BoneSword(MAT_BONE);
+		BoneShovel = new 				Item_BoneShovel(MAT_BONE);
+		BonePickaxe = new 			Item_BonePickaxe(MAT_BONE);
+		BoneAxe = new 					Item_BoneAxe(MAT_BONE, 8.0f, -3.2f); //Damage(+1), Attack Speed
+		BoneHoe = new 					Item_BoneHoe(MAT_BONE);
+		BoneSword = new 				Item_BoneSword(MAT_BONE);
 		
 		//Flint
-		FlintShovel = new 			Item_FlintShovel(MAT_FLINT);
-		FlintPickaxe = new 		Item_FlintPickaxe(MAT_FLINT);
-		FlintAxe = new 			Item_FlintAxe(MAT_FLINT, 7.0f, -3.2f); //Damage(+1), Attack Speed
-		FlintHoe = new 			Item_FlintHoe(MAT_FLINT);
-		FlintSword = new 			Item_FlintSword(MAT_FLINT);
+		FlintShovel = new 				Item_FlintShovel(MAT_FLINT);
+		FlintPickaxe = new 			Item_FlintPickaxe(MAT_FLINT);
+		FlintAxe = new 					Item_FlintAxe(MAT_FLINT, 7.0f, -3.2f); //Damage(+1), Attack Speed
+		FlintHoe = new 					Item_FlintHoe(MAT_FLINT);
+		FlintSword = new 				Item_FlintSword(MAT_FLINT);
 	}
 	public static void register() {
 		//Obsidian

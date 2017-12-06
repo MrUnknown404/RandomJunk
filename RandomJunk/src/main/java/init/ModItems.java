@@ -71,38 +71,38 @@ public class ModItems {
 	
 	public static void init() {
 		//Apples
-		AppleApple = new  			Item_AppleApple();
-		BlazeApple = new 			Item_BlazeApple();
-		ClayApple = new  			Item_ClayApple();
-		CoalApple = new 			Item_CoalApple();
-		DiamondApple = new 		Item_DiamondApple();
-		EmeraldApple = new 		Item_EmeraldApple();
-		EnderPearlApple = new  		Item_EnderPearlApple();
-		FlintApple = new  			Item_FlintApple();
-		GlowstoneApple = new  		Item_GlowstoneApple();
-		GunpowderApple = new		Item_GunpowderApple();
-		InkApple = new  			Item_InkApple();
-		IronApple = new 			Item_IronApple();
-		LapisApple = new			Item_LapisApple();
-		LeatherApple = new 		Item_LeatherApple();
-		MagmaCreamApple = new	Item_MagmaCreamApple();
-		ObsidianApple = new  		Item_ObsidianApple();
-		PaperApple = new  		Item_PaperApple();
-		PrismarineApple = new  	Item_PrismarineApple();
-		QuartzApple = new			Item_QuartzApple();
-		RedstoneApple = new		Item_RedstoneApple();
-		RottenFleshApple = new 	Item_RottenFleshApple();
-		SlimeApple = new 			Item_SlimeApple();
+		AppleApple = new  					Item_AppleApple();
+		BlazeApple = new 					Item_BlazeApple();
+		ClayApple = new  					Item_ClayApple();
+		CoalApple = new 					Item_CoalApple();
+		DiamondApple = new 			Item_DiamondApple();
+		EmeraldApple = new 				Item_EmeraldApple();
+		EnderPearlApple = new  			Item_EnderPearlApple();
+		FlintApple = new  					Item_FlintApple();
+		GlowstoneApple = new  			Item_GlowstoneApple();
+		GunpowderApple = new			Item_GunpowderApple();
+		InkApple = new  						Item_InkApple();
+		IronApple = new 					Item_IronApple();
+		LapisApple = new					Item_LapisApple();
+		LeatherApple = new 				Item_LeatherApple();
+		MagmaCreamApple = new		Item_MagmaCreamApple();
+		ObsidianApple = new  			Item_ObsidianApple();
+		PaperApple = new  				Item_PaperApple();
+		PrismarineApple = new  		Item_PrismarineApple();
+		QuartzApple = new					Item_QuartzApple();
+		RedstoneApple = new				Item_RedstoneApple();
+		RottenFleshApple = new 		Item_RottenFleshApple();
+		SlimeApple = new 					Item_SlimeApple();
 		
 		//Obsidian Things
-		ObsidianIngot = new 		Item_ObsidianIngot();
+		ObsidianIngot = new 				Item_ObsidianIngot();
 		
 		//Bone Things
-		BoneIngot = new 			Item_BoneIngot();
-		BoneMix = new 			Item_BoneMix();
+		BoneIngot = new 					Item_BoneIngot();
+		BoneMix = new 						Item_BoneMix();
 		
 		//Flint Things
-		FlintIngot = new 			Item_FlintIngot();
+		FlintIngot = new 					Item_FlintIngot();
 		
 	}
 	public static void register() {

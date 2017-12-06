@@ -57,22 +57,22 @@ public class ModArmor {
 	
 	public static void init() {
 		//Obsidian
-		ObsidianHelmet = new 		Item_ObsidianHelmet(ARMMAT_OBSIDIAN, 1, EntityEquipmentSlot.HEAD);
+		ObsidianHelmet = new 			Item_ObsidianHelmet(ARMMAT_OBSIDIAN, 1, EntityEquipmentSlot.HEAD);
 		ObsidianChestplate = new 	Item_ObsidianChestplate(ARMMAT_OBSIDIAN, 1, EntityEquipmentSlot.CHEST);
-		ObsidianLeggings = new 	Item_ObsidianLeggings(ARMMAT_OBSIDIAN, 2, EntityEquipmentSlot.LEGS);
-		ObsidianBoots = new 		Item_ObsidianBoots(ARMMAT_OBSIDIAN, 1, EntityEquipmentSlot.FEET);
+		ObsidianLeggings = new 		Item_ObsidianLeggings(ARMMAT_OBSIDIAN, 2, EntityEquipmentSlot.LEGS);
+		ObsidianBoots = new 			Item_ObsidianBoots(ARMMAT_OBSIDIAN, 1, EntityEquipmentSlot.FEET);
 		
 		//Bone
-		BoneHelmet = new 		Item_BoneHelmet(ARMMAT_BONE, 1, EntityEquipmentSlot.HEAD);
-		BoneChestplate = new 		Item_BoneChestplate(ARMMAT_BONE, 1, EntityEquipmentSlot.CHEST);
-		BoneLeggings = new 		Item_BoneLeggings(ARMMAT_BONE, 2, EntityEquipmentSlot.LEGS);
-		BoneBoots = new 			Item_BoneBoots(ARMMAT_BONE, 1, EntityEquipmentSlot.FEET);
+		BoneHelmet = new 				Item_BoneHelmet(ARMMAT_BONE, 1, EntityEquipmentSlot.HEAD);
+		BoneChestplate = new 			Item_BoneChestplate(ARMMAT_BONE, 1, EntityEquipmentSlot.CHEST);
+		BoneLeggings = new 				Item_BoneLeggings(ARMMAT_BONE, 2, EntityEquipmentSlot.LEGS);
+		BoneBoots = new 					Item_BoneBoots(ARMMAT_BONE, 1, EntityEquipmentSlot.FEET);
 		
 		//Flint
-		FlintHelmet = new 			Item_FlintHelmet(ARMMAT_FLINT, 1, EntityEquipmentSlot.HEAD);
-		FlintChestplate = new 		Item_FlintChestplate(ARMMAT_FLINT, 1, EntityEquipmentSlot.CHEST);
-		FlintLeggings = new 		Item_FlintLeggings(ARMMAT_FLINT, 2, EntityEquipmentSlot.LEGS);
-		FlintBoots = new 			Item_FlintBoots(ARMMAT_FLINT, 1, EntityEquipmentSlot.FEET);
+		FlintHelmet = new 					Item_FlintHelmet(ARMMAT_FLINT, 1, EntityEquipmentSlot.HEAD);
+		FlintChestplate = new 			Item_FlintChestplate(ARMMAT_FLINT, 1, EntityEquipmentSlot.CHEST);
+		FlintLeggings = new 				Item_FlintLeggings(ARMMAT_FLINT, 2, EntityEquipmentSlot.LEGS);
+		FlintBoots = new 					Item_FlintBoots(ARMMAT_FLINT, 1, EntityEquipmentSlot.FEET);
 		
 	}
 	public static void register() {

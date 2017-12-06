@@ -19,9 +19,9 @@ public class ModBlocks {
 	
 	public static void init() {
 		//Blocks
-		ObsidianBlock = new 	Block_ObsidianBlock();
-		BoneBlock = new 		Block_BoneBlock();
-		FlintBlock = new 		Block_FlintBlock();
+		ObsidianBlock = new 		Block_ObsidianBlock();
+		BoneBlock = new 			Block_BoneBlock();
+		FlintBlock = new 			Block_FlintBlock();
 	}
 	public static void register() {
 		//Register Blocks
