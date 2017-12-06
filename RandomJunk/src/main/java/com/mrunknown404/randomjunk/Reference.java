@@ -4,7 +4,7 @@ public class Reference {
 	//Strings
 	public static final String MOD_ID  = "mrj";
 	public static final String NAME  = "RandomJunk!";
-	public static final String VERSION  = "1.1.1-Alpha";
+	public static final String VERSION  = "1.1.2-Alpha";
 	public static final String  ACCEPTED_VERSIONS  = "[1.11.2]";
 
 	//Proxy
@@ -14,9 +14,9 @@ public class Reference {
 	//Blocks
 	public static enum RandomJunkBlocks {
 		//Block NAME			("",""),
-		OBSIDIANBLOCK			("ObsidianBlock",		"Block_ObsidianBlock"),
-		BONEBLOCK					("BoneBlock",			"Block_BoneBlock"),
-		FLINTBLOCK 				("FlintBlock",			"Block_FlintBlock");
+		OBSIDIANBLOCK ("ObsidianBlock", "Block_ObsidianBlock"),
+		BONEBLOCK ("BoneBlock", "Block_BoneBlock"),
+		FLINTBLOCK ("FlintBlock", "Block_FlintBlock");
 
 		private String unlocalizedName;
 		private String registryName;
