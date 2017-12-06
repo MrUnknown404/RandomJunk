@@ -11,24 +11,24 @@ import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
-	
+
 	//Blocks
 	public static Block ObsidianBlock;
 	public static Block BoneBlock;
 	public static Block FlintBlock;
-	
+
 	public static void init() {
 		//Blocks
-		ObsidianBlock = new 		Block_ObsidianBlock();
-		BoneBlock = new 			Block_BoneBlock();
-		FlintBlock = new 			Block_FlintBlock();
+		ObsidianBlock = new Block_ObsidianBlock();
+		BoneBlock = new Block_BoneBlock();
+		FlintBlock = new Block_FlintBlock();
 	}
 	public static void register() {
 		//Register Blocks
 		registerBlock(ObsidianBlock);
 		registerBlock(BoneBlock);
 		registerBlock(FlintBlock);
-		
+
 		//-//Register Items
 		//Blocks
 		///*
@@ -38,7 +38,7 @@ public class ModBlocks {
 		//*/
 	}
 	private static void registerBlock(Block block) {
-		
+
 		ItemBlock item = new ItemBlock(block);
 		item.setRegistryName(block.getRegistryName());
 		GameRegistry.register(item);
