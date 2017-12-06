@@ -137,10 +137,12 @@ public class ModItems {
 		
 		//Bone Things
 		GameRegistry.register(BoneIngot);
-		GameRegistry.register(BoneMix);
 		
 		//Flint Things
 		GameRegistry.register(FlintIngot);
+		
+		//Misc
+		GameRegistry.register(BoneMix);
 		//*/
 		
 	}
@@ -179,6 +181,9 @@ public class ModItems {
 		
 		//Flint Things
 		registerRender(FlintIngot);
+
+		//Misc
+		
 		
 	}
 	private static void registerRender(Item item) {

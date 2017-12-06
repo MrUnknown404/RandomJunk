@@ -60,6 +60,19 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModTools.BoneSword), 			"XOX", "XOX", "XSX", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
 		GameRegistry.addRecipe(new ItemStack(ModTools.BoneSword), 			"XXO", "XXO", "XXS", 	'O',ModItems.BoneIngot,			'S',Items.STICK );
 		
+		//Flint
+		GameRegistry.addRecipe(new ItemStack(ModTools.FlintShovel), 			"OXX", "SXX", "SXX", 	'O',ModItems.FlintIngot,				'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.FlintShovel), 			"XOX", "XSX", "XSX", 	'O',ModItems.FlintIngot,				'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.FlintShovel), 			"XXO", "XXS", "XXS", 	'O',ModItems.FlintIngot,				'S',Items.STICK );
+		
+		GameRegistry.addRecipe(new ItemStack(ModTools.FlintPickaxe), 			"OOO", "XSX", "XSX", 	'O',ModItems.FlintIngot,				'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.FlintAxe), 				"OOX", "OS ", "XSX", 	'O',ModItems.FlintIngot,				'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.FlintHoe), 				"OOX", "XSX", "XSX", 	'O',ModItems.FlintIngot,				'S',Items.STICK );
+		
+		GameRegistry.addRecipe(new ItemStack(ModTools.FlintSword), 			"OXX", "OXX", "SXX", 	'O',ModItems.FlintIngot,				'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.FlintSword), 			"XOX", "XOX", "XSX", 	'O',ModItems.FlintIngot,				'S',Items.STICK );
+		GameRegistry.addRecipe(new ItemStack(ModTools.FlintSword), 			"XXO", "XXO", "XXS", 	'O',ModItems.FlintIngot,				'S',Items.STICK );
+		
 		//-//Armor
 		//Obsidian
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianHelmet), 		"OOO", "OXO", "XXX", 	'O',ModItems.ObsidianIngot);
@@ -91,6 +104,7 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.FlintBlock, 1), 	 		"XXX", "XXX", "XXX", 'X',ModItems.FlintIngot);
 		
 		//-//-//Shapeless
+		//-//Misc
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneMix, 1),		new ItemStack(Items.BONE, 1), new ItemStack(Items.BONE, 1), new ItemStack(Items.BONE, 1)); //Block Into Ingot
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ObsidianIngot, 9), 	new ItemStack(ModBlocks.ObsidianBlock, 1)); //Block Into Ingot
