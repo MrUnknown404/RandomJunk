@@ -1,8 +1,8 @@
 package blocks;
 
-import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
 
+import init.ModCreativeTabs;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -21,6 +21,7 @@ public class Block_FlintBlock extends Block {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkBlocks.FLINTBLOCK.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkBlocks.FLINTBLOCK.getRegistryName());
-		setCreativeTab(RandomJunk.TabRandomJunkBlocks);
+		
+		setCreativeTab(ModCreativeTabs.TabRandomJunkBlocks);
 	}
 }

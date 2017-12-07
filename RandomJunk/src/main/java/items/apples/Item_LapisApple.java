@@ -1,8 +1,8 @@
 package items.apples;
 
-import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
 
+import init.ModCreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -23,7 +23,7 @@ public class Item_LapisApple extends ItemFood {
 		setUnlocalizedName(Reference.RandomJunkItems.LAPISAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.LAPISAPPLE.getRegistryName());
 
-		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setCreativeTab(ModCreativeTabs.TabRandomJunkItems);
 		setAlwaysEdible();
 	}
 	

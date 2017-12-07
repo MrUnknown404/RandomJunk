@@ -1,8 +1,8 @@
 package items.apples;
 
-import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
 
+import init.ModCreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -20,7 +20,7 @@ public class Item_GunpowderApple extends ItemFood {
 		setUnlocalizedName(Reference.RandomJunkItems.GUNPOWDERAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.GUNPOWDERAPPLE.getRegistryName());
 
-		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setCreativeTab(ModCreativeTabs.TabRandomJunkItems);
 		setAlwaysEdible();
 	}
 	

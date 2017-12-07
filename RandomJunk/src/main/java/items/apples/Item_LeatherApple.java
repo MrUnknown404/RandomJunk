@@ -1,8 +1,8 @@
 package items.apples;
 
-import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
 
+import init.ModCreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -21,7 +21,7 @@ public class Item_LeatherApple extends ItemFood {
 		setUnlocalizedName(Reference.RandomJunkItems.LEATHERAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.LEATHERAPPLE.getRegistryName());
 
-		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setCreativeTab(ModCreativeTabs.TabRandomJunkItems);
 		setAlwaysEdible();
 	}
 	

@@ -1,8 +1,8 @@
 package items.apples;
 
-import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
 
+import init.ModCreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -21,7 +21,7 @@ public class Item_CoalApple extends ItemFood {
 		setUnlocalizedName(Reference.RandomJunkItems.COALAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.COALAPPLE.getRegistryName());
 
-		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setCreativeTab(ModCreativeTabs.TabRandomJunkItems);
 		setAlwaysEdible();
 	}
 	

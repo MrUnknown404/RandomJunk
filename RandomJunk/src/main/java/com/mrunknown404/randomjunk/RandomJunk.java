@@ -64,19 +64,4 @@ public class RandomJunk {
 		Items.GOLDEN_HORSE_ARMOR.setMaxStackSize(64);
 		Items.DIAMOND_HORSE_ARMOR.setMaxStackSize(64);
 	}
-	
-	public static CreativeTabs TabRandomJunkItems = new CreativeTabs("Tab_RandomJunkItems") {
-		
-		@Override
-		public ItemStack getTabIconItem() {
-			return new ItemStack(ModItems.GunpowderApple);
-		}
-	};
-	public static CreativeTabs TabRandomJunkBlocks = new CreativeTabs("Tab_RandomJunkBlocks") {
-		
-		@Override
-		public ItemStack getTabIconItem() {
-			return new ItemStack(ModBlocks.ObsidianBlock);
-		}
-	};
 }
