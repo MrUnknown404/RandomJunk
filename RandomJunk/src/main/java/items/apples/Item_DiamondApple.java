@@ -20,7 +20,9 @@ public class Item_DiamondApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.DIAMONDAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.DIAMONDAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

@@ -22,7 +22,9 @@ public class Item_RedstoneApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.REDSTONEAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.REDSTONEAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

@@ -9,6 +9,8 @@ import init.ModItems;
 import init.ModTools;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -54,7 +56,13 @@ public class RandomJunk {
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-		
+		//Normally 16
+		Items.BUCKET.setMaxStackSize(64);
+		Items.SNOWBALL.setMaxStackSize(64);
+		Items.ENDER_PEARL.setMaxStackSize(64);
+		Items.IRON_HORSE_ARMOR.setMaxStackSize(64);
+		Items.GOLDEN_HORSE_ARMOR.setMaxStackSize(64);
+		Items.DIAMOND_HORSE_ARMOR.setMaxStackSize(64);
 	}
 	
 	public static CreativeTabs TabRandomJunkItems = new CreativeTabs("Tab_RandomJunkItems") {

@@ -20,7 +20,9 @@ public class Item_CoalApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.COALAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.COALAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

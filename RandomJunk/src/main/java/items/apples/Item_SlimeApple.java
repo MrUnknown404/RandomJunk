@@ -20,7 +20,9 @@ public class Item_SlimeApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.SLIMEAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.SLIMEAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

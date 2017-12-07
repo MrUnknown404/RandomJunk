@@ -22,7 +22,9 @@ public class Item_IronApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.IRONAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.IRONAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

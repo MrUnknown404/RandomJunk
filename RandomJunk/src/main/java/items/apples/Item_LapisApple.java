@@ -22,7 +22,9 @@ public class Item_LapisApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.LAPISAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.LAPISAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

@@ -21,7 +21,9 @@ public class Item_EnderPearlApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.ENDERPEARLAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.ENDERPEARLAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

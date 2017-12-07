@@ -20,7 +20,9 @@ public class Item_ClayApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.CLAYAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.CLAYAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

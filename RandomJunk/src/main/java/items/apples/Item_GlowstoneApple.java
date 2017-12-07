@@ -20,7 +20,9 @@ public class Item_GlowstoneApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.GLOWSTONEAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.GLOWSTONEAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

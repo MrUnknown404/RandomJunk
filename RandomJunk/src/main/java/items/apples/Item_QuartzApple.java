@@ -22,7 +22,9 @@ public class Item_QuartzApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.QUARTZAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.QUARTZAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

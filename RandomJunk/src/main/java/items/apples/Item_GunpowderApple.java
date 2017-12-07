@@ -19,7 +19,9 @@ public class Item_GunpowderApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.GUNPOWDERAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.GUNPOWDERAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

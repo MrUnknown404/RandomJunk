@@ -20,7 +20,9 @@ public class Item_ObsidianApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.OBSIDIANAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.OBSIDIANAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

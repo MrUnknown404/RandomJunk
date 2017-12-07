@@ -22,7 +22,9 @@ public class Item_MagmaCreamApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.MAGMACREAMAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.MAGMACREAMAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

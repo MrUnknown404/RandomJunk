@@ -20,7 +20,9 @@ public class Item_PaperApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.PAPERAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.PAPERAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

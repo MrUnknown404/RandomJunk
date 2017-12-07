@@ -20,7 +20,9 @@ public class Item_BlazeApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.BLAZEAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.BLAZEAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {

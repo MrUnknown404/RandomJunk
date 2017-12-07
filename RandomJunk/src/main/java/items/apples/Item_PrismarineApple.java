@@ -22,7 +22,9 @@ public class Item_PrismarineApple extends ItemFood {
 		//Get Names
 		setUnlocalizedName(Reference.RandomJunkItems.PRISMARINEAPPLE.getUnlocalizedName());
 		setRegistryName(Reference.RandomJunkItems.PRISMARINEAPPLE.getRegistryName());
+
 		setCreativeTab(RandomJunk.TabRandomJunkItems);
+		setAlwaysEdible();
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {
