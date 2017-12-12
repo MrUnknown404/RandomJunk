@@ -76,6 +76,7 @@ tile.BoneBlock.name=Block of Bone
 tile.FlintBlock.name=Block of Flint
 
 tile.EmptyJar.name=Empty Jar
+tile.GroundLantern.name=Ground Lantern
 
 //-//GUI
 itemGroup.Tab_RandomJunkItems=RandomJunk Items

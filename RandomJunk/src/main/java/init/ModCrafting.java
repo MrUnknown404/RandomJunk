@@ -127,6 +127,7 @@ public class ModCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.NETHER_BRICK), new ItemStack(Blocks.STONE_SLAB, 1, 6), new ItemStack(Blocks.STONE_SLAB, 1, 6)); //Netherbrick Slab
 
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.EmptyJar, 1),new ItemStack(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE,1),new ItemStack(Blocks.GLASS,1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.GroundLantern, 1),new ItemStack(Blocks.TORCH,1),new ItemStack(Items.IRON_INGOT,1));
 		
 		//-//-//Smelting
 		//Misc
