@@ -128,6 +128,8 @@ public class ModCrafting {
 
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.EmptyJar, 1),new ItemStack(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE,1),new ItemStack(Blocks.GLASS,1));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.GroundLantern, 1),new ItemStack(Blocks.TORCH,1),new ItemStack(Items.IRON_INGOT,1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.HangingLantern, 1),new ItemStack(ModBlocks.GroundLantern,1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.GroundLantern, 1),new ItemStack(ModBlocks.HangingLantern,1));
 		
 		//-//-//Smelting
 		//Misc

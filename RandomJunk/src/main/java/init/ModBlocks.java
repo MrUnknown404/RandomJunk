@@ -5,6 +5,7 @@ import blocks.Block_EmptyJar;
 import blocks.Block_FlintBlock;
 import blocks.Block_GroundLantern;
 import blocks.Block_ObsidianBlock;
+import blocks.Block_HangingLantern;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -21,6 +22,7 @@ public class ModBlocks {
 	
 	public static Block EmptyJar;
 	public static Block GroundLantern;
+	public static Block HangingLantern;
 
 	public static void init() {
 		//Blocks
@@ -30,6 +32,7 @@ public class ModBlocks {
 		
 		EmptyJar = new Block_EmptyJar();
 		GroundLantern = new Block_GroundLantern();
+		HangingLantern = new Block_HangingLantern();
 	}
 	public static void register() {
 		//Register Blocks
@@ -39,6 +42,7 @@ public class ModBlocks {
 		
 		registerBlock(EmptyJar);
 		registerBlock(GroundLantern);
+		registerBlock(HangingLantern);
 	}
 	private static void registerBlock(Block block) {
 		GameRegistry.register(block);
@@ -56,6 +60,7 @@ public class ModBlocks {
 		
 		registerRender(EmptyJar);
 		registerRender(GroundLantern);
+		registerRender(HangingLantern);
 	}
 	private static void registerRender(Block block) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(), "inventory"));
