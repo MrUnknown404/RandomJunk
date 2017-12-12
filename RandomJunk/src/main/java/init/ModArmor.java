@@ -33,7 +33,7 @@ public class ModArmor {
 	//durability * 13 for the boots
 
 	public static ArmorMaterial ARMMAT_OBSIDIAN = EnumHelper.addArmorMaterial("ARMMAT_OBSIDIAN",  Reference.MOD_ID+":obsidian", 44 , new int[]{4, 6, 8, 4}, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0f); //Texture, Durability, Damage Reduction, Enchantability, SoundEvent, Toughness
-	public static ArmorMaterial ARMMAT_BONE = EnumHelper.addArmorMaterial("ARMMAT_BONE",  Reference.MOD_ID+":bone", 16 , new int[]{3, 5, 6, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f); //Texture, Durability, Damage Reduction, Enchantability, SoundEvent, Toughness
+	public static ArmorMaterial ARMMAT_BONE = EnumHelper.addArmorMaterial("ARMMAT_BONE",  Reference.MOD_ID+":bone", 18 , new int[]{3, 5, 6, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f); //Texture, Durability, Damage Reduction, Enchantability, SoundEvent, Toughness
 	public static ArmorMaterial ARMMAT_FLINT = EnumHelper.addArmorMaterial("ARMMAT_FLINT",  Reference.MOD_ID+":flint", 9 , new int[]{2, 3, 4, 2}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f); //Texture, Durability, Damage Reduction, Enchantability, SoundEvent, Toughness
 
 	//Items

@@ -1,6 +1,7 @@
 package init;
 
 import blocks.Block_BoneBlock;
+import blocks.Block_EmptyJar;
 import blocks.Block_FlintBlock;
 import blocks.Block_ObsidianBlock;
 import net.minecraft.block.Block;
@@ -16,29 +17,28 @@ public class ModBlocks {
 	public static Block ObsidianBlock;
 	public static Block BoneBlock;
 	public static Block FlintBlock;
+	
+	public static Block EmptyJar;
 
 	public static void init() {
 		//Blocks
 		ObsidianBlock = new Block_ObsidianBlock();
 		BoneBlock = new Block_BoneBlock();
 		FlintBlock = new Block_FlintBlock();
+		
+		EmptyJar = new Block_EmptyJar();
 	}
 	public static void register() {
 		//Register Blocks
 		registerBlock(ObsidianBlock);
 		registerBlock(BoneBlock);
 		registerBlock(FlintBlock);
-
-		//-//Register Items
-		//Blocks
-		///*
-		GameRegistry.register(ObsidianBlock);
-		GameRegistry.register(BoneBlock);
-		GameRegistry.register(FlintBlock);
-		//*/
+		
+		registerBlock(EmptyJar);
 	}
 	private static void registerBlock(Block block) {
-
+		GameRegistry.register(block);
+		
 		ItemBlock item = new ItemBlock(block);
 		item.setRegistryName(block.getRegistryName());
 		GameRegistry.register(item);
@@ -49,6 +49,8 @@ public class ModBlocks {
 		registerRender(ObsidianBlock);
 		registerRender(BoneBlock);
 		registerRender(FlintBlock);
+		
+		registerRender(EmptyJar);
 	}
 	private static void registerRender(Block block) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(), "inventory"));
