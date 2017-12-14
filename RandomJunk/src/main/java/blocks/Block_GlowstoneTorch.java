@@ -1,5 +1,7 @@
 package blocks;
 
+import java.util.Random;
+
 import com.mrunknown404.randomjunk.Reference;
 
 import init.ModCreativeTabs;
@@ -7,11 +9,14 @@ import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.renderer.ItemRenderer;
+import net.minecraft.client.Minecraft;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
 
 
 public class Block_GlowstoneTorch extends Block {
@@ -45,7 +50,7 @@ public class Block_GlowstoneTorch extends Block {
 	
 	@Override
 	public BlockRenderLayer getBlockLayer() {
-		return BlockRenderLayer.SOLID;
+		return BlockRenderLayer.TRANSLUCENT;
 	}
 	
 	@Override
@@ -57,4 +62,28 @@ public class Block_GlowstoneTorch extends Block {
 	public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
 		return null;
 	}
+	
+	@Override
+	public void randomDisplayTick(IBlockState state, World world, BlockPos pos, Random random) {
+		EntityPlayer entity = Minecraft.getMinecraft().player;
+		int i = pos.getX();
+		int j = pos.getY();
+		int k = pos.getZ();
+		World par1World = world;
+		int par2 = i;
+		int par3 = j;
+		int par4 = k;
+		Random par5Random = random;
+		if (true)
+			for (int la = 0; la < 1; ++la) {
+				double d0 = (double) ((float) par2+0.725f) + (double) (par5Random.nextFloat()) * 0.1D;
+				double d1 = ((double) ((float) par3-0.1f) + (double) (par5Random.nextFloat()) * 0.1D) + 0.5D;
+				double d2 = (double) ((float) par4+0.45f) + (double) (par5Random.nextFloat()) * 0.1D;
+				double d3 = 0.2199999988079071D;
+				double d4 = 0.27000001072883606D;
+				par1World.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, d0 - d4, d1 + d3, d2, 0.0D, 0.0D, 0.0D);
+			}
+
+	}
+	
 }
