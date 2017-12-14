@@ -3,6 +3,7 @@ package init;
 import blocks.Block_BoneBlock;
 import blocks.Block_EmptyJar;
 import blocks.Block_FlintBlock;
+import blocks.Block_GlowstoneTorch;
 import blocks.Block_GroundLantern;
 import blocks.Block_ObsidianBlock;
 import blocks.Block_HangingLantern;
@@ -23,6 +24,7 @@ public class ModBlocks {
 	public static Block EmptyJar;
 	public static Block GroundLantern;
 	public static Block HangingLantern;
+	public static Block GlowstoneTorch;
 
 	public static void init() {
 		//Blocks
@@ -33,6 +35,7 @@ public class ModBlocks {
 		EmptyJar = new Block_EmptyJar();
 		GroundLantern = new Block_GroundLantern();
 		HangingLantern = new Block_HangingLantern();
+		GlowstoneTorch = new Block_GlowstoneTorch();
 	}
 	public static void register() {
 		//Register Blocks
@@ -43,6 +46,7 @@ public class ModBlocks {
 		registerBlock(EmptyJar);
 		registerBlock(GroundLantern);
 		registerBlock(HangingLantern);
+		registerBlock(GlowstoneTorch);
 	}
 	private static void registerBlock(Block block) {
 		GameRegistry.register(block);
@@ -61,6 +65,7 @@ public class ModBlocks {
 		registerRender(EmptyJar);
 		registerRender(GroundLantern);
 		registerRender(HangingLantern);
+		registerRender(GlowstoneTorch);
 	}
 	private static void registerRender(Block block) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(), "inventory"));

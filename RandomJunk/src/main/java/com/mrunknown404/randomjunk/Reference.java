@@ -4,7 +4,7 @@ public class Reference {
    //Strings
    public static final String MOD_ID  = "randomjunk";
    public static final String NAME  = "RandomJunk!";
-   public static final String VERSION  = "1.1.0-Beta";
+   public static final String VERSION  = "1.1.1-Beta";
    public static final String  ACCEPTED_VERSIONS  = "[1.11.2]";
 
    //Proxy
@@ -20,7 +20,8 @@ public class Reference {
 
       EMPTYJAR("EmptyJar","Block_EmptyJar"),
       GROUNDLANTERN("GroundLantern","Block_GroundLantern"),
-      HANGINGLANTERN("HangingLantern","Block_HangingLantern");
+      HANGINGLANTERN("HangingLantern","Block_HangingLantern"),
+	  GLOWSTONETORCH("GlowstoneTorch","Block_GlowstoneTorch");
       
       private String unlocalizedName;
       private String registryName;
