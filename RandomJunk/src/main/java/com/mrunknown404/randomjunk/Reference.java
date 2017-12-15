@@ -21,7 +21,8 @@ public class Reference {
       EMPTYJAR("EmptyJar","Block_EmptyJar"),
       GROUNDLANTERN("GroundLantern","Block_GroundLantern"),
       HANGINGLANTERN("HangingLantern","Block_HangingLantern"),
-      GLOWSTONETORCH("GlowstoneTorch","Block_GlowstoneTorch");
+      GLOWSTONETORCH("GlowstoneTorch","Block_GlowstoneTorch"),
+      LAPISTORCH("LapisTorch","Block_LapisTorch");
       
       private String unlocalizedName;
       private String registryName;

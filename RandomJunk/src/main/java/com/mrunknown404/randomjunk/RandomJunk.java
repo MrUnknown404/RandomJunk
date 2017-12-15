@@ -1,5 +1,6 @@
 package com.mrunknown404.randomjunk;
 
+import com.mrunknown404.randomjunk.handlers.ObsidianEventHandler;
 import com.mrunknown404.randomjunk.proxy.CommonProxy;
 
 import init.ModArmor;
@@ -64,5 +65,7 @@ public class RandomJunk {
 		Items.IRON_HORSE_ARMOR.setMaxStackSize(64);
 		Items.GOLDEN_HORSE_ARMOR.setMaxStackSize(64);
 		Items.DIAMOND_HORSE_ARMOR.setMaxStackSize(64);
+		
+		Items.DIAMOND_PICKAXE.setMaxDamage(-1);
 	}
 }

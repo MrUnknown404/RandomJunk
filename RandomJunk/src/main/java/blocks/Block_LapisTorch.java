@@ -19,21 +19,21 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 
-public class Block_GlowstoneTorch extends Block {
+public class Block_LapisTorch extends Block {
 
 	//0.0625 * #
 	private static final AxisAlignedBB BOUDNING_BOX = new AxisAlignedBB(0.0625*6.5, 0, 0.0625*6.5, 0.0625*9.5, 0.0625*10, 0.0625*9.5);
 	
-	public Block_GlowstoneTorch() {
-		super(Material.WOOD);
+	public Block_LapisTorch() {
+		super(Material.CIRCUITS);
 		//
 		setSoundType(SoundType.WOOD);
-		setLightLevel(1);
+		setLightLevel(0.5f);
 		setLightOpacity(1);
 		
 		//Get Names
-		setUnlocalizedName(Reference.RandomJunkBlocks.GLOWSTONETORCH.getUnlocalizedName());
-		setRegistryName(Reference.RandomJunkBlocks.GLOWSTONETORCH.getRegistryName());
+		setUnlocalizedName(Reference.RandomJunkBlocks.LAPISTORCH.getUnlocalizedName());
+		setRegistryName(Reference.RandomJunkBlocks.LAPISTORCH.getRegistryName());
 		
 		setCreativeTab(ModCreativeTabs.TabRandomJunkBlocks);
 	}
@@ -77,7 +77,7 @@ public class Block_GlowstoneTorch extends Block {
 				double d2 = (double) ((float) par4+0.425f) + (double) (par5Random.nextFloat()) * 0.1D;
 				double d3 = 0.22D;
 				double d4 = 0.27D;
-				par1World.spawnParticle(EnumParticleTypes.REDSTONE, d0 - d4, d1 + d3, d2, 0.0D, 1.0D, 0.0D);
+				par1World.spawnParticle(EnumParticleTypes.REDSTONE, d0 - d4, d1 + d3, d2, -1.0D, 0.0D, 1.0D);
 			}
 		}
 	}

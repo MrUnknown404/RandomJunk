@@ -1,4 +1,4 @@
-package com.mrunknown404.randomjunk;
+package com.mrunknown404.randomjunk.handlers;
 
 import java.util.Random;
 
