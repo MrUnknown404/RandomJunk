@@ -25,6 +25,7 @@ item.SlimeApple.name=Slime Apple
 
 //Obsidian
 item.ObsidianIngot.name=Obsidian Ingot
+item.ObsidianShard.name=Obsidian Shard
 
 item.ObsidianShovel.name=Obsidian Shovel
 item.ObsidianPickaxe.name=Obsidian Pickaxe
@@ -50,6 +51,9 @@ item.FlintPickaxe.name=Flint Pickaxe
 item.FlintAxe.name=Flint Axe
 item.FlintHoe.name=Flint Hoe
 item.FlintSword.name=Flint Sword
+
+//Debug Items
+item.DebugPickaxe.name=Debug Pickaxe
 
 //-//Armor
 //Obsidian

@@ -81,6 +81,8 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.EmptyJar, 1),"W","G",'W',Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE,'G',Blocks.GLASS);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.GroundLantern, 1),"T","I",'T',Blocks.TORCH,'I',Items.IRON_INGOT);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.GlowstoneTorch, 4),"G","S",'G',Items.GLOWSTONE_DUST,'S',Items.STICK);
+		
+		GameRegistry.addRecipe(new ItemStack(Blocks.OBSIDIAN, 1),"OO","OO",'O',ModItems.ObsidianShard);
 
 		//Slabs
 		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 0),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 0)); //Oak
@@ -105,8 +107,9 @@ public class ModCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneIngot, 9), new ItemStack(ModBlocks.BoneBlock, 1)); //Block Into Ingot
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.FlintIngot, 9), new ItemStack(ModBlocks.FlintBlock, 1)); //Block Into Ingot
 
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ObsidianShard, 4), new ItemStack(Blocks.OBSIDIAN, 1));
+		
 		//-//Blocks
-
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.HangingLantern, 1),new ItemStack(ModBlocks.GroundLantern,1));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.GroundLantern, 1),new ItemStack(ModBlocks.HangingLantern,1));
 		
@@ -114,7 +117,7 @@ public class ModCrafting {
 		//Misc
 		GameRegistry.addSmelting(Items.ROTTEN_FLESH, new ItemStack(Items.LEATHER), 0.1f);
 
-		GameRegistry.addSmelting(Blocks.OBSIDIAN, new ItemStack(ModItems.ObsidianIngot), 0.4f);
+		GameRegistry.addSmelting(Blocks.OBSIDIAN, new ItemStack(ModItems.ObsidianShard), 0.4f);
 		GameRegistry.addSmelting(ModItems.BoneMix, new ItemStack(ModItems.BoneIngot), 0.3f);
 		GameRegistry.addSmelting(Items.FLINT, new ItemStack(ModItems.FlintIngot), 0.3f);
 	}

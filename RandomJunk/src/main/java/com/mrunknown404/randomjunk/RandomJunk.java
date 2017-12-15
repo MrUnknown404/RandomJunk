@@ -8,10 +8,8 @@ import init.ModCrafting;
 import init.ModItems;
 import init.ModTools;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -56,6 +54,9 @@ public class RandomJunk {
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
+		
+		MinecraftForge.EVENT_BUS.register(new ObsidianEventHandler());
+		
 		//Normally 16
 		Items.BUCKET.setMaxStackSize(64);
 		Items.SNOWBALL.setMaxStackSize(64);

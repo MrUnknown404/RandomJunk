@@ -4,7 +4,7 @@ public class Reference {
    //Strings
    public static final String MOD_ID  = "randomjunk";
    public static final String NAME  = "RandomJunk!";
-   public static final String VERSION  = "1.2.0-Beta";
+   public static final String VERSION  = "1.2.2-Beta";
    public static final String  ACCEPTED_VERSIONS  = "[1.11.2]";
 
    //Proxy
@@ -67,6 +67,7 @@ public class Reference {
       SLIMEAPPLE("SlimeApple","Item_SlimeApple"),
       //Obsidian Things
       OBSIDIANINGOT("ObsidianIngot","Item_ObsidianIngot"),
+      OBSIDIANSHARD("ObsidianShard","Item_ObsidianShard"),
 
       OBSIDIANSHOVEL("ObsidianShovel","Item_ObsidianShovel"),
       OBSIDIANPICKAXE("ObsidianPickaxe","Item_ObsidianPickaxe"),
@@ -105,8 +106,11 @@ public class Reference {
       FLINTHELMET("FlintHelmet","Item_FlintHelmet"),
       FLINTCHESTPLATE("FlintChestplate","Item_FlintChestplate"),
       FLINTLEGGINGS("FlintLeggings","Item_FlintLeggings"),
-      FLINTBOOTS("FlintBoots","Item_FlintBoots");
+      FLINTBOOTS("FlintBoots","Item_FlintBoots"),
 
+	  //Debug Tools
+	  DEBUGPICKAXE("DebugPickaxe","Item_DebugPickaxe");
+	   
       private String unlocalizedName;
       private String registryName;
 

@@ -27,6 +27,7 @@ import items.bonethings.Item_BoneIngot;
 import items.bonethings.Item_BoneMix;
 import items.flintthings.Item_FlintIngot;
 import items.obsidianthings.Item_ObsidianIngot;
+import items.obsidianthings.Item_ObsidianShard;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -61,6 +62,7 @@ public class ModItems {
 
 	//Obsidian Things
 	public static Item ObsidianIngot;
+	public static Item ObsidianShard;
 
 	//Bone Things
 	public static Item BoneIngot;
@@ -96,6 +98,7 @@ public class ModItems {
 
 		//Obsidian Things
 		ObsidianIngot = new Item_ObsidianIngot();
+		ObsidianShard = new Item_ObsidianShard();
 
 		//Bone Things
 		BoneIngot = new Item_BoneIngot();
@@ -134,6 +137,7 @@ public class ModItems {
 
 		//Obsidian Things
 		GameRegistry.register(ObsidianIngot);
+		GameRegistry.register(ObsidianShard);
 
 		//Bone Things
 		GameRegistry.register(BoneIngot);
@@ -174,6 +178,7 @@ public class ModItems {
 
 		//Obsidian Things
 		registerRender(ObsidianIngot);
+		registerRender(ObsidianShard);
 
 		//Bone Things
 		registerRender(BoneIngot);

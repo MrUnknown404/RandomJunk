@@ -65,7 +65,6 @@ public class Block_GlowstoneTorch extends Block {
 	
 	@Override
 	public void randomDisplayTick(IBlockState state, World world, BlockPos pos, Random random) {
-		EntityPlayer entity = Minecraft.getMinecraft().player;
 		int i = pos.getX();
 		int j = pos.getY();
 		int k = pos.getZ();
