@@ -25,3 +25,5 @@ pickaxe
 chestplate
 renderindex
 randomjunk
+config
+modded

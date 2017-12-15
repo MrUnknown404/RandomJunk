@@ -12,11 +12,11 @@ public class ConfigHandler {
 	
 	public static Configuration Config;
 	public static boolean InfDurability = false;
-	public static String CATEGORY_MISC = "Misc Config";
+	public static boolean UpdateCheck = true;
 	
 	public static void init(String ConfigDir) {
 		if (Config == null) {
-			File path = new File(ConfigDir + "/RandomJunk!" + Reference.MOD_ID + ".cfg");
+			File path = new File(ConfigDir + "/" + Reference.MOD_ID + ".cfg");
 			
 			Config = new Configuration(path);
 			loadConfiguration();
@@ -24,7 +24,8 @@ public class ConfigHandler {
 	}
 	
 	private static void loadConfiguration() {
-		InfDurability = Config.getBoolean("Infinite Durability",CATEGORY_MISC,false,"Config Infinite Durabilty");
+		InfDurability = Config.getBoolean("Infinite Durability",Configuration.CATEGORY_GENERAL,false,"Enable/Disable Infinite Durabilty (Requires Restart)");
+		UpdateCheck = Config.getBoolean("UpdateCheck",Configuration.CATEGORY_GENERAL,true,"Check For Updates");
 		
 		if (Config.hasChanged()) {
 			Config.save();
@@ -38,4 +39,7 @@ public class ConfigHandler {
 		}
 	}
 	
+	public static Configuration getConfiguration() {
+		return Config;
+	}
 }

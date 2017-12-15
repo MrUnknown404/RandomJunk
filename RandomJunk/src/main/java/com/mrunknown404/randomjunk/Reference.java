@@ -2,11 +2,13 @@ package com.mrunknown404.randomjunk;
 
 public class Reference {
    //Strings
-   public static final String MOD_ID  = "randomjunk";
-   public static final String NAME  = "RandomJunk!";
-   public static final String VERSION  = "1.2.2-Beta";
-   public static final String  ACCEPTED_VERSIONS  = "[1.11.2]";
+   public static final String MOD_ID = "randomjunk";
+   public static final String NAME = "RandomJunk!";
+   public static final String VERSION = "1.3.0-Beta";
+   public static final String ACCEPTED_VERSIONS = "[1.11.2]";
 
+   public static final String GUI_FACTORY_CLASS = "com.mrunknown404.randomjunk.client.gui.GuiFactory";
+   
    //Proxy
    public static final String CLIENT_PROXY_CLASS = "com.mrunknown404.randomjunk.proxy.ClientProxy";
    public static final String SERVER_PROXY_CLASS = "com.mrunknown404.randomjunk.proxy.ServerProxy";
