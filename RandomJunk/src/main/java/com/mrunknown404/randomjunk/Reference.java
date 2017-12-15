@@ -21,7 +21,7 @@ public class Reference {
       EMPTYJAR("EmptyJar","Block_EmptyJar"),
       GROUNDLANTERN("GroundLantern","Block_GroundLantern"),
       HANGINGLANTERN("HangingLantern","Block_HangingLantern"),
-	  GLOWSTONETORCH("GlowstoneTorch","Block_GlowstoneTorch");
+      GLOWSTONETORCH("GlowstoneTorch","Block_GlowstoneTorch");
       
       private String unlocalizedName;
       private String registryName;
@@ -108,8 +108,8 @@ public class Reference {
       FLINTLEGGINGS("FlintLeggings","Item_FlintLeggings"),
       FLINTBOOTS("FlintBoots","Item_FlintBoots"),
 
-	  //Debug Tools
-	  DEBUGPICKAXE("DebugPickaxe","Item_DebugPickaxe");
+      //Debug Tools
+      DEBUGPICKAXE("DebugPickaxe","Item_DebugPickaxe");
 	   
       private String unlocalizedName;
       private String registryName;
