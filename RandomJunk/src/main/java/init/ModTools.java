@@ -1,6 +1,7 @@
 package init;
 
 import com.mrunknown404.randomjunk.Reference;
+import com.mrunknown404.randomjunk.handlers.ConfigHandler;
 
 import items.bonethings.Item_BoneAxe;
 import items.bonethings.Item_BoneHoe;
@@ -99,7 +100,10 @@ public class ModTools {
 		GameRegistry.register(FlintHoe);
 		GameRegistry.register(FlintSword);
 		
-		GameRegistry.register(DebugPickaxe);
+		//Debug Items
+		if (ConfigHandler.DebugItems == true) {
+			GameRegistry.register(DebugPickaxe);
+		}
 		
 	}
 	public static void registerRenders() {

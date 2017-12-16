@@ -13,6 +13,7 @@ public class ConfigHandler {
 	public static Configuration Config;
 	public static boolean InfDurability = false;
 	public static boolean UpdateCheck = true;
+	public static boolean DebugItems = false;
 	
 	public static void init(String ConfigDir) {
 		if (Config == null) {
@@ -24,8 +25,10 @@ public class ConfigHandler {
 	}
 	
 	private static void loadConfiguration() {
-		InfDurability = Config.getBoolean("Infinite Durability",Configuration.CATEGORY_GENERAL,false,"Enable/Disable Infinite Durabilty (Requires Restart)");
-		UpdateCheck = Config.getBoolean("UpdateCheck",Configuration.CATEGORY_GENERAL,true,"Check For Updates");
+		//Order Doesn't Matter
+		InfDurability = Config.getBoolean("Infinite Durability (Beta)",Configuration.CATEGORY_GENERAL,false,"Enable/Disable Infinite Durabilty (Requires Restart, Also Buggy)");
+		DebugItems = Config.getBoolean("Debug Items",Configuration.CATEGORY_GENERAL,false,"Enable/Disable Debug Items");
+		UpdateCheck = Config.getBoolean("Update Check (Beta)",Configuration.CATEGORY_GENERAL,true,"Check For Updates");
 		
 		if (Config.hasChanged()) {
 			Config.save();

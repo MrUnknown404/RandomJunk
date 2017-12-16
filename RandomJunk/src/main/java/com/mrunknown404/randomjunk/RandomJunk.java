@@ -1,7 +1,7 @@
 package com.mrunknown404.randomjunk;
 
 import com.mrunknown404.randomjunk.handlers.ConfigHandler;
-import com.mrunknown404.randomjunk.handlers.ObsidianEventHandler;
+import com.mrunknown404.randomjunk.handlers.ModEventHandler;
 import com.mrunknown404.randomjunk.proxy.CommonProxy;
 
 import init.ModArmor;
@@ -65,7 +65,7 @@ public class RandomJunk {
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		
-		MinecraftForge.EVENT_BUS.register(new ObsidianEventHandler());
+		MinecraftForge.EVENT_BUS.register(new ModEventHandler());
 		
 		//Normally 16
 		Items.BUCKET.setMaxStackSize(64);
@@ -79,122 +79,121 @@ public class RandomJunk {
 			//-//-//Vanilla
 			//-//Tools
 			//Diamond
-			
-			Items.DIAMOND_SHOVEL.setMaxDamage(-1);
-			Items.DIAMOND_PICKAXE.setMaxDamage(-1);
-			Items.DIAMOND_AXE.setMaxDamage(-1);
-			Items.DIAMOND_HOE.setMaxDamage(-1);
-			Items.DIAMOND_SWORD.setMaxDamage(-1);
+			Items.DIAMOND_SHOVEL.setMaxDamage(1000000);
+			Items.DIAMOND_PICKAXE.setMaxDamage(1000000);
+			Items.DIAMOND_AXE.setMaxDamage(1000000);
+			Items.DIAMOND_HOE.setMaxDamage(1000000);
+			Items.DIAMOND_SWORD.setMaxDamage(1000000);
 			
 			//Iron
-			Items.IRON_SHOVEL.setMaxDamage(-1);
-			Items.IRON_PICKAXE.setMaxDamage(-1);
-			Items.IRON_AXE.setMaxDamage(-1);
-			Items.IRON_HOE.setMaxDamage(-1);
-			Items.IRON_SWORD.setMaxDamage(-1);
+			Items.IRON_SHOVEL.setMaxDamage(1000000);
+			Items.IRON_PICKAXE.setMaxDamage(1000000);
+			Items.IRON_AXE.setMaxDamage(1000000);
+			Items.IRON_HOE.setMaxDamage(1000000);
+			Items.IRON_SWORD.setMaxDamage(1000000);
 			
 			//Stone
-			Items.STONE_SHOVEL.setMaxDamage(-1);
-			Items.STONE_PICKAXE.setMaxDamage(-1);
-			Items.STONE_AXE.setMaxDamage(-1);
-			Items.STONE_HOE.setMaxDamage(-1);
-			Items.STONE_SWORD.setMaxDamage(-1);
+			Items.STONE_SHOVEL.setMaxDamage(1000000);
+			Items.STONE_PICKAXE.setMaxDamage(1000000);
+			Items.STONE_AXE.setMaxDamage(1000000);
+			Items.STONE_HOE.setMaxDamage(1000000);
+			Items.STONE_SWORD.setMaxDamage(1000000);
 			
 			//Gold
-			Items.GOLDEN_SHOVEL.setMaxDamage(-1);
-			Items.GOLDEN_PICKAXE.setMaxDamage(-1);
-			Items.GOLDEN_AXE.setMaxDamage(-1);
-			Items.GOLDEN_HOE.setMaxDamage(-1);
-			Items.GOLDEN_SWORD.setMaxDamage(-1);
+			Items.GOLDEN_SHOVEL.setMaxDamage(1000000);
+			Items.GOLDEN_PICKAXE.setMaxDamage(1000000);
+			Items.GOLDEN_AXE.setMaxDamage(1000000);
+			Items.GOLDEN_HOE.setMaxDamage(1000000);
+			Items.GOLDEN_SWORD.setMaxDamage(1000000);
 			
 			//Wood
-			Items.WOODEN_SHOVEL.setMaxDamage(-1);
-			Items.WOODEN_PICKAXE.setMaxDamage(-1);
-			Items.WOODEN_AXE.setMaxDamage(-1);
-			Items.WOODEN_HOE.setMaxDamage(-1);
-			Items.WOODEN_SWORD.setMaxDamage(-1);
+			Items.WOODEN_SHOVEL.setMaxDamage(1000000);
+			Items.WOODEN_PICKAXE.setMaxDamage(1000000);
+			Items.WOODEN_AXE.setMaxDamage(1000000);
+			Items.WOODEN_HOE.setMaxDamage(1000000);
+			Items.WOODEN_SWORD.setMaxDamage(1000000);
 			
 			//Misc
-			Items.SHEARS.setMaxDamage(-1);
-			Items.FISHING_ROD.setMaxDamage(-1);
-			Items.CARROT_ON_A_STICK.setMaxDamage(-1);
-			Items.FLINT_AND_STEEL.setMaxDamage(-1);
-			Items.BOW.setMaxDamage(-1);
-			Items.ELYTRA.setMaxDamage(-1);
-			Items.SHIELD.setMaxDamage(-1);
+			Items.SHEARS.setMaxDamage(1000000);
+			Items.FISHING_ROD.setMaxDamage(1000000);
+			Items.CARROT_ON_A_STICK.setMaxDamage(1000000);
+			Items.FLINT_AND_STEEL.setMaxDamage(1000000);
+			Items.BOW.setMaxDamage(1000000);
+			Items.ELYTRA.setMaxDamage(1000000);
+			Items.SHIELD.setMaxDamage(1000000);
 			
 			//-//Armor
 			//Diamond
-			Items.DIAMOND_HELMET.setMaxDamage(-1);
-			Items.DIAMOND_CHESTPLATE.setMaxDamage(-1);
-			Items.DIAMOND_LEGGINGS.setMaxDamage(-1);
-			Items.DIAMOND_BOOTS.setMaxDamage(-1);
+			Items.DIAMOND_HELMET.setMaxDamage(1000000);
+			Items.DIAMOND_CHESTPLATE.setMaxDamage(1000000);
+			Items.DIAMOND_LEGGINGS.setMaxDamage(1000000);
+			Items.DIAMOND_BOOTS.setMaxDamage(1000000);
 			
 			//Iron
-			Items.IRON_HELMET.setMaxDamage(-1);
-			Items.IRON_CHESTPLATE.setMaxDamage(-1);
-			Items.IRON_LEGGINGS.setMaxDamage(-1);
-			Items.IRON_BOOTS.setMaxDamage(-1);
+			Items.IRON_HELMET.setMaxDamage(1000000);
+			Items.IRON_CHESTPLATE.setMaxDamage(1000000);
+			Items.IRON_LEGGINGS.setMaxDamage(1000000);
+			Items.IRON_BOOTS.setMaxDamage(1000000);
 			
 			//Chain
-			Items.CHAINMAIL_HELMET.setMaxDamage(-1);
-			Items.CHAINMAIL_CHESTPLATE.setMaxDamage(-1);
-			Items.CHAINMAIL_LEGGINGS.setMaxDamage(-1);
-			Items.CHAINMAIL_BOOTS.setMaxDamage(-1);
+			Items.CHAINMAIL_HELMET.setMaxDamage(1000000);
+			Items.CHAINMAIL_CHESTPLATE.setMaxDamage(1000000);
+			Items.CHAINMAIL_LEGGINGS.setMaxDamage(1000000);
+			Items.CHAINMAIL_BOOTS.setMaxDamage(1000000);
 			
 			//Gold
-			Items.GOLDEN_HELMET.setMaxDamage(-1);
-			Items.GOLDEN_CHESTPLATE.setMaxDamage(-1);
-			Items.GOLDEN_LEGGINGS.setMaxDamage(-1);
-			Items.GOLDEN_BOOTS.setMaxDamage(-1);
+			Items.GOLDEN_HELMET.setMaxDamage(1000000);
+			Items.GOLDEN_CHESTPLATE.setMaxDamage(1000000);
+			Items.GOLDEN_LEGGINGS.setMaxDamage(1000000);
+			Items.GOLDEN_BOOTS.setMaxDamage(1000000);
 			
 			//Leather
-			Items.LEATHER_HELMET.setMaxDamage(-1);
-			Items.LEATHER_CHESTPLATE.setMaxDamage(-1);
-			Items.LEATHER_LEGGINGS.setMaxDamage(-1);
-			Items.LEATHER_BOOTS.setMaxDamage(-1);
+			Items.LEATHER_HELMET.setMaxDamage(1000000);
+			Items.LEATHER_CHESTPLATE.setMaxDamage(1000000);
+			Items.LEATHER_LEGGINGS.setMaxDamage(1000000);
+			Items.LEATHER_BOOTS.setMaxDamage(1000000);
 			
 			//-//-//Modded
 			//-//Items
 			//Obsidian
-			ModTools.ObsidianShovel.setMaxDamage(-1);
-			ModTools.ObsidianPickaxe.setMaxDamage(-1);
-			ModTools.ObsidianAxe.setMaxDamage(-1);
-			ModTools.ObsidianHoe.setMaxDamage(-1);
-			ModTools.ObsidianSword.setMaxDamage(-1);
+			ModTools.ObsidianShovel.setMaxDamage(1000000);
+			ModTools.ObsidianPickaxe.setMaxDamage(1000000);
+			ModTools.ObsidianAxe.setMaxDamage(1000000);
+			ModTools.ObsidianHoe.setMaxDamage(1000000);
+			ModTools.ObsidianSword.setMaxDamage(1000000);
 			
 			//Bone
-			ModTools.BoneShovel.setMaxDamage(-1);
-			ModTools.BonePickaxe.setMaxDamage(-1);
-			ModTools.BoneAxe.setMaxDamage(-1);
-			ModTools.BoneHoe.setMaxDamage(-1);
-			ModTools.BoneSword.setMaxDamage(-1);
+			ModTools.BoneShovel.setMaxDamage(1000000);
+			ModTools.BonePickaxe.setMaxDamage(1000000);
+			ModTools.BoneAxe.setMaxDamage(1000000);
+			ModTools.BoneHoe.setMaxDamage(1000000);
+			ModTools.BoneSword.setMaxDamage(1000000);
 			
 			//Flint
-			ModTools.FlintShovel.setMaxDamage(-1);
-			ModTools.FlintPickaxe.setMaxDamage(-1);
-			ModTools.FlintAxe.setMaxDamage(-1);
-			ModTools.FlintHoe.setMaxDamage(-1);
-			ModTools.FlintSword.setMaxDamage(-1);
+			ModTools.FlintShovel.setMaxDamage(1000000);
+			ModTools.FlintPickaxe.setMaxDamage(1000000);
+			ModTools.FlintAxe.setMaxDamage(1000000);
+			ModTools.FlintHoe.setMaxDamage(1000000);
+			ModTools.FlintSword.setMaxDamage(1000000);
 			
 			//-//Armor
 			//Obsidian
-			ModArmor.ObsidianHelmet.setMaxDamage(-1);
-			ModArmor.ObsidianChestplate.setMaxDamage(-1);
-			ModArmor.ObsidianLeggings.setMaxDamage(-1);
-			ModArmor.ObsidianBoots.setMaxDamage(-1);
+			ModArmor.ObsidianHelmet.setMaxDamage(1000000);
+			ModArmor.ObsidianChestplate.setMaxDamage(1000000);
+			ModArmor.ObsidianLeggings.setMaxDamage(1000000);
+			ModArmor.ObsidianBoots.setMaxDamage(1000000);
 			
 			//Bone
-			ModArmor.BoneHelmet.setMaxDamage(-1);
-			ModArmor.BoneChestplate.setMaxDamage(-1);
-			ModArmor.BoneLeggings.setMaxDamage(-1);
-			ModArmor.BoneBoots.setMaxDamage(-1);
+			ModArmor.BoneHelmet.setMaxDamage(1000000);
+			ModArmor.BoneChestplate.setMaxDamage(1000000);
+			ModArmor.BoneLeggings.setMaxDamage(1000000);
+			ModArmor.BoneBoots.setMaxDamage(1000000);
 			
 			//Flint
-			ModArmor.FlintHelmet.setMaxDamage(-1);
-			ModArmor.FlintChestplate.setMaxDamage(-1);
-			ModArmor.FlintLeggings.setMaxDamage(-1);
-			ModArmor.FlintBoots.setMaxDamage(-1);
+			ModArmor.FlintHelmet.setMaxDamage(1000000);
+			ModArmor.FlintChestplate.setMaxDamage(1000000);
+			ModArmor.FlintLeggings.setMaxDamage(1000000);
+			ModArmor.FlintBoots.setMaxDamage(1000000);
 		}
 	}
 }
