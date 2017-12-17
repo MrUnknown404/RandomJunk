@@ -3,19 +3,20 @@ package com.mrunknown404.randomjunk.handlers;
 import java.util.Random;
 
 import init.ModItems;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.world.BlockEvent.HarvestDropsEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-public class ModEventHandler {
+public class BlockHarvestHandler {
 	
 	Random rand = new Random();
 	
+	//Change Obsidian Drops
 	@SubscribeEvent
 	public void yourPlayerHarvestEvent(HarvestDropsEvent event) {
 		if (event.getHarvester() != null) {
-			
 			if (event.getState() == Blocks.OBSIDIAN.getDefaultState()) {
 				if (event.isSilkTouching() == false) {
 					event.getDrops().clear();

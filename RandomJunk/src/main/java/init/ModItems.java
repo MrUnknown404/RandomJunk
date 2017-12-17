@@ -43,7 +43,7 @@ public class ModItems {
 	public static Item CoalApple;
 	public static Item DiamondApple;
 	public static Item EmeraldApple;
-	public static Item  EnderPearlApple;
+	public static Item EnderPearlApple;
 	public static Item FlintApple;
 	public static Item GlowstoneApple;
 	public static Item GunpowderApple;
@@ -60,18 +60,18 @@ public class ModItems {
 	public static Item RottenFleshApple;
 	public static Item SlimeApple;
 
-	//Obsidian Things
+	//Obsidian Items
 	public static Item ObsidianIngot;
 	public static Item ObsidianShard;
 
-	//Bone Things
+	//Bone Items
 	public static Item BoneIngot;
 	public static Item BoneMix;
 
-	//Flint Things
+	//Flint Items
 	public static Item FlintIngot;
 
-	public static void init() {
+	public static void Init() {
 		//Apples
 		AppleApple = new Item_AppleApple();
 		BlazeApple = new Item_BlazeApple();
@@ -108,10 +108,9 @@ public class ModItems {
 		FlintIngot = new Item_FlintIngot();
 
 	}
-	public static void register() {
+	public static void Register() {
 		//-//Register Items
 		//Apples
-		///*
 		GameRegistry.register(AppleApple);
 		GameRegistry.register(BlazeApple);
 		GameRegistry.register(ClayApple);
@@ -135,22 +134,21 @@ public class ModItems {
 		GameRegistry.register(RottenFleshApple);
 		GameRegistry.register(SlimeApple);
 
-		//Obsidian Things
+		//Obsidian Items
 		GameRegistry.register(ObsidianIngot);
 		GameRegistry.register(ObsidianShard);
 
-		//Bone Things
+		//Bone Items
 		GameRegistry.register(BoneIngot);
 
-		//Flint Things
+		//Flint Items
 		GameRegistry.register(FlintIngot);
 
 		//Misc
 		GameRegistry.register(BoneMix);
-		//*/
-
+		
 	}
-	public static void registerRenders() {
+	public static void RegisterRenders() {
 		//-//Register Render Items
 		//Apples
 		registerRender(AppleApple);
@@ -176,20 +174,17 @@ public class ModItems {
 		registerRender(RottenFleshApple);
 		registerRender(SlimeApple);
 
-		//Obsidian Things
+		//Obsidian Items
 		registerRender(ObsidianIngot);
 		registerRender(ObsidianShard);
 
-		//Bone Things
+		//Bone Items
 		registerRender(BoneIngot);
 		registerRender(BoneMix);
 
-		//Flint Things
+		//Flint Items
 		registerRender(FlintIngot);
-
-		//Misc
-
-
+		
 	}
 	private static void registerRender(Item item) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));

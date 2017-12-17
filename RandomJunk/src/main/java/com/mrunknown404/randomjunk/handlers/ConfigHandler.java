@@ -27,8 +27,8 @@ public class ConfigHandler {
 	private static void loadConfiguration() {
 		//Order Doesn't Matter
 		InfDurability = Config.getBoolean("Infinite Durability (Beta)",Configuration.CATEGORY_GENERAL,false,"Enable/Disable Infinite Durabilty (Requires Restart, Also Buggy)");
-		DebugItems = Config.getBoolean("Debug Items",Configuration.CATEGORY_GENERAL,false,"Enable/Disable Debug Items");
-		UpdateCheck = Config.getBoolean("Update Check (Beta)",Configuration.CATEGORY_GENERAL,true,"Check For Updates");
+		DebugItems = Config.getBoolean("Debug Items",Configuration.CATEGORY_GENERAL,false,"Enable/Disable Debug Items (Requires Restart)");
+		UpdateCheck = Config.getBoolean("Update Check (Beta)",Configuration.CATEGORY_GENERAL,true,"Check For Updates (Does Nothing Currently)");
 		
 		if (Config.hasChanged()) {
 			Config.save();

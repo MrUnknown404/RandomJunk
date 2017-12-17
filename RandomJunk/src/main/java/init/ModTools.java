@@ -54,7 +54,7 @@ public class ModTools {
 	
 	public static Item DebugPickaxe;
 	
-	public static void init() {
+	public static void Init() {
 		//Obsidian
 		ObsidianShovel = new Item_ObsidianShovel(MAT_OBSIDIAN);
 		ObsidianPickaxe = new Item_ObsidianPickaxe(MAT_OBSIDIAN);
@@ -78,7 +78,7 @@ public class ModTools {
 		
 		DebugPickaxe = new Item_DebugPickaxe(MAT_DEBUG);
 	}
-	public static void register() {
+	public static void Register() {
 		//Obsidian
 		GameRegistry.register(ObsidianShovel);
 		GameRegistry.register(ObsidianPickaxe);
@@ -106,7 +106,7 @@ public class ModTools {
 		}
 		
 	}
-	public static void registerRenders() {
+	public static void RegisterRenders() {
 		//Obsidian
 		registerRender(ObsidianShovel);
 		registerRender(ObsidianPickaxe);

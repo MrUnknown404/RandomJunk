@@ -9,9 +9,9 @@ public class ClientProxy implements CommonProxy {
 
 	@Override
 	public void init() {
-		ModItems.registerRenders();
-		ModBlocks.registerRenders();
-		ModArmor.registerRenders();
-		ModTools.registerRenders();
+		ModItems.RegisterRenders();
+		ModBlocks.RegisterRenders();
+		ModArmor.RegisterRenders();
+		ModTools.RegisterRenders();
 	}
 }

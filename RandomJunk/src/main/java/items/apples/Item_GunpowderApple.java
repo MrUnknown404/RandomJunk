@@ -1,6 +1,7 @@
 package items.apples;
 
 import com.mrunknown404.randomjunk.Reference;
+import com.mrunknown404.randomjunk.handlers.AchievementHandler;
 
 import init.ModCreativeTabs;
 import net.minecraft.entity.Entity;
@@ -35,6 +36,15 @@ public class Item_GunpowderApple extends ItemFood {
 		//Create Explosion
 		if (true) {
 			world.createExplosion((Entity) null, i, j, k, 5F, true);
+		}
+	}
+	
+	//Achievement
+	@Override
+	public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn) {
+		super.onCreated(stack, worldIn, playerIn);
+		if (!playerIn.hasAchievement(AchievementHandler.Achievement_InkApple)) {
+			playerIn.addStat(AchievementHandler.Achievement_InkApple);
 		}
 	}
 }

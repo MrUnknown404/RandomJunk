@@ -87,5 +87,105 @@ tile.GlowstoneTorch.name=Glowstone Torch
 tile.LapisTorch.name=Lapis Torch
 
 //-//GUI
+//Creative Tabs
 itemGroup.Tab_RandomJunkItems=RandomJunk Items
 itemGroup.Tab_RandomJunkBlocks=RandomJunk Blocks
+
+//-//Achievements
+//Apples
+achievement.GetApple=The Start...
+achievement.GetApple.desc=Collect an Apple!
+
+achievement.AppleApple=Magical Apple
+achievement.AppleApple.desc=Craft an Apple Apple!
+
+achievement.BlazeApple=Hot Apple
+achievement.BlazeApple.desc=Craft a Blaze Apple!
+
+achievement.ClayApple=Mud Apple
+achievement.ClayApple.desc=Craft a Clay Apple!
+
+achievement.CoalApple=Weakening Apple
+achievement.CoalApple.desc=Craft a Coal Apple!
+
+achievement.DiamondApple=Blue Shiny Apple
+achievement.DiamondApple.desc=Craft a Diamond Apple!
+
+achievement.EmeraldApple=Green Shiny Apple
+achievement.EmeraldApple.desc=Craft an Emerald Apple!
+
+achievement.EnderPearlApple=Ender Apple
+achievement.EnderPearlApple.desc=Craft an Ender Pearl Apple!
+
+achievement.FlintApple=Sharp Apple
+achievement.FlintApple.desc=Craft a Flint Apple!
+
+achievement.GlowstoneApple=Glowing Apple
+achievement.GlowstoneApple.desc=Craft a Glowstone Apple!
+
+achievement.GunpowderApple=Explosive Apple
+achievement.GunpowderApple.desc=Craft a Gunpowder Apple!
+
+achievement.InkApple=Blinding Apple
+achievement.InkApple.desc=Craft an Ink Apple!
+
+achievement.IronApple=Tough Apple
+achievement.IronApple.desc=Craft an Iron Apple!
+
+achievement.LapisApple=Colorful Apple
+achievement.LapisApple.desc=Craft a Lapis Apple!
+
+achievement.LeatherApple=Skin Apple
+achievement.LeatherApple.desc=Craft a Leather Apple!
+
+achievement.MagmaCreamApple=Magma Apple
+achievement.MagmaCreamApple.desc=Craft a Magma Cream Apple!
+
+achievement.ObsidianApple=Unbreakable Apple
+achievement.ObsidianApple.desc=Craft an Obsidian Apple!
+
+achievement.PaperApple=Paper Apple
+achievement.PaperApple.desc=Craft a Paper App-Ow! Papercut!
+
+achievement.PrismarineApple=Water Apple
+achievement.PrismarineApple.desc=Craft a Prismarine Apple!
+
+achievement.QuartzApple=White Apple
+achievement.QuartzApple.desc=Craft a Quartz Apple!
+
+achievement.RedstoneApple=Powered Apple
+achievement.RedstoneApple.desc=Craft a Redstone Apple!
+
+achievement.RottenFleshApple=Rotton Apple
+achievement.RottenFleshApple.desc=Craft a Rotten Apple!
+
+achievement.SlimeApple=Bouncy Apple
+achievement.SlimeApple.desc=Craft a Slime Apple!
+
+//Misc
+achievement.Bone=a Bone
+achievement.Bone.desc=Pickup a Bone!
+
+achievement.BoneIngot=Brittle Ingot
+achievement.BoneIngot.desc=Smelt a Bone Ingot!
+
+achievement.BonePickaxe=Boney Pickaxe
+achievement.BonePickaxe.desc=Craft a Bone Pickaxe!
+
+achievement.Flint=a Piece of Flint
+achievement.Flint.desc=Pickup a Piece of Flint!
+
+achievement.FlintIngot=Sharp Ingot
+achievement.FlintIngot.desc=Smelt a Flint Ingot!
+
+achievement.FlintPickaxe=Getting an Upgrade?
+achievement.FlintPickaxe.desc=Craft a Flint Pickaxe!
+
+achievement.ObsidianShard=Hardest Shard
+achievement.ObsidianShard.desc=Mine a block of Obsidian!
+
+achievement.ObsidianIngot=Hardest Ingot
+achievement.ObsidianIngot.desc=Smelt an Obsidian Ingot!
+
+achievement.ObsidianPickaxe=Getting a Better Upgrade!
+achievement.ObsidianPickaxe.desc=Craft an Obsidian Pickaxe!

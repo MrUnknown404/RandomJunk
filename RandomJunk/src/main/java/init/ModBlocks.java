@@ -29,7 +29,7 @@ public class ModBlocks {
 	public static Block GlowstoneTorch;
 	public static Block LapisTorch;
 	
-	public static void init() {
+	public static void Init() {
 		//Blocks
 		ObsidianBlock = new Block_ObsidianBlock();
 		BoneBlock = new Block_BoneBlock();
@@ -42,41 +42,41 @@ public class ModBlocks {
 		GlowstoneTorch = new Block_GlowstoneTorch();
 		LapisTorch = new Block_LapisTorch();
 	}
-	public static void register() {
+	public static void Register() {
 		//Register Blocks
-		registerBlock(ObsidianBlock);
-		registerBlock(BoneBlock);
-		registerBlock(FlintBlock);
+		RegisterBlock(ObsidianBlock);
+		RegisterBlock(BoneBlock);
+		RegisterBlock(FlintBlock);
 		
-		registerBlock(EmptyJar);
-		registerBlock(GroundLantern);
-		registerBlock(HangingLantern);
+		RegisterBlock(EmptyJar);
+		RegisterBlock(GroundLantern);
+		RegisterBlock(HangingLantern);
 		
-		registerBlock(GlowstoneTorch);
-		registerBlock(LapisTorch);
+		RegisterBlock(GlowstoneTorch);
+		RegisterBlock(LapisTorch);
 	}
-	private static void registerBlock(Block block) {
+	private static void RegisterBlock(Block block) {
 		GameRegistry.register(block);
 		
 		ItemBlock item = new ItemBlock(block);
 		item.setRegistryName(block.getRegistryName());
 		GameRegistry.register(item);
 	}
-	public static void registerRenders() {
+	public static void RegisterRenders() {
 		//-//Register Render Items
 		//Blocks
-		registerRender(ObsidianBlock);
-		registerRender(BoneBlock);
-		registerRender(FlintBlock);
+		RegisterRender(ObsidianBlock);
+		RegisterRender(BoneBlock);
+		RegisterRender(FlintBlock);
 		
-		registerRender(EmptyJar);
-		registerRender(GroundLantern);
-		registerRender(HangingLantern);
+		RegisterRender(EmptyJar);
+		RegisterRender(GroundLantern);
+		RegisterRender(HangingLantern);
 		
-		registerRender(GlowstoneTorch);
-		registerRender(LapisTorch);
+		RegisterRender(GlowstoneTorch);
+		RegisterRender(LapisTorch);
 	}
-	private static void registerRender(Block block) {
+	private static void RegisterRender(Block block) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(), "inventory"));
 	}
 }

@@ -55,7 +55,7 @@ public class ModArmor {
 	public static ItemArmor FlintLeggings;
 	public static ItemArmor FlintBoots;
 
-	public static void init() {
+	public static void Init() {
 		//Obsidian
 		ObsidianHelmet = new Item_ObsidianHelmet(ARMMAT_OBSIDIAN, 1, EntityEquipmentSlot.HEAD);
 		ObsidianChestplate = new Item_ObsidianChestplate(ARMMAT_OBSIDIAN, 1, EntityEquipmentSlot.CHEST);
@@ -75,7 +75,7 @@ public class ModArmor {
 		FlintBoots = new Item_FlintBoots(ARMMAT_FLINT, 1, EntityEquipmentSlot.FEET);
 
 	}
-	public static void register() {
+	public static void Register() {
 		//Obsidian
 		GameRegistry.register(ObsidianHelmet);
 		GameRegistry.register(ObsidianChestplate);
@@ -95,7 +95,7 @@ public class ModArmor {
 		GameRegistry.register(FlintBoots);
 
 	}
-	public static void registerRenders() {
+	public static void RegisterRenders() {
 		//Obsidian
 		registerRender(ObsidianHelmet);
 		registerRender(ObsidianChestplate);

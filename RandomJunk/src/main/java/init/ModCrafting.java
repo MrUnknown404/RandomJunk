@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModCrafting {
 
-	public static void register() {
+	public static void Register() {
 		//-//-//Shaped
 		//-//Items
 		GameRegistry.addRecipe(new ItemStack(ModItems.AppleApple),"XXX","XAX","XXX",'X',Items.APPLE,'A',Items.APPLE);
@@ -25,7 +25,7 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModItems.LapisApple),"XXX","XAX","XXX",'X',new ItemStack(Items.DYE, 1, 4), 'A',Items.APPLE );
 		GameRegistry.addRecipe(new ItemStack(ModItems.LeatherApple),"XXX","XAX","XXX",'X',Items.LEATHER,'A',Items.APPLE );
 		GameRegistry.addRecipe(new ItemStack(ModItems.MagmaCreamApple),"XXX","XAX","XXX",'X',Items.MAGMA_CREAM,'A',Items.APPLE );
-		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianApple),"XXX","XAX","XXX",'X',ModItems.ObsidianIngot,'A',Items.APPLE );
+		GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianApple),"XXX","XAX","XXX",'X',ModItems.ObsidianShard,'A',Items.APPLE );
 		GameRegistry.addRecipe(new ItemStack(ModItems.PaperApple),"XXX","XAX","XXX",'X',Items.PAPER,'A',Items.APPLE );
 		GameRegistry.addRecipe(new ItemStack(ModItems.PrismarineApple),"XXX","XAX", "XXX",'X',Items.PRISMARINE_SHARD,'A',Items.APPLE );
 		GameRegistry.addRecipe(new ItemStack(ModItems.QuartzApple),"XXX","XAX","XXX",'X',Items.QUARTZ,'A',Items.APPLE );
@@ -33,21 +33,21 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModItems.RottenFleshApple),"XXX","XAX","XXX",'X',Items.ROTTEN_FLESH,'A',Items.APPLE );
 		GameRegistry.addRecipe(new ItemStack(ModItems.SlimeApple),"XXX","XAX","XXX",'X',Items.SLIME_BALL,'A',Items.APPLE );
 
-		//Obsidian
+		//Obsidian Recipes
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianShovel),"O","S","S",'O',ModItems.ObsidianIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianPickaxe),"OOO","-S-","-S-",'O',ModItems.ObsidianIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianAxe),"OO-","OS-","-S-",'O',ModItems.ObsidianIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianHoe),"OO-","-S-","-S-",'O',ModItems.ObsidianIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianSword),"O","O","S",'O',ModItems.ObsidianIngot,'S',Items.STICK);
 
-		//Bone
+		//Bone Recipes
 		GameRegistry.addRecipe(new ItemStack(ModTools.BoneShovel),"O","S","S",'O',ModItems.BoneIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.BonePickaxe),"OOO","-S-","-S-",'O',ModItems.BoneIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.BoneAxe),"OO-","OS-","-S-",'O',ModItems.BoneIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.BoneHoe),"OO-","-S-","-S-",'O',ModItems.BoneIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.BoneSword),"O","O","S",'O',ModItems.BoneIngot,'S',Items.STICK);
 
-		//Flint
+		//Flint Recipes
 		GameRegistry.addRecipe(new ItemStack(ModTools.FlintShovel),"O","S","S",'O',ModItems.FlintIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.FlintPickaxe),"OOO","-S-","-S-",'O',ModItems.FlintIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.FlintAxe),"OO-","OS-","-S-",'O',ModItems.FlintIngot,'S',Items.STICK);
@@ -55,19 +55,19 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModTools.FlintSword),"O","O","S",'O',ModItems.FlintIngot,'S',Items.STICK);
 
 		//-//Armor
-		//Obsidian
+		//Obsidian Recipes
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianHelmet),"OOO","O-O",'O',ModItems.ObsidianIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianChestplate),"O-O","OOO","OOO",'O',ModItems.ObsidianIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianLeggings),"OOO","O-O","O-O",'O',ModItems.ObsidianIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianBoots),"O-O","O-O",'O',ModItems.ObsidianIngot);
 
-		//Bone
+		//Bone Recipes
 		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneHelmet),"BBB","B-B",'B',ModItems.BoneIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneChestplate),"B-B","BBB","BBB",'B',ModItems.BoneIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneLeggings),"BBB","B-B","B-B",'B',ModItems.BoneIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneBoots),"B-B","B-B",'B',ModItems.BoneIngot);
 
-		//Flint
+		//Flint Recipes
 		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintHelmet),"FFF","F-F",'F',ModItems.FlintIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintChestplate),"F-F","F","F",'F',ModItems.FlintIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintLeggings),"FFF","F-F","F-F",'F',ModItems.FlintIngot);
@@ -86,7 +86,7 @@ public class ModCrafting {
 		
 		GameRegistry.addRecipe(new ItemStack(Blocks.OBSIDIAN, 1),"OO","OO",'O',ModItems.ObsidianShard);
 
-		//Slabs
+		//Slab Recipes
 		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 0),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 0)); //Oak
 		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 1),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 1)); //Spruce
 		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 2),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 2)); //Birch

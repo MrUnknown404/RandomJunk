@@ -1,7 +1,9 @@
 package com.mrunknown404.randomjunk;
 
+import com.mrunknown404.randomjunk.handlers.AchievementHandler;
 import com.mrunknown404.randomjunk.handlers.ConfigHandler;
-import com.mrunknown404.randomjunk.handlers.ModEventHandler;
+import com.mrunknown404.randomjunk.handlers.PickupHandler;
+import com.mrunknown404.randomjunk.handlers.BlockHarvestHandler;
 import com.mrunknown404.randomjunk.proxy.CommonProxy;
 
 import init.ModArmor;
@@ -39,19 +41,21 @@ public class RandomJunk {
 		ConfigHandler.init(ConfigDir);
 		//FMLCommonHandler.instance().bus().register(new ConfigHandler());
 		MinecraftForge.EVENT_BUS.register(new ConfigHandler());
+		MinecraftForge.EVENT_BUS.register(new PickupHandler());
 		
 		//Items/Blocks Init
-		ModItems.init();
-		ModItems.register();
+		ModItems.Init();
+		ModBlocks.Init();
+		ModTools.Init();
+		ModArmor.Init();
 		
-		ModBlocks.init();
-		ModBlocks.register();
+		ModItems.Register();
+		ModBlocks.Register();
+		ModTools.Register();
+		ModArmor.Register();
 		
-		ModTools.init();
-		ModTools.register();
+		AchievementHandler.RegisterAchievements();
 		
-		ModArmor.init();
-		ModArmor.register();
 	}
 	
 	@EventHandler
@@ -59,13 +63,13 @@ public class RandomJunk {
 		proxy.init();
 		
 		//Crafting Init
-		ModCrafting.register();
+		ModCrafting.Register();
 	}
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		
-		MinecraftForge.EVENT_BUS.register(new ModEventHandler());
+		MinecraftForge.EVENT_BUS.register(new BlockHarvestHandler());
 		
 		//Normally 16
 		Items.BUCKET.setMaxStackSize(64);

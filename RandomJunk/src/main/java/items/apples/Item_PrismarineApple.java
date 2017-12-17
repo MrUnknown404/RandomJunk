@@ -1,6 +1,7 @@
 package items.apples;
 
 import com.mrunknown404.randomjunk.Reference;
+import com.mrunknown404.randomjunk.handlers.AchievementHandler;
 
 import init.ModCreativeTabs;
 import net.minecraft.entity.Entity;
@@ -36,6 +37,15 @@ public class Item_PrismarineApple extends ItemFood {
 				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 300*20, 0)); //Time In Seconds * Tickspeed
 				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.SATURATION, 300*20, 0)); //Time In Seconds * Tickspeed
 			}
+		}
+	}
+	
+	//Achievement
+	@Override
+	public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn) {
+		super.onCreated(stack, worldIn, playerIn);
+		if (!playerIn.hasAchievement(AchievementHandler.Achievement_PrismarineApple)) {
+			playerIn.addStat(AchievementHandler.Achievement_PrismarineApple);
 		}
 	}
 }
