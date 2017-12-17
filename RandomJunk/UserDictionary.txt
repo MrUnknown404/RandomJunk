@@ -27,3 +27,4 @@ renderindex
 randomjunk
 config
 modded
+magma

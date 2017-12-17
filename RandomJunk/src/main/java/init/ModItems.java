@@ -135,8 +135,8 @@ public class ModItems {
 		GameRegistry.register(SlimeApple);
 
 		//Obsidian Items
-		GameRegistry.register(ObsidianIngot);
 		GameRegistry.register(ObsidianShard);
+		GameRegistry.register(ObsidianIngot);
 
 		//Bone Items
 		GameRegistry.register(BoneIngot);

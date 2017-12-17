@@ -163,7 +163,7 @@ achievement.SlimeApple=Bouncy Apple
 achievement.SlimeApple.desc=Craft a Slime Apple!
 
 //Misc
-achievement.Bone=a Bone
+achievement.Bone=a Boney Start
 achievement.Bone.desc=Pickup a Bone!
 
 achievement.BoneIngot=Brittle Ingot
@@ -172,7 +172,7 @@ achievement.BoneIngot.desc=Smelt a Bone Ingot!
 achievement.BonePickaxe=Boney Pickaxe
 achievement.BonePickaxe.desc=Craft a Bone Pickaxe!
 
-achievement.Flint=a Piece of Flint
+achievement.Flint=a Single Piece of Flint
 achievement.Flint.desc=Pickup a Piece of Flint!
 
 achievement.FlintIngot=Sharp Ingot

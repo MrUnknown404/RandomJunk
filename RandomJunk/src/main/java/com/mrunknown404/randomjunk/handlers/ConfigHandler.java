@@ -14,6 +14,7 @@ public class ConfigHandler {
 	public static boolean InfDurability = false;
 	public static boolean UpdateCheck = true;
 	public static boolean DebugItems = false;
+	public static boolean MaxStack = true;
 	
 	public static void init(String ConfigDir) {
 		if (Config == null) {
@@ -29,6 +30,7 @@ public class ConfigHandler {
 		InfDurability = Config.getBoolean("Infinite Durability (Beta)",Configuration.CATEGORY_GENERAL,false,"Enable/Disable Infinite Durabilty (Requires Restart, Also Buggy)");
 		DebugItems = Config.getBoolean("Debug Items",Configuration.CATEGORY_GENERAL,false,"Enable/Disable Debug Items (Requires Restart)");
 		UpdateCheck = Config.getBoolean("Update Check (Beta)",Configuration.CATEGORY_GENERAL,true,"Check For Updates (Does Nothing Currently)");
+		UpdateCheck = Config.getBoolean("Max Stack",Configuration.CATEGORY_GENERAL,true,"Sets Max Stack Size to 64 for items that are normaly 16 (Requires Restart)");
 		
 		if (Config.hasChanged()) {
 			Config.save();

@@ -63,21 +63,27 @@ public class RandomJunk {
 		proxy.init();
 		
 		//Crafting Init
-		ModCrafting.Register();
+		//ModCrafting.Register();
 	}
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		
+		//Crafting Init
+		ModCrafting.UnregisterRecipes();
+		ModCrafting.Register();
+		
 		MinecraftForge.EVENT_BUS.register(new BlockHarvestHandler());
 		
-		//Normally 16
-		Items.BUCKET.setMaxStackSize(64);
-		Items.SNOWBALL.setMaxStackSize(64);
-		Items.ENDER_PEARL.setMaxStackSize(64);
-		Items.IRON_HORSE_ARMOR.setMaxStackSize(64);
-		Items.GOLDEN_HORSE_ARMOR.setMaxStackSize(64);
-		Items.DIAMOND_HORSE_ARMOR.setMaxStackSize(64);
+		if (ConfigHandler.MaxStack == true) {
+			//Normally 16
+			Items.BUCKET.setMaxStackSize(64);
+			Items.SNOWBALL.setMaxStackSize(64);
+			Items.ENDER_PEARL.setMaxStackSize(64);
+			Items.IRON_HORSE_ARMOR.setMaxStackSize(64);
+			Items.GOLDEN_HORSE_ARMOR.setMaxStackSize(64);
+			Items.DIAMOND_HORSE_ARMOR.setMaxStackSize(64);
+		}
 		
 		if (ConfigHandler.InfDurability == true) {
 			//-//-//Vanilla

@@ -28,9 +28,9 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModTools {
 	
-	public static ToolMaterial MAT_OBSIDIAN = EnumHelper.addToolMaterial("MAT_OBSIDIAN", 4, 2341, 10.0f, 4.0f, 12); //HarvestLevel, Durability, Mining Speed, Damage, Enchantability
+	public static ToolMaterial MAT_OBSIDIAN = EnumHelper.addToolMaterial("MAT_OBSIDIAN", 4, 2341, 11.0f, 4.0f, 12); //HarvestLevel, Durability, Mining Speed, Damage, Enchantability
 	public static ToolMaterial MAT_BONE = EnumHelper.addToolMaterial("MAT_BONE", 2, 333, 6.0f, 2.0f, 8); //HarvestLevel, Durability, Mining Speed, Damage, Enchantability
-	public static ToolMaterial MAT_FLINT = EnumHelper.addToolMaterial("MAT_FLINT", 1, 188, 4.0f, 1.0f, 8); //HarvestLevel, Durability, Mining Speed, Damage, Enchantability
+	public static ToolMaterial MAT_FLINT = EnumHelper.addToolMaterial("MAT_FLINT", 1, 188, 4.0f, 2.0f, 8); //HarvestLevel, Durability, Mining Speed, Damage, Enchantability
 	public static ToolMaterial MAT_DEBUG = EnumHelper.addToolMaterial("MAT_DEBUG", 5, -1, 250.0f, 99.0f, 0); //HarvestLevel, Durability, Mining Speed, Damage, Enchantability
 	
 	//Items

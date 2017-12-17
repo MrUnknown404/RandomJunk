@@ -4,7 +4,7 @@ public class Reference {
    //Strings
    public static final String MOD_ID = "randomjunk";
    public static final String NAME = "RandomJunk!";
-   public static final String VERSION = "1.4.0-Beta";
+   public static final String VERSION = "1.4.1-Beta";
    public static final String ACCEPTED_VERSIONS = "[1.11.2]";
 
    public static final String GUI_FACTORY_CLASS = "com.mrunknown404.randomjunk.client.gui.GuiFactory";
