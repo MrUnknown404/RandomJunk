@@ -2,6 +2,7 @@ package com.mrunknown404.randomjunk;
 
 import com.mrunknown404.randomjunk.handlers.AchievementHandler;
 import com.mrunknown404.randomjunk.handlers.ConfigHandler;
+import com.mrunknown404.randomjunk.handlers.FuelHandler;
 import com.mrunknown404.randomjunk.handlers.PickupHandler;
 import com.mrunknown404.randomjunk.handlers.BlockHarvestHandler;
 import com.mrunknown404.randomjunk.proxy.CommonProxy;
@@ -23,6 +24,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS, guiFactory = Reference.GUI_FACTORY_CLASS)
 
@@ -54,6 +56,10 @@ public class RandomJunk {
 		ModTools.Register();
 		ModArmor.Register();
 		
+		//Fuel
+		GameRegistry.registerFuelHandler(new FuelHandler());
+		
+		//Achievements
 		AchievementHandler.RegisterAchievements();
 		
 	}
@@ -61,9 +67,6 @@ public class RandomJunk {
 	@EventHandler
 	public void Init(FMLInitializationEvent event) {
 		proxy.init();
-		
-		//Crafting Init
-		//ModCrafting.Register();
 	}
 	
 	@EventHandler

@@ -4,7 +4,7 @@ public class Reference {
    //Strings
    public static final String MOD_ID = "randomjunk";
    public static final String NAME = "RandomJunk!";
-   public static final String VERSION = "1.4.1-Beta";
+   public static final String VERSION = "1.5.0-Beta";
    public static final String ACCEPTED_VERSIONS = "[1.11.2]";
 
    public static final String GUI_FACTORY_CLASS = "com.mrunknown404.randomjunk.client.gui.GuiFactory";
@@ -16,15 +16,15 @@ public class Reference {
    //Blocks
    public static enum RandomJunkBlocks {
       //Block NAME         ("",""),
-      OBSIDIANBLOCK("ObsidianBlock","Block_ObsidianBlock"),
-      BONEBLOCK("BoneBlock","Block_BoneBlock"),
-      FLINTBLOCK("FlintBlock","Block_FlintBlock"),
+      OBSIDIANBLOCK("ObsidianBlock","ObsidianBlock"),
+      BONEBLOCK("BoneBlock","BoneBlock"),
+      FLINTBLOCK("FlintBlock","FlintBlock"),
 
-      EMPTYJAR("EmptyJar","Block_EmptyJar"),
-      GROUNDLANTERN("GroundLantern","Block_GroundLantern"),
-      HANGINGLANTERN("HangingLantern","Block_HangingLantern"),
-      GLOWSTONETORCH("GlowstoneTorch","Block_GlowstoneTorch"),
-      LAPISTORCH("LapisTorch","Block_LapisTorch");
+      EMPTYJAR("EmptyJar","EmptyJar"),
+      GROUNDLANTERN("GroundLantern","GroundLantern"),
+      HANGINGLANTERN("HangingLantern","HangingLantern"),
+      GLOWSTONETORCH("GlowstoneTorch","GlowstoneTorch"),
+      LAPISTORCH("LapisTorch","LapisTorch");
       
       private String unlocalizedName;
       private String registryName;
@@ -46,73 +46,73 @@ public class Reference {
    //Items
    public static enum RandomJunkItems {
       //Items NAME         ("",""),
-      APPLEAPPLE("AppleApple","Item_AppleApple"),
-      BLAZEAPPLE("BlazeApple","Item_BlazeApple"),
-      CLAYAPPLE("ClayApple","Item_ClayApple"),
-      COALAPPLE("CoalApple","Item_CoalApple"),
-      DIAMONDAPPLE("DiamondApple","Item_DiamondApple"),
-      EMERALDAPPLE("EmeraldApple","Item_EmeraldApple"),
-      ENDERPEARLAPPLE("EnderPearlApple","Item_EnderPearlApple"),
-      FLINTAPPLE("FlintApple","Item_FlintApple"),
-      GLOWSTONEAPPLE("GlowstoneApple","Item_GlowstoneApple"),
-      GUNPOWDERAPPLE("GunpowderApple","Item_GunpowderApple"),
-      INKAPPLE("InkApple","Item_InkApple"),
-      IRONAPPLE("IronApple","Item_IronApple"),
-      LAPISAPPLE("LapisApple","Item_LapisApple"),
-      LEATHERAPPLE("LeatherApple","Item_LeatherApple"),
-      MAGMACREAMAPPLE("MagmaCreamApple","Item_MagmaCreamApple"),
-      OBSIDIANAPPLE("ObsidianApple","Item_ObsidianApple"),
-      PAPERAPPLE("PaperApple","Item_PaperApple"),
-      PRISMARINEAPPLE("PrismarineApple","Item_PrismarineApple"),
-      QUARTZAPPLE("QuartzApple","Item_QuartzApple"),
-      REDSTONEAPPLE("RedstoneApple","Item_RedstoneApple"),
-      ROTTENFLESHAPPLE("RottenFleshApple","Item_RottenFleshApple"),
-      SLIMEAPPLE("SlimeApple","Item_SlimeApple"),
+      APPLEAPPLE("AppleApple","AppleApple"),
+      BLAZEAPPLE("BlazeApple","BlazeApple"),
+      CLAYAPPLE("ClayApple","ClayApple"),
+      COALAPPLE("CoalApple","CoalApple"),
+      DIAMONDAPPLE("DiamondApple","DiamondApple"),
+      EMERALDAPPLE("EmeraldApple","EmeraldApple"),
+      ENDERPEARLAPPLE("EnderPearlApple","EnderPearlApple"),
+      FLINTAPPLE("FlintApple","FlintApple"),
+      GLOWSTONEAPPLE("GlowstoneApple","GlowstoneApple"),
+      GUNPOWDERAPPLE("GunpowderApple","GunpowderApple"),
+      INKAPPLE("InkApple","InkApple"),
+      IRONAPPLE("IronApple","IronApple"),
+      LAPISAPPLE("LapisApple","LapisApple"),
+      LEATHERAPPLE("LeatherApple","LeatherApple"),
+      MAGMACREAMAPPLE("MagmaCreamApple","MagmaCreamApple"),
+      OBSIDIANAPPLE("ObsidianApple","ObsidianApple"),
+      PAPERAPPLE("PaperApple","PaperApple"),
+      PRISMARINEAPPLE("PrismarineApple","PrismarineApple"),
+      QUARTZAPPLE("QuartzApple","QuartzApple"),
+      REDSTONEAPPLE("RedstoneApple","RedstoneApple"),
+      ROTTENFLESHAPPLE("RottenFleshApple","RottenFleshApple"),
+      SLIMEAPPLE("SlimeApple","SlimeApple"),
       //Obsidian Things
-      OBSIDIANINGOT("ObsidianIngot","Item_ObsidianIngot"),
-      OBSIDIANSHARD("ObsidianShard","Item_ObsidianShard"),
+      OBSIDIANINGOT("ObsidianIngot","ObsidianIngot"),
+      OBSIDIANSHARD("ObsidianShard","ObsidianShard"),
 
-      OBSIDIANSHOVEL("ObsidianShovel","Item_ObsidianShovel"),
-      OBSIDIANPICKAXE("ObsidianPickaxe","Item_ObsidianPickaxe"),
-      OBSIDIANAXE("ObsidianAxe","Item_ObsidianAxe"),
-      OBSIDIANHOE("ObsidianHoe","Item_ObsidianHoe"),
-      OBSIDIANSWORD("ObsidianSword","Item_ObsidianSword"),
+      OBSIDIANSHOVEL("ObsidianShovel","ObsidianShovel"),
+      OBSIDIANPICKAXE("ObsidianPickaxe","ObsidianPickaxe"),
+      OBSIDIANAXE("ObsidianAxe","ObsidianAxe"),
+      OBSIDIANHOE("ObsidianHoe","ObsidianHoe"),
+      OBSIDIANSWORD("ObsidianSword","ObsidianSword"),
 
-      OBSIDIANHELMET("ObsidianHelmet","Item_ObsidianHelmet"),
-      OBSIDIANCHESTPLATE("ObsidianChestplate","Item_ObsidianChestplate"),
-      OBSIDIANLEGGINGS("ObsidianLeggings","Item_ObsidianLeggings"),
-      OBSIDIANBOOTS("ObsidianBoots","Item_ObsidianBoots"),
+      OBSIDIANHELMET("ObsidianHelmet","ObsidianHelmet"),
+      OBSIDIANCHESTPLATE("ObsidianChestplate","ObsidianChestplate"),
+      OBSIDIANLEGGINGS("ObsidianLeggings","ObsidianLeggings"),
+      OBSIDIANBOOTS("ObsidianBoots","ObsidianBoots"),
 
-      BONEINGOT("BoneIngot","Item_BoneIngot"),
-      BONEMIX("BoneMix","Item_BoneMix"),
+      BONEINGOT("BoneIngot","BoneIngot"),
+      BONEMIX("BoneMix","BoneMix"),
 
-      BONESHOVEL("BoneShovel","Item_BoneShovel"),
-      BONEPICKAXE("BonePickaxe","Item_BonePickaxe"),
-      BONEAXE("BoneAxe","Item_BoneAxe"),
-      BONEHOE("BoneHoe","Item_BoneHoe"),
-      BONESWORD("BoneSword","Item_BoneSword"),
+      BONESHOVEL("BoneShovel","BoneShovel"),
+      BONEPICKAXE("BonePickaxe","BonePickaxe"),
+      BONEAXE("BoneAxe","BoneAxe"),
+      BONEHOE("BoneHoe","BoneHoe"),
+      BONESWORD("BoneSword","BoneSword"),
 
-      BONEHELMET("BoneHelmet","Item_BoneHelmet"),
-      BONECHESTPLATE("BoneChestplate","Item_BoneChestplate"),
-      BONELEGGINGS("BoneLeggings","Item_BoneLeggings"),
-      BONEBOOTS("BoneBoots","Item_BoneBoots"),
+      BONEHELMET("BoneHelmet","BoneHelmet"),
+      BONECHESTPLATE("BoneChestplate","BoneChestplate"),
+      BONELEGGINGS("BoneLeggings","BoneLeggings"),
+      BONEBOOTS("BoneBoots","BoneBoots"),
 
       //Flint
-      FLINTINGOT("FlintIngot","Item_FlintIngot"),
+      FLINTINGOT("FlintIngot","FlintIngot"),
 
-      FLINTSHOVEL("FlintShovel","Item_FlintShovel"),
-      FLINTPICKAXE("FlintPickaxe","Item_FlintPickaxe"),
-      FLINTAXE("FlintAxe","Item_FlintAxe"),
-      FLINTHOE("FlintHoe","Item_FlintHoe"),
-      FLINTSWORD("FlintSword","Item_FlintSword"),
+      FLINTSHOVEL("FlintShovel","FlintShovel"),
+      FLINTPICKAXE("FlintPickaxe","FlintPickaxe"),
+      FLINTAXE("FlintAxe","FlintAxe"),
+      FLINTHOE("FlintHoe","FlintHoe"),
+      FLINTSWORD("FlintSword","FlintSword"),
 
-      FLINTHELMET("FlintHelmet","Item_FlintHelmet"),
-      FLINTCHESTPLATE("FlintChestplate","Item_FlintChestplate"),
-      FLINTLEGGINGS("FlintLeggings","Item_FlintLeggings"),
-      FLINTBOOTS("FlintBoots","Item_FlintBoots"),
+      FLINTHELMET("FlintHelmet","FlintHelmet"),
+      FLINTCHESTPLATE("FlintChestplate","FlintChestplate"),
+      FLINTLEGGINGS("FlintLeggings","FlintLeggings"),
+      FLINTBOOTS("FlintBoots","FlintBoots"),
 
       //Debug Tools
-      DEBUGPICKAXE("DebugPickaxe","Item_DebugPickaxe");
+      DEBUGPICKAXE("DebugPickaxe","DebugPickaxe");
 	   
       private String unlocalizedName;
       private String registryName;

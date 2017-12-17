@@ -1,7 +1,7 @@
 {
    "variants": {
       "normal": {
-         "model":"randomjunk:block_lapistorch"
+         "model":"randomjunk:emptyjar"
       }
    }
 }
