@@ -1,133 +1,147 @@
 package com.mrunknown404.randomjunk;
 
 public class Reference {
-   //Strings
-   public static final String MOD_ID = "randomjunk";
-   public static final String NAME = "RandomJunk!";
-   public static final String VERSION = "1.5.0-Beta";
-   public static final String ACCEPTED_VERSIONS = "[1.11.2]";
+	//Strings
+	public static final String MOD_ID = "randomjunk";
+	public static final String NAME = "RandomJunk!";
+	public static final String VERSION = "1.5.0-Beta";
+	public static final String ACCEPTED_VERSIONS = "[1.11.2]";
 
-   public static final String GUI_FACTORY_CLASS = "com.mrunknown404.randomjunk.client.gui.GuiFactory";
-   
-   //Proxy
-   public static final String CLIENT_PROXY_CLASS = "com.mrunknown404.randomjunk.proxy.ClientProxy";
-   public static final String SERVER_PROXY_CLASS = "com.mrunknown404.randomjunk.proxy.ServerProxy";
+	public static final String GUI_FACTORY_CLASS = "com.mrunknown404.randomjunk.client.gui.GuiFactory";
+	
+	//Proxy
+	public static final String CLIENT_PROXY_CLASS = "com.mrunknown404.randomjunk.proxy.ClientProxy";
+	public static final String SERVER_PROXY_CLASS = "com.mrunknown404.randomjunk.proxy.ServerProxy";
 
-   //Blocks
-   public static enum RandomJunkBlocks {
-      //Block NAME         ("",""),
-      OBSIDIANBLOCK("ObsidianBlock","ObsidianBlock"),
-      BONEBLOCK("BoneBlock","BoneBlock"),
-      FLINTBLOCK("FlintBlock","FlintBlock"),
+	//Blocks
+	public static enum RandomJunkBlocks {
+		//Misc
+		OBSIDIANBLOCK("ObsidianBlock","ObsidianBlock"),
+		BONEBLOCK("BoneBlock","BoneBlock"),
+		FLINTBLOCK("FlintBlock","FlintBlock"),
 
-      EMPTYJAR("EmptyJar","EmptyJar"),
-      GROUNDLANTERN("GroundLantern","GroundLantern"),
-      HANGINGLANTERN("HangingLantern","HangingLantern"),
-      GLOWSTONETORCH("GlowstoneTorch","GlowstoneTorch"),
-      LAPISTORCH("LapisTorch","LapisTorch");
-      
-      private String unlocalizedName;
-      private String registryName;
+		EMPTYJAR("EmptyJar","EmptyJar"),
+		GROUNDLANTERN("GroundLantern","GroundLantern"),
+		HANGINGLANTERN("HangingLantern","HangingLantern"),
+		GLOWSTONETORCH("GlowstoneTorch","GlowstoneTorch"),
+		LAPISTORCH("LapisTorch","LapisTorch"),
 
-      RandomJunkBlocks(String unlocalizedName, String registryName) {
-         this.unlocalizedName = unlocalizedName;
-         this.registryName = registryName;
-      }
+		//Compressed Blocks
+		COMPRESSEDCOBBLESTONE1 ("CompressedCobblestone1", "CompressedCobblestone1"),
+		COMPRESSEDCOBBLESTONE2 ("CompressedCobblestone2", "CompressedCobblestone2"),
+		COMPRESSEDCOBBLESTONE3 ("CompressedCobblestone3", "CompressedCobblestone3"),
+		COMPRESSEDCOBBLESTONE4 ("CompressedCobblestone4", "CompressedCobblestone4"),
+		COMPRESSEDCOBBLESTONE5 ("CompressedCobblestone5", "CompressedCobblestone5"),
+		COMPRESSEDCOBBLESTONE6 ("CompressedCobblestone6", "CompressedCobblestone6"),
+		COMPRESSEDCOBBLESTONE7 ("CompressedCobblestone7", "CompressedCobblestone7"),
+		COMPRESSEDCOBBLESTONE8 ("CompressedCobblestone8", "CompressedCobblestone8"),
+		COMPRESSEDCOBBLESTONE9 ("CompressedCobblestone9", "CompressedCobblestone9"),
+		COMPRESSEDCOBBLESTONE10("CompressedCobblestone10","CompressedCobblestone10"),
+		COMPRESSEDCOBBLESTONE11("CompressedCobblestone11","CompressedCobblestone11"),
+		COMPRESSEDCOBBLESTONE12("CompressedCobblestone12","CompressedCobblestone12");
+		
+		private String unlocalizedName;
+		private String registryName;
 
-      public String getUnlocalizedName() {
-         return unlocalizedName;
-      }
+		RandomJunkBlocks(String unlocalizedName, String registryName) {
+			this.unlocalizedName = unlocalizedName;
+			this.registryName = registryName;
+		}
 
-      public String getRegistryName() {
-         return registryName;
-      }
-   }
+		public String getUnlocalizedName() {
+			return unlocalizedName;
+		}
 
-   //Items
-   public static enum RandomJunkItems {
-      //Items NAME         ("",""),
-      APPLEAPPLE("AppleApple","AppleApple"),
-      BLAZEAPPLE("BlazeApple","BlazeApple"),
-      CLAYAPPLE("ClayApple","ClayApple"),
-      COALAPPLE("CoalApple","CoalApple"),
-      DIAMONDAPPLE("DiamondApple","DiamondApple"),
-      EMERALDAPPLE("EmeraldApple","EmeraldApple"),
-      ENDERPEARLAPPLE("EnderPearlApple","EnderPearlApple"),
-      FLINTAPPLE("FlintApple","FlintApple"),
-      GLOWSTONEAPPLE("GlowstoneApple","GlowstoneApple"),
-      GUNPOWDERAPPLE("GunpowderApple","GunpowderApple"),
-      INKAPPLE("InkApple","InkApple"),
-      IRONAPPLE("IronApple","IronApple"),
-      LAPISAPPLE("LapisApple","LapisApple"),
-      LEATHERAPPLE("LeatherApple","LeatherApple"),
-      MAGMACREAMAPPLE("MagmaCreamApple","MagmaCreamApple"),
-      OBSIDIANAPPLE("ObsidianApple","ObsidianApple"),
-      PAPERAPPLE("PaperApple","PaperApple"),
-      PRISMARINEAPPLE("PrismarineApple","PrismarineApple"),
-      QUARTZAPPLE("QuartzApple","QuartzApple"),
-      REDSTONEAPPLE("RedstoneApple","RedstoneApple"),
-      ROTTENFLESHAPPLE("RottenFleshApple","RottenFleshApple"),
-      SLIMEAPPLE("SlimeApple","SlimeApple"),
-      //Obsidian Things
-      OBSIDIANINGOT("ObsidianIngot","ObsidianIngot"),
-      OBSIDIANSHARD("ObsidianShard","ObsidianShard"),
+		public String getRegistryName() {
+			return registryName;
+		}
+	}
 
-      OBSIDIANSHOVEL("ObsidianShovel","ObsidianShovel"),
-      OBSIDIANPICKAXE("ObsidianPickaxe","ObsidianPickaxe"),
-      OBSIDIANAXE("ObsidianAxe","ObsidianAxe"),
-      OBSIDIANHOE("ObsidianHoe","ObsidianHoe"),
-      OBSIDIANSWORD("ObsidianSword","ObsidianSword"),
+	//Items
+	public static enum RandomJunkItems {
+		//Items NAME         ("",""),
+		APPLEAPPLE("AppleApple","AppleApple"),
+		BLAZEAPPLE("BlazeApple","BlazeApple"),
+		CLAYAPPLE("ClayApple","ClayApple"),
+		COALAPPLE("CoalApple","CoalApple"),
+		DIAMONDAPPLE("DiamondApple","DiamondApple"),
+		EMERALDAPPLE("EmeraldApple","EmeraldApple"),
+		ENDERPEARLAPPLE("EnderPearlApple","EnderPearlApple"),
+		FLINTAPPLE("FlintApple","FlintApple"),
+		GLOWSTONEAPPLE("GlowstoneApple","GlowstoneApple"),
+		GUNPOWDERAPPLE("GunpowderApple","GunpowderApple"),
+		INKAPPLE("InkApple","InkApple"),
+		IRONAPPLE("IronApple","IronApple"),
+		LAPISAPPLE("LapisApple","LapisApple"),
+		LEATHERAPPLE("LeatherApple","LeatherApple"),
+		MAGMACREAMAPPLE("MagmaCreamApple","MagmaCreamApple"),
+		OBSIDIANAPPLE("ObsidianApple","ObsidianApple"),
+		PAPERAPPLE("PaperApple","PaperApple"),
+		PRISMARINEAPPLE("PrismarineApple","PrismarineApple"),
+		QUARTZAPPLE("QuartzApple","QuartzApple"),
+		REDSTONEAPPLE("RedstoneApple","RedstoneApple"),
+		ROTTENFLESHAPPLE("RottenFleshApple","RottenFleshApple"),
+		SLIMEAPPLE("SlimeApple","SlimeApple"),
+		//Obsidian Things
+		OBSIDIANINGOT("ObsidianIngot","ObsidianIngot"),
+		OBSIDIANSHARD("ObsidianShard","ObsidianShard"),
 
-      OBSIDIANHELMET("ObsidianHelmet","ObsidianHelmet"),
-      OBSIDIANCHESTPLATE("ObsidianChestplate","ObsidianChestplate"),
-      OBSIDIANLEGGINGS("ObsidianLeggings","ObsidianLeggings"),
-      OBSIDIANBOOTS("ObsidianBoots","ObsidianBoots"),
+		OBSIDIANSHOVEL("ObsidianShovel","ObsidianShovel"),
+		OBSIDIANPICKAXE("ObsidianPickaxe","ObsidianPickaxe"),
+		OBSIDIANAXE("ObsidianAxe","ObsidianAxe"),
+		OBSIDIANHOE("ObsidianHoe","ObsidianHoe"),
+		OBSIDIANSWORD("ObsidianSword","ObsidianSword"),
 
-      BONEINGOT("BoneIngot","BoneIngot"),
-      BONEMIX("BoneMix","BoneMix"),
+		OBSIDIANHELMET("ObsidianHelmet","ObsidianHelmet"),
+		OBSIDIANCHESTPLATE("ObsidianChestplate","ObsidianChestplate"),
+		OBSIDIANLEGGINGS("ObsidianLeggings","ObsidianLeggings"),
+		OBSIDIANBOOTS("ObsidianBoots","ObsidianBoots"),
 
-      BONESHOVEL("BoneShovel","BoneShovel"),
-      BONEPICKAXE("BonePickaxe","BonePickaxe"),
-      BONEAXE("BoneAxe","BoneAxe"),
-      BONEHOE("BoneHoe","BoneHoe"),
-      BONESWORD("BoneSword","BoneSword"),
+		BONEINGOT("BoneIngot","BoneIngot"),
+		BONEMIX("BoneMix","BoneMix"),
 
-      BONEHELMET("BoneHelmet","BoneHelmet"),
-      BONECHESTPLATE("BoneChestplate","BoneChestplate"),
-      BONELEGGINGS("BoneLeggings","BoneLeggings"),
-      BONEBOOTS("BoneBoots","BoneBoots"),
+		BONESHOVEL("BoneShovel","BoneShovel"),
+		BONEPICKAXE("BonePickaxe","BonePickaxe"),
+		BONEAXE("BoneAxe","BoneAxe"),
+		BONEHOE("BoneHoe","BoneHoe"),
+		BONESWORD("BoneSword","BoneSword"),
 
-      //Flint
-      FLINTINGOT("FlintIngot","FlintIngot"),
+		BONEHELMET("BoneHelmet","BoneHelmet"),
+		BONECHESTPLATE("BoneChestplate","BoneChestplate"),
+		BONELEGGINGS("BoneLeggings","BoneLeggings"),
+		BONEBOOTS("BoneBoots","BoneBoots"),
 
-      FLINTSHOVEL("FlintShovel","FlintShovel"),
-      FLINTPICKAXE("FlintPickaxe","FlintPickaxe"),
-      FLINTAXE("FlintAxe","FlintAxe"),
-      FLINTHOE("FlintHoe","FlintHoe"),
-      FLINTSWORD("FlintSword","FlintSword"),
+		//Flint
+		FLINTINGOT("FlintIngot","FlintIngot"),
 
-      FLINTHELMET("FlintHelmet","FlintHelmet"),
-      FLINTCHESTPLATE("FlintChestplate","FlintChestplate"),
-      FLINTLEGGINGS("FlintLeggings","FlintLeggings"),
-      FLINTBOOTS("FlintBoots","FlintBoots"),
+		FLINTSHOVEL("FlintShovel","FlintShovel"),
+		FLINTPICKAXE("FlintPickaxe","FlintPickaxe"),
+		FLINTAXE("FlintAxe","FlintAxe"),
+		FLINTHOE("FlintHoe","FlintHoe"),
+		FLINTSWORD("FlintSword","FlintSword"),
 
-      //Debug Tools
-      DEBUGPICKAXE("DebugPickaxe","DebugPickaxe");
-	   
-      private String unlocalizedName;
-      private String registryName;
+		FLINTHELMET("FlintHelmet","FlintHelmet"),
+		FLINTCHESTPLATE("FlintChestplate","FlintChestplate"),
+		FLINTLEGGINGS("FlintLeggings","FlintLeggings"),
+		FLINTBOOTS("FlintBoots","FlintBoots"),
 
-      RandomJunkItems(String unlocalizedName, String registryName) {
-         this.unlocalizedName = unlocalizedName;
-         this.registryName = registryName;
-      }
+		//Debug Tools
+		DEBUGPICKAXE("DebugPickaxe","DebugPickaxe");
 
-      public String getUnlocalizedName() {
-         return unlocalizedName;
-      }
+		private String unlocalizedName;
+		private String registryName;
 
-      public String getRegistryName() {
-         return registryName;
-      }
-   }
+		RandomJunkItems(String unlocalizedName, String registryName) {
+			this.unlocalizedName = unlocalizedName;
+			this.registryName = registryName;
+		}
+
+		public String getUnlocalizedName() {
+			return unlocalizedName;
+		}
+
+		public String getRegistryName() {
+			return registryName;
+		}
+	}
 }

@@ -55,6 +55,31 @@ item.FlintSword.name=Flint Sword
 //Debug Items
 item.DebugPickaxe.name=Debug Pickaxe
 
+//-//Blocks
+tile.ObsidianBlock.name=Block of Obsidian
+tile.BoneBlock.name=Block of Bone
+tile.FlintBlock.name=Block of Flint
+
+tile.EmptyJar.name=Empty Jar
+tile.GroundLantern.name=Ground Lantern
+tile.HangingLantern.name=Hanging Lantern
+
+tile.GlowstoneTorch.name=Glowstone Torch
+tile.LapisTorch.name=Lapis Torch
+
+tile.CompressedCobblestone1.name=Compressed Cobblestone X1
+tile.CompressedCobblestone2.name=Compressed Cobblestone X2
+tile.CompressedCobblestone3.name=Compressed Cobblestone X3
+tile.CompressedCobblestone4.name=Compressed Cobblestone X4
+tile.CompressedCobblestone5.name=Compressed Cobblestone X5
+tile.CompressedCobblestone6.name=Compressed Cobblestone X6
+tile.CompressedCobblestone7.name=Compressed Cobblestone X7
+tile.CompressedCobblestone8.name=Compressed Cobblestone X8
+tile.CompressedCobblestone9.name=Compressed Cobblestone X9
+tile.CompressedCobblestone10.name=Compressed Cobblestone X10
+tile.CompressedCobblestone11.name=Compressed Cobblestone X11
+tile.CompressedCobblestone12.name=Compressed Cobblestone X12
+
 //-//Armor
 //Obsidian
 item.ObsidianHelmet.name=Obsidian Helmet
@@ -73,18 +98,6 @@ item.FlintHelmet.name=Flint Helmet
 item.FlintChestplate.name=Flint Chestplate
 item.FlintLeggings.name=Flint Leggings
 item.FlintBoots.name=Flint Boots
-
-//-//Blocks
-tile.ObsidianBlock.name=Block of Obsidian
-tile.BoneBlock.name=Block of Bone
-tile.FlintBlock.name=Block of Flint
-
-tile.EmptyJar.name=Empty Jar
-tile.GroundLantern.name=Ground Lantern
-tile.HangingLantern.name=Hanging Lantern
-
-tile.GlowstoneTorch.name=Glowstone Torch
-tile.LapisTorch.name=Lapis Torch
 
 //-//GUI
 //Creative Tabs

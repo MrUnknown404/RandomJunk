@@ -154,6 +154,20 @@ public class ModCrafting {
 
 		GameRegistry.addRecipe(new ItemStack(Blocks.WOOL, 1),"SS","SS",'S',Items.STRING);
 		
+		//Compressed Blocks
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone1,1), "CCC","CCC","CCC",'C',Blocks.COBBLESTONE);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone2,1), "CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone1);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone3,1), "CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone2);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone4,1), "CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone3);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone5,1), "CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone4);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone6,1), "CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone5);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone7,1), "CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone6);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone8,1), "CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone7);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone9,1), "CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone8);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone10,1),"CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone9);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone11,1),"CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone10);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone12,1),"CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone11);
+		
 		//Slab Recipes
 		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 0),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 0)); //Oak
 		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 1),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 1)); //Spruce
@@ -180,6 +194,19 @@ public class ModCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ObsidianIngot, 9), new ItemStack(ModBlocks.ObsidianBlock, 1)); //Block Into Ingot
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneIngot, 9), new ItemStack(ModBlocks.BoneBlock, 1)); //Block Into Ingot
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.FlintIngot, 9), new ItemStack(ModBlocks.FlintBlock, 1)); //Block Into Ingot
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.COBBLESTONE, 9), new ItemStack(ModBlocks.CompressedCobblestone1, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone1, 9), new ItemStack(ModBlocks.CompressedCobblestone2, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone2, 9), new ItemStack(ModBlocks.CompressedCobblestone3, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone3, 9), new ItemStack(ModBlocks.CompressedCobblestone4, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone4, 9), new ItemStack(ModBlocks.CompressedCobblestone5, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone5, 9), new ItemStack(ModBlocks.CompressedCobblestone6, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone6, 9), new ItemStack(ModBlocks.CompressedCobblestone7, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone7, 9), new ItemStack(ModBlocks.CompressedCobblestone8, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone8, 9), new ItemStack(ModBlocks.CompressedCobblestone9, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone9, 9), new ItemStack(ModBlocks.CompressedCobblestone10,1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone10,9), new ItemStack(ModBlocks.CompressedCobblestone11,1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone11,9), new ItemStack(ModBlocks.CompressedCobblestone12,1));
 		
 		//-//Blocks
 		//Misc
@@ -461,6 +488,25 @@ public class ModCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 12));
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 13));
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 14));
+		
+		//Hardened Clay
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 0 ));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 1 ));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 2 ));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 3 ));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 4 ));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 5 ));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 6 ));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 7 ));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 8 ));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 9 ));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 10));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 11));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 12));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 13));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 14));
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15));
+		
 		
 		//-//-//Smelting
 		//Misc

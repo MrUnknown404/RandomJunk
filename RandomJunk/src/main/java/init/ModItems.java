@@ -134,8 +134,11 @@ public class ModItems {
 		GameRegistry.register(RottenFleshApple);
 		GameRegistry.register(SlimeApple);
 
-		//Obsidian Items
+		//Misc
 		GameRegistry.register(ObsidianShard);
+		GameRegistry.register(BoneMix);
+		
+		//Obsidian Items
 		GameRegistry.register(ObsidianIngot);
 
 		//Bone Items
@@ -143,9 +146,6 @@ public class ModItems {
 
 		//Flint Items
 		GameRegistry.register(FlintIngot);
-
-		//Misc
-		GameRegistry.register(BoneMix);
 		
 	}
 	public static void RegisterRenders() {
