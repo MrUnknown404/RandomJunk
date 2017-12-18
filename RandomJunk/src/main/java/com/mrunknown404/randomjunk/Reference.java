@@ -4,7 +4,7 @@ public class Reference {
 	//Strings
 	public static final String MOD_ID = "randomjunk";
 	public static final String NAME = "RandomJunk!";
-	public static final String VERSION = "1.5.0-Beta";
+	public static final String VERSION = "1.6.0-Beta";
 	public static final String ACCEPTED_VERSIONS = "[1.11.2]";
 
 	public static final String GUI_FACTORY_CLASS = "com.mrunknown404.randomjunk.client.gui.GuiFactory";
@@ -38,7 +38,33 @@ public class Reference {
 		COMPRESSEDCOBBLESTONE9 ("CompressedCobblestone9", "CompressedCobblestone9"),
 		COMPRESSEDCOBBLESTONE10("CompressedCobblestone10","CompressedCobblestone10"),
 		COMPRESSEDCOBBLESTONE11("CompressedCobblestone11","CompressedCobblestone11"),
-		COMPRESSEDCOBBLESTONE12("CompressedCobblestone12","CompressedCobblestone12");
+		COMPRESSEDCOBBLESTONE12("CompressedCobblestone12","CompressedCobblestone12"),
+		
+		COMPRESSEDDIRT1 ("CompressedDirt1", "CompressedDirt1"),
+		COMPRESSEDDIRT2 ("CompressedDirt2", "CompressedDirt2"),
+		COMPRESSEDDIRT3 ("CompressedDirt3", "CompressedDirt3"),
+		COMPRESSEDDIRT4 ("CompressedDirt4", "CompressedDirt4"),
+		COMPRESSEDDIRT5 ("CompressedDirt5", "CompressedDirt5"),
+		COMPRESSEDDIRT6 ("CompressedDirt6", "CompressedDirt6"),
+		COMPRESSEDDIRT7 ("CompressedDirt7", "CompressedDirt7"),
+		COMPRESSEDDIRT8 ("CompressedDirt8", "CompressedDirt8"),
+		COMPRESSEDDIRT9 ("CompressedDirt9", "CompressedDirt9"),
+		COMPRESSEDDIRT10("CompressedDirt10","CompressedDirt10"),
+		COMPRESSEDDIRT11("CompressedDirt11","CompressedDirt11"),
+		COMPRESSEDDIRT12("CompressedDirt12","CompressedDirt12"),
+		
+		COMPRESSEDSAND1 ("CompressedSand1", "CompressedSand1"),
+		COMPRESSEDSAND2 ("CompressedSand2", "CompressedSand2"),
+		COMPRESSEDSAND3 ("CompressedSand3", "CompressedSand3"),
+		COMPRESSEDSAND4 ("CompressedSand4", "CompressedSand4"),
+		COMPRESSEDSAND5 ("CompressedSand5", "CompressedSand5"),
+		COMPRESSEDSAND6 ("CompressedSand6", "CompressedSand6"),
+		COMPRESSEDSAND7 ("CompressedSand7", "CompressedSand7"),
+		COMPRESSEDSAND8 ("CompressedSand8", "CompressedSand8"),
+		COMPRESSEDSAND9 ("CompressedSand9", "CompressedSand9"),
+		COMPRESSEDSAND10("CompressedSand10","CompressedSand10"),
+		COMPRESSEDSAND11("CompressedSand11","CompressedSand11"),
+		COMPRESSEDSAND12("CompressedSand12","CompressedSand12");
 		
 		private String unlocalizedName;
 		private String registryName;

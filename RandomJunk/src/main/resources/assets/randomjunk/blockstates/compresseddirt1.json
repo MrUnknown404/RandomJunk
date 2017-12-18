@@ -2,7 +2,7 @@
     "forge_marker": 1,
     "defaults": {
         "textures": {
-            "all": "randomjunk:blocks/compressed/8compressedcobblestone"
+            "all": "randomjunk:blocks/compressed/1compresseddirt"
         },
         "model": "cube_all",
         "uvlock": true

@@ -80,6 +80,32 @@ tile.CompressedCobblestone10.name=Compressed Cobblestone X10
 tile.CompressedCobblestone11.name=Compressed Cobblestone X11
 tile.CompressedCobblestone12.name=Compressed Cobblestone X12
 
+tile.CompressedDirt1.name=Compressed Dirt X1
+tile.CompressedDirt2.name=Compressed Dirt X2
+tile.CompressedDirt3.name=Compressed Dirt X3
+tile.CompressedDirt4.name=Compressed Dirt X4
+tile.CompressedDirt5.name=Compressed Dirt X5
+tile.CompressedDirt6.name=Compressed Dirt X6
+tile.CompressedDirt7.name=Compressed Dirt X7
+tile.CompressedDirt8.name=Compressed Dirt X8
+tile.CompressedDirt9.name=Compressed Dirt X9
+tile.CompressedDirt10.name=Compressed Dirt X10
+tile.CompressedDirt11.name=Compressed Dirt X11
+tile.CompressedDirt12.name=Compressed Dirt X12
+
+tile.CompressedSand1.name=Compressed Sand X1
+tile.CompressedSand2.name=Compressed Sand X2
+tile.CompressedSand3.name=Compressed Sand X3
+tile.CompressedSand4.name=Compressed Sand X4
+tile.CompressedSand5.name=Compressed Sand X5
+tile.CompressedSand6.name=Compressed Sand X6
+tile.CompressedSand7.name=Compressed Sand X7
+tile.CompressedSand8.name=Compressed Sand X8
+tile.CompressedSand9.name=Compressed Sand X9
+tile.CompressedSand10.name=Compressed Sand X10
+tile.CompressedSand11.name=Compressed Sand X11
+tile.CompressedSand12.name=Compressed Sand X12
+
 //-//Armor
 //Obsidian
 item.ObsidianHelmet.name=Obsidian Helmet

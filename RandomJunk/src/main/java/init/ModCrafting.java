@@ -167,6 +167,32 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone10,1),"CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone9);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone11,1),"CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone10);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone12,1),"CCC","CCC","CCC",'C',ModBlocks.CompressedCobblestone11);
+
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt1,1), "DDD","DDD","DDD",'D',Blocks.DIRT);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt2,1), "DDD","DDD","DDD",'D',ModBlocks.CompressedDirt1);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt3,1), "DDD","DDD","DDD",'D',ModBlocks.CompressedDirt2);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt4,1), "DDD","DDD","DDD",'D',ModBlocks.CompressedDirt3);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt5,1), "DDD","DDD","DDD",'D',ModBlocks.CompressedDirt4);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt6,1), "DDD","DDD","DDD",'D',ModBlocks.CompressedDirt5);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt7,1), "DDD","DDD","DDD",'D',ModBlocks.CompressedDirt6);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt8,1), "DDD","DDD","DDD",'D',ModBlocks.CompressedDirt7);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt9,1), "DDD","DDD","DDD",'D',ModBlocks.CompressedDirt8);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt10,1),"DDD","DDD","DDD",'D',ModBlocks.CompressedDirt9);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt11,1),"DDD","DDD","DDD",'D',ModBlocks.CompressedDirt10);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt12,1),"DDD","DDD","DDD",'D',ModBlocks.CompressedDirt11);
+		
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand1,1), "SSS","SSS","SSS",'S',Blocks.SAND);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand2,1), "SSS","SSS","SSS",'S',ModBlocks.CompressedSand1);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand3,1), "SSS","SSS","SSS",'S',ModBlocks.CompressedSand2);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand4,1), "SSS","SSS","SSS",'S',ModBlocks.CompressedSand3);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand5,1), "SSS","SSS","SSS",'S',ModBlocks.CompressedSand4);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand6,1), "SSS","SSS","SSS",'S',ModBlocks.CompressedSand5);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand7,1), "SSS","SSS","SSS",'S',ModBlocks.CompressedSand6);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand8,1), "SSS","SSS","SSS",'S',ModBlocks.CompressedSand7);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand9,1), "SSS","SSS","SSS",'S',ModBlocks.CompressedSand8);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand10,1),"SSS","SSS","SSS",'S',ModBlocks.CompressedSand9);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand11,1),"SSS","SSS","SSS",'S',ModBlocks.CompressedSand10);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand12,1),"SSS","SSS","SSS",'S',ModBlocks.CompressedSand11);
 		
 		//Slab Recipes
 		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 0),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 0)); //Oak
@@ -207,6 +233,32 @@ public class ModCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone9, 9), new ItemStack(ModBlocks.CompressedCobblestone10,1));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone10,9), new ItemStack(ModBlocks.CompressedCobblestone11,1));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone11,9), new ItemStack(ModBlocks.CompressedCobblestone12,1));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.DIRT, 9), new ItemStack(ModBlocks.CompressedDirt1, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt1, 9), new ItemStack(ModBlocks.CompressedDirt2, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt2, 9), new ItemStack(ModBlocks.CompressedDirt3, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt3, 9), new ItemStack(ModBlocks.CompressedDirt4, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt4, 9), new ItemStack(ModBlocks.CompressedDirt5, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt5, 9), new ItemStack(ModBlocks.CompressedDirt6, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt6, 9), new ItemStack(ModBlocks.CompressedDirt7, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt7, 9), new ItemStack(ModBlocks.CompressedDirt8, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt8, 9), new ItemStack(ModBlocks.CompressedDirt9, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt9, 9), new ItemStack(ModBlocks.CompressedDirt10,1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt10,9), new ItemStack(ModBlocks.CompressedDirt11,1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt11,9), new ItemStack(ModBlocks.CompressedDirt12,1));
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.SAND, 9), new ItemStack(ModBlocks.CompressedSand1, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand1, 9), new ItemStack(ModBlocks.CompressedSand2, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand2, 9), new ItemStack(ModBlocks.CompressedSand3, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand3, 9), new ItemStack(ModBlocks.CompressedSand4, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand4, 9), new ItemStack(ModBlocks.CompressedSand5, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand5, 9), new ItemStack(ModBlocks.CompressedSand6, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand6, 9), new ItemStack(ModBlocks.CompressedSand7, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand7, 9), new ItemStack(ModBlocks.CompressedSand8, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand8, 9), new ItemStack(ModBlocks.CompressedSand9, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand9, 9), new ItemStack(ModBlocks.CompressedSand10,1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand10,9), new ItemStack(ModBlocks.CompressedSand11,1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand11,9), new ItemStack(ModBlocks.CompressedSand12,1));
 		
 		//-//Blocks
 		//Misc
