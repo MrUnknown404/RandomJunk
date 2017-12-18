@@ -46,7 +46,7 @@ public class Block_EmptyJar extends Block {
 	
 	@Override
 	public BlockRenderLayer getBlockLayer() {
-		return BlockRenderLayer.TRANSLUCENT;
+		return BlockRenderLayer.CUTOUT;
 	}
 	
 	@Override

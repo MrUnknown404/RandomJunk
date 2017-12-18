@@ -1,7 +1,9 @@
 {
-   "variants": {
-      "normal": {
-         "model":"randomjunk:lapistorch"
-      }
-   }
+    "variants": {
+        "facing=up": { "model": "randomjunk:lapistorch" },
+        "facing=east": { "model": "randomjunk:lapistorchwall" },
+        "facing=south": { "model": "randomjunk:lapistorchwall", "y": 90 },
+        "facing=west": { "model": "randomjunk:lapistorchwall", "y": 180 },
+        "facing=north": { "model": "randomjunk:lapistorchwall", "y": 270 }
+    }
 }

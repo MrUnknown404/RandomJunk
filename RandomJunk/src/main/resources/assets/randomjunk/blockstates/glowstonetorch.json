@@ -1,7 +1,9 @@
 {
-   "variants": {
-      "normal": {
-         "model":"randomjunk:glowstonetorch"
-      }
-   }
+    "variants": {
+        "facing=up": { "model": "randomjunk:glowstonetorch" },
+        "facing=east": { "model": "randomjunk:glowstonetorchwall" },
+        "facing=south": { "model": "randomjunk:glowstonetorchwall", "y": 90 },
+        "facing=west": { "model": "randomjunk:glowstonetorchwall", "y": 180 },
+        "facing=north": { "model": "randomjunk:glowstonetorchwall", "y": 270 }
+    }
 }

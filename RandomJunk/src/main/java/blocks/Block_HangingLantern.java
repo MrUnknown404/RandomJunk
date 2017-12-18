@@ -48,7 +48,7 @@ public class Block_HangingLantern extends Block {
 	
 	@Override
 	public BlockRenderLayer getBlockLayer() {
-		return BlockRenderLayer.SOLID;
+		return BlockRenderLayer.CUTOUT;
 	}
 	
 	@Override
