@@ -14,7 +14,6 @@
                 "west":  { "uv": [ 6, 0, 10, 16 ], "texture": "#0" },
                 "east":  { "uv": [ 6, 0, 10, 16 ], "texture": "#0" }
             },
-            "__comment": "Center post"
         }
     ]
 }
