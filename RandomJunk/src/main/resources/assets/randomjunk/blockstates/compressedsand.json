@@ -1,0 +1,16 @@
+{
+   "variants": {
+      "type=compressed_x1": {"model": "randomjunk:sand_compressed_x1"},
+      "type=compressed_x2": {"model": "randomjunk:sand_compressed_x2"},
+      "type=compressed_x3": {"model": "randomjunk:sand_compressed_x3"},
+      "type=compressed_x4": {"model": "randomjunk:sand_compressed_x4"},
+      "type=compressed_x5": {"model": "randomjunk:sand_compressed_x5"},
+      "type=compressed_x6": {"model": "randomjunk:sand_compressed_x6"},
+      "type=compressed_x7": {"model": "randomjunk:sand_compressed_x7"},
+      "type=compressed_x8": {"model": "randomjunk:sand_compressed_x8"},
+      "type=compressed_x9": {"model": "randomjunk:sand_compressed_x9"},
+      "type=compressed_x10": {"model": "randomjunk:sand_compressed_x10"},
+      "type=compressed_x11": {"model": "randomjunk:sand_compressed_x11"},
+      "type=compressed_x12": {"model": "randomjunk:sand_compressed_x12"}
+   }
+}
