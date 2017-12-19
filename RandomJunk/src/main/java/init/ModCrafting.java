@@ -73,7 +73,7 @@ public class ModCrafting {
 		}
 	}
 	
-	public static void Register() {
+	public static void RegisterRecipes() {
 		//-//-//Shaped
 		//-//Items
 		GameRegistry.addRecipe(new ItemStack(ModItems.AppleApple, 1),"XXX","XAX","XXX",'X',Items.APPLE,'A',Items.APPLE);
@@ -153,6 +153,9 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(Blocks.OBSIDIAN, 1),"OO","OO",'O',ModItems.ObsidianShard);
 
 		GameRegistry.addRecipe(new ItemStack(Blocks.WOOL, 1),"SS","SS",'S',Items.STRING);
+		
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CobblestoneFence, 1),"FSF","FSF",'S',Items.STICK,'F',Blocks.COBBLESTONE);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CobblestoneFenceGate, 1),"SFS","SFS",'S',Items.STICK,'F',Blocks.COBBLESTONE);
 		
 		//Compressed Blocks
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,0), "CCC","CCC","CCC",'C',Blocks.COBBLESTONE);

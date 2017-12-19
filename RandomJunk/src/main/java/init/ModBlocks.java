@@ -14,6 +14,8 @@ import blocks.Block_GroundLantern;
 import blocks.Block_HangingLantern;
 import blocks.Block_LapisTorch;
 import blocks.Block_ObsidianBlock;
+import blocks.fences.Block_CobblestoneFence;
+import blocks.fences.Block_CobblestoneFenceGate;
 import blocks.item.Item_Compressed;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -41,6 +43,9 @@ public class ModBlocks {
 	public static Block CompressedDirt;
 	public static Block CompressedSand;
 	
+	public static Block CobblestoneFence;
+	public static Block CobblestoneFenceGate;
+	
 	public static void Init() {
 		//Blocks
 		ObsidianBlock = new Block_ObsidianBlock();
@@ -57,6 +62,9 @@ public class ModBlocks {
 		CompressedCobblestone = new Block_CompressedCobblestone();
 		CompressedDirt = new Block_CompressedDirt();
 		CompressedSand = new Block_CompressedSand();
+		
+		CobblestoneFence = new Block_CobblestoneFence();
+		CobblestoneFenceGate = new Block_CobblestoneFenceGate();
 		
 	}
 	public static void Register() {
@@ -76,7 +84,9 @@ public class ModBlocks {
 		RegisterBlock(CompressedDirt, new Item_Compressed(CompressedDirt));
 		RegisterBlock(CompressedSand, new Item_Compressed(CompressedSand));
 		
-		//RegisterBlock(CompressedSand1);
+		RegisterBlock(CobblestoneFence);
+		RegisterBlock(CobblestoneFenceGate);
+		
 	}
 	private static void RegisterBlock(Block block) {
 		GameRegistry.register(block);
@@ -105,6 +115,9 @@ public class ModBlocks {
 		
 		RegisterRender(GlowstoneTorch);
 		RegisterRender(LapisTorch);
+		
+		RegisterRender(CobblestoneFence);
+		RegisterRender(CobblestoneFenceGate);
 		
 		for (int i = 0; i < EnumHandler.CompBlockTypes.values().length; i++) {
 			RegisterRender(CompressedCobblestone, i, "cobblestone_" + EnumHandler.CompBlockTypes.values()[i].getName());

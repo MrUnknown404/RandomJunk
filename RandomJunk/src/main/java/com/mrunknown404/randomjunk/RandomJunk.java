@@ -74,7 +74,7 @@ public class RandomJunk {
 		
 		//Crafting Init
 		ModCrafting.UnregisterRecipes();
-		ModCrafting.Register();
+		ModCrafting.RegisterRecipes();
 		
 		MinecraftForge.EVENT_BUS.register(new BlockHarvestHandler());
 		

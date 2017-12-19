@@ -67,6 +67,9 @@ tile.HangingLantern.name=Hanging Lantern
 tile.GlowstoneTorch.name=Glowstone Torch
 tile.LapisTorch.name=Lapis Torch
 
+tile.CobblestoneFence.name=Cobblestone Fence
+tile.CobblestoneFenceGate.name=Cobblestone Fence Gate
+
 tile.CompressedCobblestone.compressed_x1.name=Compressed Cobblestone X1
 tile.CompressedCobblestone.compressed_x2.name=Compressed Cobblestone X2
 tile.CompressedCobblestone.compressed_x3.name=Compressed Cobblestone X3
