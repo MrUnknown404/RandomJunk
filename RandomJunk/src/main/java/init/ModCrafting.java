@@ -157,6 +157,9 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CobblestoneFence, 1),"FSF","FSF",'S',Items.STICK,'F',Blocks.COBBLESTONE);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CobblestoneFenceGate, 1),"SFS","SFS",'S',Items.STICK,'F',Blocks.COBBLESTONE);
 		
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.MossyCobblestoneFence, 1),"FSF","FSF",'S',Items.STICK,'F',Blocks.MOSSY_COBBLESTONE);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.MossyCobblestoneFenceGate, 1),"SFS","SFS",'S',Items.STICK,'F',Blocks.MOSSY_COBBLESTONE);
+		
 		//Compressed Blocks
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,0), "CCC","CCC","CCC",'C',Blocks.COBBLESTONE);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,1), "CCC","CCC","CCC",'C',new ItemStack(ModBlocks.CompressedCobblestone, 1, 0));

@@ -4,7 +4,7 @@
         {   "when": { "north": "true" },
             "apply": { "model": "randomjunk:cobblestonefence_side", "uvlock": true }
         },
-        {   "when": { "east": "true" },
+        {	"when": { "east": "true" },
             "apply": { "model": "randomjunk:cobblestonefence_side", "y": 90, "uvlock": true }
         },
         {   "when": { "south": "true" },

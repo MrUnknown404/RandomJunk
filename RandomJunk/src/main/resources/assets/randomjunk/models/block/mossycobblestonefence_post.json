@@ -1,6 +1,6 @@
 {
     "parent": "block/fence_post",
     "textures": {
-        "texture": "blocks/cobblestone"
+        "texture": "blocks/cobblestone_mossy"
     }
 }
