@@ -1,7 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "randomjunk:items/flintthings/flint_sword"
+        "layer0": "randomjunk:items/flint/flint_sword"
      },
 
     "display": {

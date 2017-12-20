@@ -23,8 +23,10 @@ public class ModCrafting {
 						recipes.remove();
 					}
 				}
-				
 				if (ItemStack.areItemStacksEqual(output, new ItemStack(Items.MAGMA_CREAM))) {
+					recipes.remove();
+				}
+				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.NETHER_BRICK_FENCE, 6))) {
 					recipes.remove();
 				}
 			}
@@ -63,6 +65,13 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianAxe, 1),"OO-","OS-","-S-",'O',ModItems.ObsidianIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianHoe, 1),"OO-","-S-","-S-",'O',ModItems.ObsidianIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianSword, 1),"O","O","S",'O',ModItems.ObsidianIngot,'S',Items.STICK);
+		
+		//Obsidian Recipes
+		GameRegistry.addRecipe(new ItemStack(ModTools.SteelShovel, 1),"O","S","S",'O',ModItems.SteelIngot,'S',Items.STICK);
+		GameRegistry.addRecipe(new ItemStack(ModTools.SteelPickaxe, 1),"OOO","-S-","-S-",'O',ModItems.SteelIngot,'S',Items.STICK);
+		GameRegistry.addRecipe(new ItemStack(ModTools.SteelAxe, 1),"OO-","OS-","-S-",'O',ModItems.SteelIngot,'S',Items.STICK);
+		GameRegistry.addRecipe(new ItemStack(ModTools.SteelHoe, 1),"OO-","-S-","-S-",'O',ModItems.SteelIngot,'S',Items.STICK);
+		GameRegistry.addRecipe(new ItemStack(ModTools.SteelSword, 1),"O","O","S",'O',ModItems.SteelIngot,'S',Items.STICK);
 
 		//Bone Recipes
 		GameRegistry.addRecipe(new ItemStack(ModTools.BoneShovel, 1),"O","S","S",'O',ModItems.BoneIngot,'S',Items.STICK);
@@ -85,6 +94,12 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianLeggings, 1),"OOO","O-O","O-O",'O',ModItems.ObsidianIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianBoots, 1),"O-O","O-O",'O',ModItems.ObsidianIngot);
 
+		//Steel Recipes
+		GameRegistry.addRecipe(new ItemStack(ModArmor.SteelHelmet, 1),"SSS","S-S",'S',ModItems.SteelIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.SteelChestplate, 1),"S-S","SSS","SSS",'S',ModItems.SteelIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.SteelLeggings, 1),"SSS","S-S","S-S",'S',ModItems.SteelIngot);
+		GameRegistry.addRecipe(new ItemStack(ModArmor.SteelBoots, 1),"S-S","S-S",'S',ModItems.SteelIngot);
+		
 		//Bone Recipes
 		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneHelmet, 1),"BBB","B-B",'B',ModItems.BoneIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneChestplate, 1),"B-B","BBB","BBB",'B',ModItems.BoneIngot);
@@ -101,6 +116,7 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.SandyDirt,4),"DS","SD", 'S', new ItemStack(Blocks.SAND, 1, 0), 'D', new ItemStack(Blocks.DIRT, 1, 0));
 		
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.ObsidianBlock,1),"OOO","OOO","OOO",'O',ModItems.ObsidianIngot);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.SteelBlock,1),"SSS","SSS","SSS",'S',ModItems.SteelIngot);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.BoneBlock,1),"BBB","BBB","BBB",'B',ModItems.BoneIngot);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.FlintBlock,1),"FFF","FFF","FFF",'F',ModItems.FlintIngot);
 		
@@ -114,64 +130,35 @@ public class ModCrafting {
 
 		GameRegistry.addRecipe(new ItemStack(Blocks.WOOL, 1),"SS","SS",'S',Items.STRING);
 		
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CobblestoneFence, 1),"FSF","FSF",'S',Items.STICK,'F',Blocks.COBBLESTONE);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.CobblestoneFence, 3),"FSF","FSF",'S',Items.STICK,'F',Blocks.COBBLESTONE);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CobblestoneFenceGate, 1),"SFS","SFS",'S',Items.STICK,'F',Blocks.COBBLESTONE);
 		
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.MossyCobblestoneFence, 1),"FSF","FSF",'S',Items.STICK,'F',Blocks.MOSSY_COBBLESTONE);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.MossyCobblestoneFence, 3),"FSF","FSF",'S',Items.STICK,'F',Blocks.MOSSY_COBBLESTONE);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.MossyCobblestoneFenceGate, 1),"SFS","SFS",'S',Items.STICK,'F',Blocks.MOSSY_COBBLESTONE);
+		
+		GameRegistry.addRecipe(new ItemStack(Blocks.NETHER_BRICK_FENCE, 3),"FSF","FSF",'S',Items.STICK,'F',Blocks.NETHER_BRICK);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.NetherBrickFenceGate, 1),"SFS","SFS",'S',Items.STICK,'F',Blocks.NETHER_BRICK);
 		
 		//Compressed Blocks
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,0), "CCC","CCC","CCC",'C',Blocks.COBBLESTONE);
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,1), "CCC","CCC","CCC",'C',new ItemStack(ModBlocks.CompressedCobblestone, 1, 0));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,2), "CCC","CCC","CCC",'C',new ItemStack(ModBlocks.CompressedCobblestone, 1, 1));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,3), "CCC","CCC","CCC",'C',new ItemStack(ModBlocks.CompressedCobblestone, 1, 2));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,4), "CCC","CCC","CCC",'C',new ItemStack(ModBlocks.CompressedCobblestone, 1, 3));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,5), "CCC","CCC","CCC",'C',new ItemStack(ModBlocks.CompressedCobblestone, 1, 4));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,6), "CCC","CCC","CCC",'C',new ItemStack(ModBlocks.CompressedCobblestone, 1, 5));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,7), "CCC","CCC","CCC",'C',new ItemStack(ModBlocks.CompressedCobblestone, 1, 6));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,8), "CCC","CCC","CCC",'C',new ItemStack(ModBlocks.CompressedCobblestone, 1, 7));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,9), "CCC","CCC","CCC",'C',new ItemStack(ModBlocks.CompressedCobblestone, 1, 8));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,10),"CCC","CCC","CCC",'C',new ItemStack(ModBlocks.CompressedCobblestone, 1, 9));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,11),"CCC","CCC","CCC",'C',new ItemStack(ModBlocks.CompressedCobblestone, 1, 10));
-		
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,0), "DDD","DDD","DDD",'D',Blocks.DIRT);
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,1), "DDD","DDD","DDD",'D',new ItemStack(ModBlocks.CompressedDirt, 1, 0));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,2), "DDD","DDD","DDD",'D',new ItemStack(ModBlocks.CompressedDirt, 1, 1));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,3), "DDD","DDD","DDD",'D',new ItemStack(ModBlocks.CompressedDirt, 1, 2));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,4), "DDD","DDD","DDD",'D',new ItemStack(ModBlocks.CompressedDirt, 1, 3));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,5), "DDD","DDD","DDD",'D',new ItemStack(ModBlocks.CompressedDirt, 1, 4));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,6), "DDD","DDD","DDD",'D',new ItemStack(ModBlocks.CompressedDirt, 1, 5));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,7), "DDD","DDD","DDD",'D',new ItemStack(ModBlocks.CompressedDirt, 1, 6));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,8), "DDD","DDD","DDD",'D',new ItemStack(ModBlocks.CompressedDirt, 1, 7));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,9), "DDD","DDD","DDD",'D',new ItemStack(ModBlocks.CompressedDirt, 1, 8));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,10),"DDD","DDD","DDD",'D',new ItemStack(ModBlocks.CompressedDirt, 1, 9));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,11),"DDD","DDD","DDD",'D',new ItemStack(ModBlocks.CompressedDirt, 1, 10));
-		
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,0), "SSS","SSS","SSS",'S',Blocks.SAND);
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,1), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, 0));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,2), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, 1));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,3), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, 2));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,4), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, 3));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,5), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, 4));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,6), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, 5));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,7), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, 6));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,8), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, 7));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,9), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, 8));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,10),"SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, 9));
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,11),"SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, 10));
+		
+		for (int i = 0; i < 11; i++) {
+			GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,i+1), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedCobblestone, 1, i));
+			GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,i+1), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedDirt, 1, i));
+			GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,i+1), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, i));
+		}
 		
 		//Slab Recipes
-		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 0),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 0)); //Oak
-		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 1),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 1)); //Spruce
-		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 2),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 2)); //Birch
-		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 3),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 3)); //Jungle
-		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 4),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 4)); //Acacia
-		GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, 5),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, 5)); //Dark Oak
+		for (int i = 0; i < 6; i++) {
+			GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, i),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, i));
+		}
 		
 		GameRegistry.addRecipe(new ItemStack(Blocks.STONE, 1),"S","S",'S',new ItemStack(Blocks.STONE_SLAB, 1, 0)); //Stone Slab
 		GameRegistry.addRecipe(new ItemStack(Blocks.COBBLESTONE, 1),"S","S",'S',new ItemStack(Blocks.STONE_SLAB, 1, 3)); //Cobblestone Slab
-		GameRegistry.addRecipe(new ItemStack(Blocks.BRICK_BLOCK, 1),"S","S",'S',new ItemStack(Blocks.STONE_SLAB, 1, 3)); //Brick Slab
-		GameRegistry.addRecipe(new ItemStack(Blocks.NETHER_BRICK, 1),"S","S",'S',new ItemStack(Blocks.STONE_SLAB, 1, 3)); //Netherbrick Slab
+		GameRegistry.addRecipe(new ItemStack(Blocks.BRICK_BLOCK, 1),"S","S",'S',new ItemStack(Blocks.STONE_SLAB, 1, 4)); //Brick Slab
+		GameRegistry.addRecipe(new ItemStack(Blocks.NETHER_BRICK, 1),"S","S",'S',new ItemStack(Blocks.STONE_SLAB, 1, 6)); //Netherbrick Slab
 		
 		//-//-//Shapeless
 		//-//Items
@@ -183,48 +170,22 @@ public class ModCrafting {
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.FLINT, 1), new ItemStack(Blocks.GRAVEL, 1)); //Gravel Into Flint
 
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ObsidianIngot, 9), new ItemStack(ModBlocks.ObsidianBlock, 1)); //Block Into Ingot
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneIngot, 9), new ItemStack(ModBlocks.BoneBlock, 1)); //Block Into Ingot
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.FlintIngot, 9), new ItemStack(ModBlocks.FlintBlock, 1)); //Block Into Ingot
+		//Blocks Into Ingot
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ObsidianIngot, 9), new ItemStack(ModBlocks.ObsidianBlock, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.SteelIngot, 9), new ItemStack(ModBlocks.SteelBlock, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneIngot, 9), new ItemStack(ModBlocks.BoneBlock, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.FlintIngot, 9), new ItemStack(ModBlocks.FlintBlock, 1));
 		
+		//Compressed
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.COBBLESTONE, 9), new ItemStack(ModBlocks.CompressedCobblestone, 1, 0));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, 0 ), new ItemStack(ModBlocks.CompressedCobblestone, 1, 1));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, 1 ), new ItemStack(ModBlocks.CompressedCobblestone, 1, 2));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, 2 ), new ItemStack(ModBlocks.CompressedCobblestone, 1, 3));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, 3 ), new ItemStack(ModBlocks.CompressedCobblestone, 1, 4));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, 4 ), new ItemStack(ModBlocks.CompressedCobblestone, 1, 5));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, 5 ), new ItemStack(ModBlocks.CompressedCobblestone, 1, 6));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, 6 ), new ItemStack(ModBlocks.CompressedCobblestone, 1, 7));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, 7 ), new ItemStack(ModBlocks.CompressedCobblestone, 1, 8));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, 8 ), new ItemStack(ModBlocks.CompressedCobblestone, 1, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, 9 ), new ItemStack(ModBlocks.CompressedCobblestone, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, 10), new ItemStack(ModBlocks.CompressedCobblestone, 1, 11));
-		
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.DIRT, 9), new ItemStack(ModBlocks.CompressedDirt, 1, 0));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, 0 ), new ItemStack(ModBlocks.CompressedDirt, 1, 1));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, 1 ), new ItemStack(ModBlocks.CompressedDirt, 1, 2));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, 2 ), new ItemStack(ModBlocks.CompressedDirt, 1, 3));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, 3 ), new ItemStack(ModBlocks.CompressedDirt, 1, 4));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, 4 ), new ItemStack(ModBlocks.CompressedDirt, 1, 5));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, 5 ), new ItemStack(ModBlocks.CompressedDirt, 1, 6));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, 6 ), new ItemStack(ModBlocks.CompressedDirt, 1, 7));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, 7 ), new ItemStack(ModBlocks.CompressedDirt, 1, 8));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, 8 ), new ItemStack(ModBlocks.CompressedDirt, 1, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, 9 ), new ItemStack(ModBlocks.CompressedDirt, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, 10), new ItemStack(ModBlocks.CompressedDirt, 1, 11));
-		
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.SAND, 9), new ItemStack(ModBlocks.CompressedSand, 1, 0));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, 0 ), new ItemStack(ModBlocks.CompressedSand, 1, 1));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, 1 ), new ItemStack(ModBlocks.CompressedSand, 1, 2));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, 2 ), new ItemStack(ModBlocks.CompressedSand, 1, 3));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, 3 ), new ItemStack(ModBlocks.CompressedSand, 1, 4));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, 4 ), new ItemStack(ModBlocks.CompressedSand, 1, 5));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, 5 ), new ItemStack(ModBlocks.CompressedSand, 1, 6));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, 6 ), new ItemStack(ModBlocks.CompressedSand, 1, 7));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, 7 ), new ItemStack(ModBlocks.CompressedSand, 1, 8));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, 8 ), new ItemStack(ModBlocks.CompressedSand, 1, 9));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, 9 ), new ItemStack(ModBlocks.CompressedSand, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, 10), new ItemStack(ModBlocks.CompressedSand, 1, 11));
+		
+		for (int i = 0; i < 11; i++) {
+			GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, i), new ItemStack(ModBlocks.CompressedCobblestone, 1, i+1));
+			GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, i), new ItemStack(ModBlocks.CompressedDirt, 1, i+1));
+			GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, i), new ItemStack(ModBlocks.CompressedSand, 1, i+1));
+		}
 		
 		//-//Blocks
 		//Misc
@@ -236,302 +197,63 @@ public class ModCrafting {
 		
 		//Wools
 		//White
-		
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 15));
-
-		//Orange
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Magenta
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Light Blue
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Yellow
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Lime
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Pink
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Gray
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Light Gray
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Cyan
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Purple
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Blue
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Brown
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Green
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Red
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, 15));
-		
-		//Black
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, 14));
-		
-		//Hardened Clay
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 0 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 1 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 2 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 3 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 4 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 5 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 6 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 7 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 8 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 9 ));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 10));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 11));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 12));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 13));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 14));
-		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.HARDENED_CLAY, 1), new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 15));
-		
+		for (int i = 0; i < 15; i++) {
+			if (i !=0) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=1) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 1 ), new ItemStack(Items.DYE, 1, 14),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=2) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 2 ), new ItemStack(Items.DYE, 1, 13),new ItemStack(Blocks.WOOL, 1, i));
+				}
+			if (i !=3) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 3 ), new ItemStack(Items.DYE, 1, 12),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=4) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 4 ), new ItemStack(Items.DYE, 1, 11),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=5) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 5 ), new ItemStack(Items.DYE, 1, 10),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=6) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 6 ), new ItemStack(Items.DYE, 1, 9 ),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=7) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 7 ), new ItemStack(Items.DYE, 1, 8 ),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=8) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 8 ), new ItemStack(Items.DYE, 1, 7 ),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=9) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 9 ), new ItemStack(Items.DYE, 1, 6 ),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=10) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 10), new ItemStack(Items.DYE, 1, 5 ),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=11) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 11), new ItemStack(Items.DYE, 1, 4 ),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=12) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 12), new ItemStack(Items.DYE, 1, 3 ),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=13) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 13), new ItemStack(Items.DYE, 1, 2 ),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=14) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 14), new ItemStack(Items.DYE, 1, 1 ),new ItemStack(Blocks.WOOL, 1, i));
+			}
+			if (i !=15) {
+				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, i));
+			}
+		}
 		
 		//-//-//Smelting
 		//Misc
 		GameRegistry.addSmelting(Items.ROTTEN_FLESH, new ItemStack(Items.LEATHER), 0.1f);
 
-		GameRegistry.addSmelting(Blocks.OBSIDIAN, new ItemStack(ModItems.ObsidianShard), 0.4f);
+		GameRegistry.addSmelting(Items.IRON_INGOT, new ItemStack(ModItems.SteelIngot), 0.2f);
+		GameRegistry.addSmelting(ModItems.ObsidianShard, new ItemStack(ModItems.ObsidianIngot), 0.4f);
 		GameRegistry.addSmelting(ModItems.BoneMix, new ItemStack(ModItems.BoneIngot), 0.3f);
 		GameRegistry.addSmelting(Items.FLINT, new ItemStack(ModItems.FlintIngot), 0.3f);
 	}

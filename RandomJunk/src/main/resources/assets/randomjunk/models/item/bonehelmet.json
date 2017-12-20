@@ -1,7 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "randomjunk:items/bonethings/bone_helmet"
+        "layer0": "randomjunk:items/bone/bone_helmet"
      },
 
     "display": {

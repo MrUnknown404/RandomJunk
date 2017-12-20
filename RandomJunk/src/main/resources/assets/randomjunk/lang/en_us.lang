@@ -43,7 +43,7 @@ item.BoneAxe.name=Bone Axe
 item.BoneHoe.name=Bone Hoe
 item.BoneSword.name=Bone Sword
 
-//Flint Things
+//Flint
 item.FlintIngot.name=Flint Ingot
 
 item.FlintShovel.name=Flint Shovel
@@ -51,6 +51,15 @@ item.FlintPickaxe.name=Flint Pickaxe
 item.FlintAxe.name=Flint Axe
 item.FlintHoe.name=Flint Hoe
 item.FlintSword.name=Flint Sword
+
+//Steel
+item.SteelIngot.name=Steel Ingot
+
+item.SteelShovel.name=Steel Shovel
+item.SteelPickaxe.name=Steel Pickaxe
+item.SteelAxe.name=Steel Axe
+item.SteelHoe.name=Steel Hoe
+item.SteelSword.name=Steel Sword
 
 //Debug Items
 item.DebugPickaxe.name=Debug Pickaxe
@@ -61,6 +70,7 @@ tile.SandyDirt.name=Sandy Dirt
 tile.ObsidianBlock.name=Block of Obsidian
 tile.BoneBlock.name=Block of Bone
 tile.FlintBlock.name=Block of Flint
+tile.SteelBlock.name=Block of Steel
 
 tile.EmptyJar.name=Empty Jar
 tile.GroundLantern.name=Ground Lantern
@@ -74,6 +84,8 @@ tile.CobblestoneFenceGate.name=Cobblestone Fence Gate
 
 tile.MossyCobblestoneFence.name=Mossy Cobblestone Fence
 tile.MossyCobblestoneFenceGate.name=Mossy Cobblestone Fence Gate
+
+tile.NetherBrickFenceGate.name=Nether Brick Fence Gate
 
 tile.CompressedCobblestone.compressed_x1.name=Compressed Cobblestone X1
 tile.CompressedCobblestone.compressed_x2.name=Compressed Cobblestone X2
@@ -132,6 +144,12 @@ item.FlintHelmet.name=Flint Helmet
 item.FlintChestplate.name=Flint Chestplate
 item.FlintLeggings.name=Flint Leggings
 item.FlintBoots.name=Flint Boots
+
+//Steel
+item.SteelHelmet.name=Steel Helmet
+item.SteelChestplate.name=Steel Chestplate
+item.SteelLeggings.name=Steel Leggings
+item.SteelBoots.name=Steel Boots
 
 //-//GUI
 //Creative Tabs
@@ -236,3 +254,9 @@ achievement.ObsidianIngot.desc=Smelt an Obsidian Ingot!
 
 achievement.ObsidianPickaxe=Getting a Better Upgrade!
 achievement.ObsidianPickaxe.desc=Craft an Obsidian Pickaxe!
+
+achievement.SteelIngot=a Durable Ingot
+achievement.SteelIngot.desc=Smelt a Steel Ingot!
+
+achievement.SteelPickaxe=Durable Pickaxe
+achievement.SteelPickaxe.desc=Craft a Steel Pickaxe!

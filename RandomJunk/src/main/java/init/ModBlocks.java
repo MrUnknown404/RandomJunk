@@ -15,10 +15,12 @@ import blocks.Block_HangingLantern;
 import blocks.Block_LapisTorch;
 import blocks.Block_ObsidianBlock;
 import blocks.Block_SandyDirt;
+import blocks.Block_SteelBlock;
 import blocks.fences.Block_CobblestoneFence;
 import blocks.fences.Block_CobblestoneFenceGate;
 import blocks.fences.Block_MossyCobblestoneFence;
 import blocks.fences.Block_MossyCobblestoneFenceGate;
+import blocks.fences.Block_NetherBrickFenceGate;
 import blocks.item.Item_Compressed;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -34,6 +36,7 @@ public class ModBlocks {
 	public static Block SandyDirt;
 	
 	public static Block ObsidianBlock;
+	public static Block SteelBlock;
 	public static Block BoneBlock;
 	public static Block FlintBlock;
 	
@@ -54,11 +57,14 @@ public class ModBlocks {
 	public static Block MossyCobblestoneFence;
 	public static Block MossyCobblestoneFenceGate;
 	
+	public static Block NetherBrickFenceGate;
+	
 	public static void Init() {
 		//Blocks
 		SandyDirt = new Block_SandyDirt();
 		
 		ObsidianBlock = new Block_ObsidianBlock();
+		SteelBlock = new Block_SteelBlock();
 		BoneBlock = new Block_BoneBlock();
 		FlintBlock = new Block_FlintBlock();
 		
@@ -78,12 +84,15 @@ public class ModBlocks {
 		
 		MossyCobblestoneFence = new Block_MossyCobblestoneFence();
 		MossyCobblestoneFenceGate = new Block_MossyCobblestoneFenceGate();
+		
+		NetherBrickFenceGate = new Block_NetherBrickFenceGate();
 	}
 	public static void Register() {
 		//Register Blocks
 		RegisterBlock(SandyDirt);
 		
 		RegisterBlock(ObsidianBlock);
+		RegisterBlock(SteelBlock);
 		RegisterBlock(BoneBlock);
 		RegisterBlock(FlintBlock);
 		
@@ -103,6 +112,8 @@ public class ModBlocks {
 		
 		RegisterBlock(MossyCobblestoneFence);
 		RegisterBlock(MossyCobblestoneFenceGate);
+		
+		RegisterBlock(NetherBrickFenceGate);
 		
 	}
 	private static void RegisterBlock(Block block) {
@@ -125,6 +136,7 @@ public class ModBlocks {
 		RegisterRender(SandyDirt);
 		
 		RegisterRender(ObsidianBlock);
+		RegisterRender(SteelBlock);
 		RegisterRender(BoneBlock);
 		RegisterRender(FlintBlock);
 		
@@ -140,6 +152,8 @@ public class ModBlocks {
 		
 		RegisterRender(MossyCobblestoneFence);
 		RegisterRender(MossyCobblestoneFenceGate);
+		
+		RegisterRender(NetherBrickFenceGate);
 		
 		for (int i = 0; i < EnumHandler.CompBlockTypes.values().length; i++) {
 			RegisterRender(CompressedCobblestone, i, "cobblestone_" + EnumHandler.CompBlockTypes.values()[i].getName());

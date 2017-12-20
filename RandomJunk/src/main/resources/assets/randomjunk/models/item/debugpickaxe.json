@@ -1,7 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "randomjunk:items/debugitems/debug_pickaxe"
+        "layer0": "randomjunk:items/debug/debug_pickaxe"
      },
 
     "display": {

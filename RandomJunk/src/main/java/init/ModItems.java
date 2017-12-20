@@ -28,6 +28,7 @@ import items.boneitems.Item_BoneMix;
 import items.flintitems.Item_FlintIngot;
 import items.obsidianitems.Item_ObsidianIngot;
 import items.obsidianitems.Item_ObsidianShard;
+import items.steelitems.Item_SteelIngot;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -64,6 +65,9 @@ public class ModItems {
 	public static Item ObsidianIngot;
 	public static Item ObsidianShard;
 
+	//Steel Items
+	public static Item SteelIngot;
+	
 	//Bone Items
 	public static Item BoneIngot;
 	public static Item BoneMix;
@@ -100,6 +104,8 @@ public class ModItems {
 		ObsidianIngot = new Item_ObsidianIngot();
 		ObsidianShard = new Item_ObsidianShard();
 
+		SteelIngot = new Item_SteelIngot();
+		
 		//Bone Things
 		BoneIngot = new Item_BoneIngot();
 		BoneMix = new Item_BoneMix();
@@ -141,6 +147,9 @@ public class ModItems {
 		//Obsidian Items
 		GameRegistry.register(ObsidianIngot);
 
+		//Steel Items
+		GameRegistry.register(SteelIngot);
+		
 		//Bone Items
 		GameRegistry.register(BoneIngot);
 
@@ -151,42 +160,45 @@ public class ModItems {
 	public static void RegisterRenders() {
 		//-//Register Render Items
 		//Apples
-		registerRender(AppleApple);
-		registerRender(BlazeApple);
-		registerRender(ClayApple);
-		registerRender(CoalApple);
-		registerRender(DiamondApple);
-		registerRender(EmeraldApple);
-		registerRender(EnderPearlApple);
-		registerRender(FlintApple);
-		registerRender(GlowstoneApple);
-		registerRender(GunpowderApple);
-		registerRender(InkApple);
-		registerRender(IronApple);
-		registerRender(LapisApple);
-		registerRender(LeatherApple);
-		registerRender(MagmaCreamApple);
-		registerRender(ObsidianApple);
-		registerRender(PaperApple);
-		registerRender(PrismarineApple);
-		registerRender(QuartzApple);
-		registerRender(RedstoneApple);
-		registerRender(RottenFleshApple);
-		registerRender(SlimeApple);
+		RegisterRender(AppleApple);
+		RegisterRender(BlazeApple);
+		RegisterRender(ClayApple);
+		RegisterRender(CoalApple);
+		RegisterRender(DiamondApple);
+		RegisterRender(EmeraldApple);
+		RegisterRender(EnderPearlApple);
+		RegisterRender(FlintApple);
+		RegisterRender(GlowstoneApple);
+		RegisterRender(GunpowderApple);
+		RegisterRender(InkApple);
+		RegisterRender(IronApple);
+		RegisterRender(LapisApple);
+		RegisterRender(LeatherApple);
+		RegisterRender(MagmaCreamApple);
+		RegisterRender(ObsidianApple);
+		RegisterRender(PaperApple);
+		RegisterRender(PrismarineApple);
+		RegisterRender(QuartzApple);
+		RegisterRender(RedstoneApple);
+		RegisterRender(RottenFleshApple);
+		RegisterRender(SlimeApple);
 
 		//Obsidian Items
-		registerRender(ObsidianIngot);
-		registerRender(ObsidianShard);
+		RegisterRender(ObsidianIngot);
+		RegisterRender(ObsidianShard);
 
+		//Steel Items
+		RegisterRender(SteelIngot);
+		
 		//Bone Items
-		registerRender(BoneIngot);
-		registerRender(BoneMix);
+		RegisterRender(BoneIngot);
+		RegisterRender(BoneMix);
 
 		//Flint Items
-		registerRender(FlintIngot);
+		RegisterRender(FlintIngot);
 		
 	}
-	private static void registerRender(Item item) {
+	private static void RegisterRender(Item item) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 	}
 }

@@ -61,6 +61,10 @@ public class AchievementHandler {
 	public static Achievement Achievement_ObsidianIngot = CreateAchievement("ObsidianIngot", -3, 3, ModItems.ObsidianIngot, Achievement_ObsidianShard);
 	public static Achievement Achievement_ObsidianPickaxe = CreateAchievement("ObsidianPickaxe", -1, 3, ModTools.ObsidianPickaxe, Achievement_ObsidianIngot);
 	
+	//Obsidian Items
+	public static Achievement Achievement_SteelIngot = CreateAchievement("SteelIngot", -3, 5, ModItems.ObsidianIngot, null);
+	public static Achievement Achievement_SteelPickaxe = CreateAchievement("SteelPickaxe", -1, 5, ModTools.ObsidianPickaxe, Achievement_SteelIngot);
+	
 	//Create Achievements
 	public static void RegisterAchievements() {
 		Achievement[] AchievementArray = new Achievement[Achievements.size()];

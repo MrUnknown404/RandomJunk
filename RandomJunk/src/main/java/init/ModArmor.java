@@ -14,6 +14,10 @@ import items.obsidianitems.Item_ObsidianBoots;
 import items.obsidianitems.Item_ObsidianChestplate;
 import items.obsidianitems.Item_ObsidianHelmet;
 import items.obsidianitems.Item_ObsidianLeggings;
+import items.steelitems.Item_SteelBoots;
+import items.steelitems.Item_SteelChestplate;
+import items.steelitems.Item_SteelHelmet;
+import items.steelitems.Item_SteelLeggings;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.SoundEvents;
@@ -30,18 +34,25 @@ public class ModArmor {
 	//durability * 16 for the chestplate
 	//durability * 15 for the leggings
 	//durability * 13 for the boots
-
-	public static ArmorMaterial ARMMAT_OBSIDIAN = EnumHelper.addArmorMaterial("ARMMAT_OBSIDIAN",  Reference.MOD_ID+":obsidian", 44 , new int[]{4, 6, 8, 4}, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0f); //Texture, Durability, Damage Reduction, Enchantability, SoundEvent, Toughness
-	public static ArmorMaterial ARMMAT_BONE = EnumHelper.addArmorMaterial("ARMMAT_BONE",  Reference.MOD_ID+":bone", 18 , new int[]{3, 5, 6, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f); //Texture, Durability, Damage Reduction, Enchantability, SoundEvent, Toughness
-	public static ArmorMaterial ARMMAT_FLINT = EnumHelper.addArmorMaterial("ARMMAT_FLINT",  Reference.MOD_ID+":flint", 9 , new int[]{2, 3, 4, 2}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f); //Texture, Durability, Damage Reduction, Enchantability, SoundEvent, Toughness
-
+	//Texture, Durability, Damage Reduction, Enchantability, SoundEvent, Toughness
+	
+	public static ArmorMaterial ARMMAT_OBSIDIAN = EnumHelper.addArmorMaterial("ARMMAT_OBSIDIAN",  Reference.MOD_ID+":obsidian", 44 , new int[]{4, 6, 8, 4}, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 3.0f);
+	public static ArmorMaterial ARMMAT_BONE = EnumHelper.addArmorMaterial("ARMMAT_BONE",  Reference.MOD_ID+":bone", 18 , new int[]{3, 5, 6, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f);
+	public static ArmorMaterial ARMMAT_FLINT = EnumHelper.addArmorMaterial("ARMMAT_FLINT",  Reference.MOD_ID+":flint", 9 , new int[]{2, 3, 4, 2}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f);
+	public static ArmorMaterial ARMMAT_STEEL = EnumHelper.addArmorMaterial("ARMMAT_STEEL",  Reference.MOD_ID+":steel", 24 , new int[]{2, 4, 5, 3}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f);
 	//Items
 	//Obsidian
 	public static ItemArmor ObsidianHelmet;
 	public static ItemArmor ObsidianChestplate;
 	public static ItemArmor ObsidianLeggings;
 	public static ItemArmor ObsidianBoots;
-
+	
+	//Steel
+	public static ItemArmor SteelHelmet;
+	public static ItemArmor SteelChestplate;
+	public static ItemArmor SteelLeggings;
+	public static ItemArmor SteelBoots;
+	
 	//Bone
 	public static ItemArmor BoneHelmet;
 	public static ItemArmor BoneChestplate;
@@ -60,7 +71,13 @@ public class ModArmor {
 		ObsidianChestplate = new Item_ObsidianChestplate(ARMMAT_OBSIDIAN, 1, EntityEquipmentSlot.CHEST);
 		ObsidianLeggings = new Item_ObsidianLeggings(ARMMAT_OBSIDIAN, 2, EntityEquipmentSlot.LEGS);
 		ObsidianBoots = new Item_ObsidianBoots(ARMMAT_OBSIDIAN, 1, EntityEquipmentSlot.FEET);
-
+		
+		//Steel
+		SteelHelmet = new Item_SteelHelmet(ARMMAT_STEEL, 1, EntityEquipmentSlot.HEAD);
+		SteelChestplate = new Item_SteelChestplate(ARMMAT_STEEL, 1, EntityEquipmentSlot.CHEST);
+		SteelLeggings = new Item_SteelLeggings(ARMMAT_STEEL, 2, EntityEquipmentSlot.LEGS);
+		SteelBoots = new Item_SteelBoots(ARMMAT_STEEL, 1, EntityEquipmentSlot.FEET);
+		
 		//Bone
 		BoneHelmet = new Item_BoneHelmet(ARMMAT_BONE, 1, EntityEquipmentSlot.HEAD);
 		BoneChestplate = new Item_BoneChestplate(ARMMAT_BONE, 1, EntityEquipmentSlot.CHEST);
@@ -80,7 +97,13 @@ public class ModArmor {
 		GameRegistry.register(ObsidianChestplate);
 		GameRegistry.register(ObsidianLeggings);
 		GameRegistry.register(ObsidianBoots);
-
+		
+		//Steel
+		GameRegistry.register(SteelHelmet);
+		GameRegistry.register(SteelChestplate);
+		GameRegistry.register(SteelLeggings);
+		GameRegistry.register(SteelBoots);
+		
 		//Bone
 		GameRegistry.register(BoneHelmet);
 		GameRegistry.register(BoneChestplate);
@@ -100,7 +123,13 @@ public class ModArmor {
 		registerRender(ObsidianChestplate);
 		registerRender(ObsidianLeggings);
 		registerRender(ObsidianBoots);
-
+		
+		//Steel
+		registerRender(SteelHelmet);
+		registerRender(SteelChestplate);
+		registerRender(SteelLeggings);
+		registerRender(SteelBoots);
+		
 		//Bone
 		registerRender(BoneHelmet);
 		registerRender(BoneChestplate);
@@ -112,6 +141,7 @@ public class ModArmor {
 		registerRender(FlintChestplate);
 		registerRender(FlintLeggings);
 		registerRender(FlintBoots);
+
 	}
 
 	private static void registerRender(Item item) {

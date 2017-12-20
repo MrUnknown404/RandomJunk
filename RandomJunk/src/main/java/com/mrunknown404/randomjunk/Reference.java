@@ -21,6 +21,7 @@ public class Reference {
 		OBSIDIANBLOCK("ObsidianBlock","ObsidianBlock"),
 		BONEBLOCK("BoneBlock","BoneBlock"),
 		FLINTBLOCK("FlintBlock","FlintBlock"),
+		STEELBLOCK("SteelBlock","SteelBlock"),
 
 		EMPTYJAR("EmptyJar","EmptyJar"),
 		GROUNDLANTERN("GroundLantern","GroundLantern"),
@@ -36,7 +37,9 @@ public class Reference {
 		COBBLESTONEFENCEGATE("CobblestoneFenceGate","CobblestoneFenceGate"),
 		
 		MOSSYCOBBLESTONEFENCE("MossyCobblestoneFence","MossyCobblestoneFence"),
-		MOSSYCOBBLESTONEFENCEGATE("MossyCobblestoneFenceGate","MossyCobblestoneFenceGate");
+		MOSSYCOBBLESTONEFENCEGATE("MossyCobblestoneFenceGate","MossyCobblestoneFenceGate"),
+		
+		NETHERBRICKFENCEGATE("NetherBrickFenceGate","NetherBrickFenceGate");
 		
 		private String unlocalizedName;
 		private String registryName;
@@ -123,7 +126,19 @@ public class Reference {
 		FLINTLEGGINGS("FlintLeggings","FlintLeggings"),
 		FLINTBOOTS("FlintBoots","FlintBoots"),
 
-		//
+		//Steel
+		STEELINGOT("SteelIngot","SteelIngot"),
+		
+		STEELSHOVEL("SteelShovel","SteelShovel"),
+		STEELPICKAXE("SteelPickaxe","SteelPickaxe"),
+		STEELAXE("SteelAxe","SteelAxe"),
+		STEELHOE("SteelHoe","SteelHoe"),
+		STEELSWORD("SteelSword","SteelSword"),
+		
+		STEELHELMET("SteelHelmet","SteelHelmet"),
+		STEELCHESTPLATE("SteelChestplate","SteelChestplate"),
+		STEELLEGGINGS("SteelLeggings","SteelLeggings"),
+		STEELBOOTS("SteelBoots","SteelBoots"),
 		
 		//Debug Tools
 		DEBUGPICKAXE("DebugPickaxe","DebugPickaxe");
