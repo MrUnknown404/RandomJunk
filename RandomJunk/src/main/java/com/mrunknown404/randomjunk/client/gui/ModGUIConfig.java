@@ -12,10 +12,10 @@ import static com.mrunknown404.randomjunk.handlers.ConfigHandler.*;
 public class ModGUIConfig extends GuiConfig {
 	public ModGUIConfig(GuiScreen guiScreen) {
 		super(guiScreen,
-				new ConfigElement(getConfiguration().getCategory(Configuration.CATEGORY_GENERAL)).getChildElements(),
+				new ConfigElement(getConfiguration().getCategory(category_general)).getChildElements(),
 				Reference.MOD_ID,
 				false,
-				false,
+				true,
 				GuiConfig.getAbridgedConfigPath(getConfiguration().toString()));
 	}
 }

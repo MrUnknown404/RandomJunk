@@ -56,6 +56,8 @@ item.FlintSword.name=Flint Sword
 item.DebugPickaxe.name=Debug Pickaxe
 
 //-//Blocks
+tile.SandyDirt.name=Sandy Dirt
+
 tile.ObsidianBlock.name=Block of Obsidian
 tile.BoneBlock.name=Block of Bone
 tile.FlintBlock.name=Block of Flint

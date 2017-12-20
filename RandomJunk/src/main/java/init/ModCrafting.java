@@ -18,55 +18,13 @@ public class ModCrafting {
 		while (recipes.hasNext()) {
 		ItemStack output = ((IRecipe) recipes.next()).getRecipeOutput();
 			if (output != null && output.getItem() != null) {
+				for (int i = 0; i < 15; i++) {
+					if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, i))) {
+						recipes.remove();
+					}
+				}
+				
 				if (ItemStack.areItemStacksEqual(output, new ItemStack(Items.MAGMA_CREAM))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 0))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 1))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 2))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 3))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 4))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 5))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 6))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 7))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 8))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 9))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 10))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 11))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 12))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 13))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 14))) {
-					recipes.remove();
-				}
-				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.WOOL, 1, 15))) {
 					recipes.remove();
 				}
 			}
@@ -140,6 +98,8 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintBoots, 1),"F-F","F-F",'F',ModItems.FlintIngot);
 
 		//-//Blocks
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.SandyDirt,4),"DS","SD", 'S', new ItemStack(Blocks.SAND, 1, 0), 'D', new ItemStack(Blocks.DIRT, 1, 0));
+		
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.ObsidianBlock,1),"OOO","OOO","OOO",'O',ModItems.ObsidianIngot);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.BoneBlock,1),"BBB","BBB","BBB",'B',ModItems.BoneIngot);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.FlintBlock,1),"FFF","FFF","FFF",'F',ModItems.FlintIngot);
@@ -276,6 +236,7 @@ public class ModCrafting {
 		
 		//Wools
 		//White
+		
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 1 ));
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 2 ));
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, 3 ));

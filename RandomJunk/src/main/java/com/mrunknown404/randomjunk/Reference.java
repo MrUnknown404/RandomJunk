@@ -16,6 +16,8 @@ public class Reference {
 	//Blocks
 	public static enum RandomJunkBlocks {
 		//Misc
+		SANDYDIRT("SandyDirt","SandyDirt"),
+		
 		OBSIDIANBLOCK("ObsidianBlock","ObsidianBlock"),
 		BONEBLOCK("BoneBlock","BoneBlock"),
 		FLINTBLOCK("FlintBlock","FlintBlock"),
@@ -121,6 +123,8 @@ public class Reference {
 		FLINTLEGGINGS("FlintLeggings","FlintLeggings"),
 		FLINTBOOTS("FlintBoots","FlintBoots"),
 
+		//
+		
 		//Debug Tools
 		DEBUGPICKAXE("DebugPickaxe","DebugPickaxe");
 

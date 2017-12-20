@@ -25,6 +25,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import world.ModBiomeRegistry;
+import world.gen.ModWorldGenerator;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS, guiFactory = Reference.GUI_FACTORY_CLASS)
 
@@ -61,7 +63,6 @@ public class RandomJunk {
 		
 		//Achievements
 		AchievementHandler.RegisterAchievements();
-		
 	}
 	
 	@EventHandler
@@ -71,6 +72,11 @@ public class RandomJunk {
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
+		
+		GameRegistry.registerWorldGenerator(new ModWorldGenerator(), 0);
+		
+		ModBiomeRegistry.InitializeBiome();
+		ModBiomeRegistry.RegisterBiome();
 		
 		//Crafting Init
 		ModCrafting.UnregisterRecipes();

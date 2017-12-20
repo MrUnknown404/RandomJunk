@@ -14,6 +14,7 @@ import blocks.Block_GroundLantern;
 import blocks.Block_HangingLantern;
 import blocks.Block_LapisTorch;
 import blocks.Block_ObsidianBlock;
+import blocks.Block_SandyDirt;
 import blocks.fences.Block_CobblestoneFence;
 import blocks.fences.Block_CobblestoneFenceGate;
 import blocks.fences.Block_MossyCobblestoneFence;
@@ -30,6 +31,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks {
 
 	//Blocks
+	public static Block SandyDirt;
+	
 	public static Block ObsidianBlock;
 	public static Block BoneBlock;
 	public static Block FlintBlock;
@@ -53,6 +56,8 @@ public class ModBlocks {
 	
 	public static void Init() {
 		//Blocks
+		SandyDirt = new Block_SandyDirt();
+		
 		ObsidianBlock = new Block_ObsidianBlock();
 		BoneBlock = new Block_BoneBlock();
 		FlintBlock = new Block_FlintBlock();
@@ -76,6 +81,8 @@ public class ModBlocks {
 	}
 	public static void Register() {
 		//Register Blocks
+		RegisterBlock(SandyDirt);
+		
 		RegisterBlock(ObsidianBlock);
 		RegisterBlock(BoneBlock);
 		RegisterBlock(FlintBlock);
@@ -115,6 +122,8 @@ public class ModBlocks {
 	public static void RegisterRenders() {
 		//-//Register Render Items
 		//Blocks
+		RegisterRender(SandyDirt);
+		
 		RegisterRender(ObsidianBlock);
 		RegisterRender(BoneBlock);
 		RegisterRender(FlintBlock);

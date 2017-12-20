@@ -11,10 +11,18 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class ConfigHandler {
 	
 	public static Configuration Config;
-	public static boolean InfDurability = false;
-	public static boolean UpdateCheck = true;
-	public static boolean DebugItems = false;
-	public static boolean MaxStack = true;
+	
+	public static boolean InfDurability;
+	public static boolean UpdateCheck;
+	public static boolean DebugItems;
+	public static boolean MaxStack;
+	
+	public static int ModBiomeID_Dead;
+	
+	
+	public static final String category_general = "general";
+	public static final String category_debug = "debug";
+	public static final String category_biomeid = "biomeid";
 	
 	public static void init(String ConfigDir) {
 		if (Config == null) {
@@ -26,11 +34,18 @@ public class ConfigHandler {
 	}
 	
 	private static void loadConfiguration() {
-		//Order Doesn't Matter
-		InfDurability = Config.getBoolean("Infinite Durability (Beta)",Configuration.CATEGORY_GENERAL,false,"Enable/Disable Infinite Durabilty (Requires Restart, Also Buggy)");
-		DebugItems = Config.getBoolean("Debug Items",Configuration.CATEGORY_GENERAL,false,"Enable/Disable Debug Items (Requires Restart)");
-		UpdateCheck = Config.getBoolean("Update Check (Beta)",Configuration.CATEGORY_GENERAL,true,"Check For Updates (Does Nothing Currently)");
-		UpdateCheck = Config.getBoolean("Max Stack",Configuration.CATEGORY_GENERAL,true,"Sets Max Stack Size to 64 for items that are normaly 16 (Requires Restart)");
+		//general
+		InfDurability = Config.getBoolean("Infinite Durability (Beta)", category_general, false,"Enable/Disable infinite durabilty (Requires restart, also buggy)");
+		UpdateCheck = Config.getBoolean("Update Check (Beta)", category_general, true,"Check for Updates (Does nothing currently)");
+		MaxStack = Config.getBoolean("Max Stack", category_general, true,"Sets Max Stack Size to 64 for items that are normaly 16 (Requires restart)");
+		
+		//debug
+		DebugItems = Config.getBoolean("Debug Items", category_general, false, "Enable/Disable Debug Items (Requires restart)");
+		
+		//biomeid
+		ModBiomeID_Dead = Config.getInt("ModBiomeID Dead", category_general, 40, 40, 126, "The Biome ID (Can break existing Worlds)");
+		
+		
 		
 		if (Config.hasChanged()) {
 			Config.save();
