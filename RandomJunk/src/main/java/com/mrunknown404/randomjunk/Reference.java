@@ -4,7 +4,7 @@ public class Reference {
 	//Strings
 	public static final String MOD_ID = "randomjunk";
 	public static final String NAME = "RandomJunk!";
-	public static final String VERSION = "1.7.2-Beta";
+	public static final String VERSION = "1.8.0-Beta";
 	public static final String ACCEPTED_VERSIONS = "[1.11.2]";
 
 	public static final String GUI_FACTORY_CLASS = "com.mrunknown404.randomjunk.client.gui.GuiFactory";
@@ -17,7 +17,7 @@ public class Reference {
 	public static enum RandomJunkBlocks {
 		//Misc
 		SANDYDIRT("SandyDirt","SandyDirt"),
-		
+
 		OBSIDIANBLOCK("ObsidianBlock","ObsidianBlock"),
 		BONEBLOCK("BoneBlock","BoneBlock"),
 		FLINTBLOCK("FlintBlock","FlintBlock"),
@@ -32,15 +32,15 @@ public class Reference {
 		COMPRESSEDCOBBLESTONE("CompressedCobblestone","CompressedCobblestone"),
 		COMPRESSEDDIRT("CompressedDirt","CompressedDirt"),
 		COMPRESSEDSAND ("CompressedSand", "CompressedSand"),
-		
+
 		COBBLESTONEFENCE("CobblestoneFence","CobblestoneFence"),
 		COBBLESTONEFENCEGATE("CobblestoneFenceGate","CobblestoneFenceGate"),
-		
+
 		MOSSYCOBBLESTONEFENCE("MossyCobblestoneFence","MossyCobblestoneFence"),
 		MOSSYCOBBLESTONEFENCEGATE("MossyCobblestoneFenceGate","MossyCobblestoneFenceGate"),
-		
+
 		NETHERBRICKFENCEGATE("NetherBrickFenceGate","NetherBrickFenceGate");
-		
+
 		private String unlocalizedName;
 		private String registryName;
 
@@ -128,18 +128,18 @@ public class Reference {
 
 		//Steel
 		STEELINGOT("SteelIngot","SteelIngot"),
-		
+
 		STEELSHOVEL("SteelShovel","SteelShovel"),
 		STEELPICKAXE("SteelPickaxe","SteelPickaxe"),
 		STEELAXE("SteelAxe","SteelAxe"),
 		STEELHOE("SteelHoe","SteelHoe"),
 		STEELSWORD("SteelSword","SteelSword"),
-		
+
 		STEELHELMET("SteelHelmet","SteelHelmet"),
 		STEELCHESTPLATE("SteelChestplate","SteelChestplate"),
 		STEELLEGGINGS("SteelLeggings","SteelLeggings"),
 		STEELBOOTS("SteelBoots","SteelBoots"),
-		
+
 		//Debug Tools
 		DEBUGPICKAXE("DebugPickaxe","DebugPickaxe");
 
