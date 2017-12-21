@@ -23,7 +23,7 @@ public class ModBiomeRegistry {
 	}
 	
 	public static void RegisterBiome() {
-		BiomeDictionary.addTypes(Dead_Biome, Type.SANDY ,Type.HOT, Type.DRY, Type.SPARSE);
+		BiomeDictionary.addTypes(Dead_Biome, Type.SANDY ,Type.HOT, Type.DRY, Type.SPARSE, Type.RARE);
 		BiomeManager.addBiome(BiomeManager.BiomeType.DESERT, new BiomeManager.BiomeEntry(Dead_Biome, 1)); //1
 		BiomeManager.addSpawnBiome(Dead_Biome);
 		BiomeProvider.allowedBiomes.add(Dead_Biome);

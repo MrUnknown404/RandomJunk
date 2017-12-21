@@ -35,11 +35,11 @@ public class ModWorldGenerator extends WorldGenerator implements IWorldGenerator
 	
 	@Override
 	public void generate(Random rand, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator,
-			IChunkProvider chunkProvider) {
-		int blockX = chunkX * 16;
-		int blockZ = chunkZ * 16;
-		
-		switch (world.provider.getDimension()) {
+		IChunkProvider chunkProvider) {
+			int blockX = chunkX * 16;
+			int blockZ = chunkZ * 16;
+			
+			switch (world.provider.getDimension()) {
 			case 0: {
 				generateOverworld(world, rand, blockX + 8, blockZ + 8);
 				break;

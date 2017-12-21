@@ -8,6 +8,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 public class ModCrafting {
 
@@ -60,65 +62,65 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModItems.SlimeApple, 1),"XXX","XAX","XXX",'X',Items.SLIME_BALL,'A',Items.APPLE);
 
 		//Obsidian Recipes
-		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianShovel, 1),"O","S","S",'O',ModItems.ObsidianIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianPickaxe, 1),"OOO","-S-","-S-",'O',ModItems.ObsidianIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianAxe, 1),"OO-","OS-","-S-",'O',ModItems.ObsidianIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianHoe, 1),"OO-","-S-","-S-",'O',ModItems.ObsidianIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianSword, 1),"O","O","S",'O',ModItems.ObsidianIngot,'S',Items.STICK);
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.ObsidianShovel, 1),"O","S","S",'O',"ingotObsidian",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.ObsidianPickaxe, 1),"OOO","-S-","-S-",'O',"ingotObsidian",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.ObsidianAxe, 1),"OO-","OS-","-S-",'O',"ingotObsidian",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.ObsidianHoe, 1),"OO-","-S-","-S-",'O',"ingotObsidian",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.ObsidianSword, 1),"O","O","S",'O',"ingotObsidian",'S',Items.STICK));
 
 		//Obsidian Recipes
-		GameRegistry.addRecipe(new ItemStack(ModTools.SteelShovel, 1),"O","S","S",'O',ModItems.SteelIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.SteelPickaxe, 1),"OOO","-S-","-S-",'O',ModItems.SteelIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.SteelAxe, 1),"OO-","OS-","-S-",'O',ModItems.SteelIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.SteelHoe, 1),"OO-","-S-","-S-",'O',ModItems.SteelIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.SteelSword, 1),"O","O","S",'O',ModItems.SteelIngot,'S',Items.STICK);
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.SteelShovel, 1),"O","S","S",'O',"ingotSteel",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.SteelPickaxe, 1),"OOO","-S-","-S-",'O',"ingotSteel",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.SteelAxe, 1),"OO-","OS-","-S-",'O',"ingotSteel",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.SteelHoe, 1),"OO-","-S-","-S-",'O',"ingotSteel",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.SteelSword, 1),"O","O","S",'O',"ingotSteel",'S',Items.STICK));
 
 		//Bone Recipes
-		GameRegistry.addRecipe(new ItemStack(ModTools.BoneShovel, 1),"O","S","S",'O',ModItems.BoneIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.BonePickaxe, 1),"OOO","-S-","-S-",'O',ModItems.BoneIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.BoneAxe, 1),"OO-","OS-","-S-",'O',ModItems.BoneIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.BoneHoe, 1),"OO-","-S-","-S-",'O',ModItems.BoneIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.BoneSword, 1),"O","O","S",'O',ModItems.BoneIngot,'S',Items.STICK);
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.BoneShovel, 1),"O","S","S",'O',"ingotBone",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.BonePickaxe, 1),"OOO","-S-","-S-",'O',"ingotBone",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.BoneAxe, 1),"OO-","OS-","-S-",'O',"ingotBone",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.BoneHoe, 1),"OO-","-S-","-S-",'O',"ingotBone",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.BoneSword, 1),"O","O","S",'O',"ingotBone",'S',Items.STICK));
 
 		//Flint Recipes
-		GameRegistry.addRecipe(new ItemStack(ModTools.FlintShovel, 1),"O","S","S",'O',ModItems.FlintIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.FlintPickaxe, 1),"OOO","-S-","-S-",'O',ModItems.FlintIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.FlintAxe, 1),"OO-","OS-","-S-",'O',ModItems.FlintIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.FlintHoe, 1),"OO-","-S-","-S-",'O',ModItems.FlintIngot,'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModTools.FlintSword, 1),"O","O","S",'O',ModItems.FlintIngot,'S',Items.STICK);
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.FlintShovel, 1),"O","S","S",'O',"ingotFlint",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.FlintPickaxe, 1),"OOO","-S-","-S-",'O',"ingotFlint",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.FlintAxe, 1),"OO-","OS-","-S-",'O',"ingotFlint",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.FlintHoe, 1),"OO-","-S-","-S-",'O',"ingotFlint",'S',Items.STICK));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModTools.FlintSword, 1),"O","O","S",'O',"ingotFlint",'S',Items.STICK));
 
 		//-//Armor
 		//Obsidian Recipes
-		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianHelmet, 1),"OOO","O-O",'O',ModItems.ObsidianIngot);
-		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianChestplate, 1),"O-O","OOO","OOO",'O',ModItems.ObsidianIngot);
-		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianLeggings, 1),"OOO","O-O","O-O",'O',ModItems.ObsidianIngot);
-		GameRegistry.addRecipe(new ItemStack(ModArmor.ObsidianBoots, 1),"O-O","O-O",'O',ModItems.ObsidianIngot);
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.ObsidianHelmet, 1),"OOO","O-O",'O',"ingotObsidian"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.ObsidianChestplate, 1),"O-O","OOO","OOO",'O',"ingotObsidian"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.ObsidianLeggings, 1),"OOO","O-O","O-O",'O',"ingotObsidian"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.ObsidianBoots, 1),"O-O","O-O",'O',"ingotObsidian"));
 
 		//Steel Recipes
-		GameRegistry.addRecipe(new ItemStack(ModArmor.SteelHelmet, 1),"SSS","S-S",'S',ModItems.SteelIngot);
-		GameRegistry.addRecipe(new ItemStack(ModArmor.SteelChestplate, 1),"S-S","SSS","SSS",'S',ModItems.SteelIngot);
-		GameRegistry.addRecipe(new ItemStack(ModArmor.SteelLeggings, 1),"SSS","S-S","S-S",'S',ModItems.SteelIngot);
-		GameRegistry.addRecipe(new ItemStack(ModArmor.SteelBoots, 1),"S-S","S-S",'S',ModItems.SteelIngot);
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.SteelHelmet, 1),"SSS","S-S",'S',"ingotSteel"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.SteelChestplate, 1),"S-S","SSS","SSS",'S',"ingotSteel"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.SteelLeggings, 1),"SSS","S-S","S-S",'S',"ingotSteel"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.SteelBoots, 1),"S-S","S-S",'S',"ingotSteel"));
 
 		//Bone Recipes
-		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneHelmet, 1),"BBB","B-B",'B',ModItems.BoneIngot);
-		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneChestplate, 1),"B-B","BBB","BBB",'B',ModItems.BoneIngot);
-		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneLeggings, 1),"BBB","B-B","B-B",'B',ModItems.BoneIngot);
-		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneBoots, 1),"B-B","B-B",'B',ModItems.BoneIngot);
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.BoneHelmet, 1),"BBB","B-B",'B',"ingotBone"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.BoneChestplate, 1),"B-B","BBB","BBB",'B',"ingotBone"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.BoneLeggings, 1),"BBB","B-B","B-B",'B',"ingotBone"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.BoneBoots, 1),"B-B","B-B",'B',"ingotBone"));
 
 		//Flint Recipes
-		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintHelmet, 1),"FFF","F-F",'F',ModItems.FlintIngot);
-		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintChestplate, 1),"F-F","F","F",'F',ModItems.FlintIngot);
-		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintLeggings, 1),"FFF","F-F","F-F",'F',ModItems.FlintIngot);
-		GameRegistry.addRecipe(new ItemStack(ModArmor.FlintBoots, 1),"F-F","F-F",'F',ModItems.FlintIngot);
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.FlintHelmet, 1),"FFF","F-F",'F',"ingotFlint"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.FlintChestplate, 1),"F-F","FFF","FFF",'F',"ingotFlint"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.FlintLeggings, 1),"FFF","F-F","F-F",'F',"ingotFlint"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.FlintBoots, 1),"F-F","F-F",'F',"ingotFlint"));
 
 		//-//Blocks
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.SandyDirt,4),"DS","SD", 'S', new ItemStack(Blocks.SAND, 1, 0), 'D', new ItemStack(Blocks.DIRT, 1, 0));
 
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.ObsidianBlock,1),"OOO","OOO","OOO",'O',ModItems.ObsidianIngot);
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.SteelBlock,1),"SSS","SSS","SSS",'S',ModItems.SteelIngot);
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.BoneBlock,1),"BBB","BBB","BBB",'B',ModItems.BoneIngot);
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.FlintBlock,1),"FFF","FFF","FFF",'F',ModItems.FlintIngot);
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.ObsidianBlock,1),"OOO","OOO","OOO",'O',"ingotObsidian"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.SteelBlock,1),"SSS","SSS","SSS",'S',"ingotSteel"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.BoneBlock,1),"BBB","BBB","BBB",'B',"ingotBone"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.FlintBlock,1),"FFF","FFF","FFF",'F',"ingotFlint"));
 
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.EmptyJar, 1),"W","G",'W',Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE,'G',Blocks.GLASS);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.GroundLantern, 1),"T","I",'T',Blocks.TORCH,'I',Items.IRON_INGOT);
@@ -171,10 +173,10 @@ public class ModCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.FLINT, 1), new ItemStack(Blocks.GRAVEL, 1)); //Gravel Into Flint
 
 		//Blocks Into Ingot
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ObsidianIngot, 9), new ItemStack(ModBlocks.ObsidianBlock, 1));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.SteelIngot, 9), new ItemStack(ModBlocks.SteelBlock, 1));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneIngot, 9), new ItemStack(ModBlocks.BoneBlock, 1));
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.FlintIngot, 9), new ItemStack(ModBlocks.FlintBlock, 1));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.ObsidianIngot, 9), "blockObsidian"));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.SteelIngot, 9), "blockSteel"));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.BoneIngot, 9), "blockBone"));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.FlintIngot, 9), "blockFlint"));
 
 		//Compressed
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.COBBLESTONE, 9), new ItemStack(ModBlocks.CompressedCobblestone, 1, 0));

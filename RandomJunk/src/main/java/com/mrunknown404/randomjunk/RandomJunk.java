@@ -3,6 +3,7 @@ package com.mrunknown404.randomjunk;
 import com.mrunknown404.randomjunk.handlers.AchievementHandler;
 import com.mrunknown404.randomjunk.handlers.ConfigHandler;
 import com.mrunknown404.randomjunk.handlers.FuelHandler;
+import com.mrunknown404.randomjunk.handlers.OreDictionaryHandler;
 import com.mrunknown404.randomjunk.handlers.PickupHandler;
 import com.mrunknown404.randomjunk.handlers.BlockHarvestHandler;
 import com.mrunknown404.randomjunk.proxy.CommonProxy;
@@ -62,18 +63,20 @@ public class RandomJunk {
 		GameRegistry.registerFuelHandler(new FuelHandler());
 		
 		//Achievements
-		AchievementHandler.RegisterAchievements();
+		AchievementHandler.RegisterAchievements();	
 	}
 	
 	@EventHandler
 	public void Init(FMLInitializationEvent event) {
 		proxy.init();
+		
+		OreDictionaryHandler.RegisterOreDictionary();
 	}
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		
-		GameRegistry.registerWorldGenerator(new ModWorldGenerator(), 0);
+		GameRegistry.registerWorldGenerator(new ModWorldGenerator(), 1);
 		
 		ModBiomeRegistry.InitializeBiome();
 		ModBiomeRegistry.RegisterBiome();
