@@ -32,7 +32,7 @@ public class ModCrafting {
 			}
 		}
 	}
-	
+
 	public static void RegisterRecipes() {
 		//-//-//Shaped
 		//-//Items
@@ -65,7 +65,7 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianAxe, 1),"OO-","OS-","-S-",'O',ModItems.ObsidianIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianHoe, 1),"OO-","-S-","-S-",'O',ModItems.ObsidianIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.ObsidianSword, 1),"O","O","S",'O',ModItems.ObsidianIngot,'S',Items.STICK);
-		
+
 		//Obsidian Recipes
 		GameRegistry.addRecipe(new ItemStack(ModTools.SteelShovel, 1),"O","S","S",'O',ModItems.SteelIngot,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModTools.SteelPickaxe, 1),"OOO","-S-","-S-",'O',ModItems.SteelIngot,'S',Items.STICK);
@@ -99,7 +99,7 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModArmor.SteelChestplate, 1),"S-S","SSS","SSS",'S',ModItems.SteelIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.SteelLeggings, 1),"SSS","S-S","S-S",'S',ModItems.SteelIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.SteelBoots, 1),"S-S","S-S",'S',ModItems.SteelIngot);
-		
+
 		//Bone Recipes
 		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneHelmet, 1),"BBB","B-B",'B',ModItems.BoneIngot);
 		GameRegistry.addRecipe(new ItemStack(ModArmor.BoneChestplate, 1),"B-B","BBB","BBB",'B',ModItems.BoneIngot);
@@ -114,60 +114,60 @@ public class ModCrafting {
 
 		//-//Blocks
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.SandyDirt,4),"DS","SD", 'S', new ItemStack(Blocks.SAND, 1, 0), 'D', new ItemStack(Blocks.DIRT, 1, 0));
-		
+
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.ObsidianBlock,1),"OOO","OOO","OOO",'O',ModItems.ObsidianIngot);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.SteelBlock,1),"SSS","SSS","SSS",'S',ModItems.SteelIngot);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.BoneBlock,1),"BBB","BBB","BBB",'B',ModItems.BoneIngot);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.FlintBlock,1),"FFF","FFF","FFF",'F',ModItems.FlintIngot);
-		
+
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.EmptyJar, 1),"W","G",'W',Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE,'G',Blocks.GLASS);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.GroundLantern, 1),"T","I",'T',Blocks.TORCH,'I',Items.IRON_INGOT);
-		
+
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.GlowstoneTorch, 4),"G","S",'G',Items.GLOWSTONE_DUST,'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.LapisTorch, 4),"G","S",'G',new ItemStack(Items.DYE, 1, 4),'S',Items.STICK);
-		
+
 		GameRegistry.addRecipe(new ItemStack(Blocks.OBSIDIAN, 1),"OO","OO",'O',ModItems.ObsidianShard);
 
 		GameRegistry.addRecipe(new ItemStack(Blocks.WOOL, 1),"SS","SS",'S',Items.STRING);
-		
+
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CobblestoneFence, 3),"FSF","FSF",'S',Items.STICK,'F',Blocks.COBBLESTONE);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CobblestoneFenceGate, 1),"SFS","SFS",'S',Items.STICK,'F',Blocks.COBBLESTONE);
-		
+
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.MossyCobblestoneFence, 3),"FSF","FSF",'S',Items.STICK,'F',Blocks.MOSSY_COBBLESTONE);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.MossyCobblestoneFenceGate, 1),"SFS","SFS",'S',Items.STICK,'F',Blocks.MOSSY_COBBLESTONE);
-		
+
 		GameRegistry.addRecipe(new ItemStack(Blocks.NETHER_BRICK_FENCE, 3),"FSF","FSF",'S',Items.STICK,'F',Blocks.NETHER_BRICK);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.NetherBrickFenceGate, 1),"SFS","SFS",'S',Items.STICK,'F',Blocks.NETHER_BRICK);
-		
+
 		//Compressed Blocks
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,0), "CCC","CCC","CCC",'C',Blocks.COBBLESTONE);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,0), "DDD","DDD","DDD",'D',Blocks.DIRT);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,0), "SSS","SSS","SSS",'S',Blocks.SAND);
-		
+
 		for (int i = 0; i < 11; i++) {
 			GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,i+1), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedCobblestone, 1, i));
 			GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,i+1), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedDirt, 1, i));
 			GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedSand,1,i+1), "SSS","SSS","SSS",'S',new ItemStack(ModBlocks.CompressedSand, 1, i));
 		}
-		
+
 		//Slab Recipes
 		for (int i = 0; i < 6; i++) {
 			GameRegistry.addRecipe(new ItemStack(Blocks.PLANKS, 1, i),"S","S",'S',new ItemStack(Blocks.WOODEN_SLAB, 1, i));
 		}
-		
+
 		GameRegistry.addRecipe(new ItemStack(Blocks.STONE, 1),"S","S",'S',new ItemStack(Blocks.STONE_SLAB, 1, 0)); //Stone Slab
 		GameRegistry.addRecipe(new ItemStack(Blocks.COBBLESTONE, 1),"S","S",'S',new ItemStack(Blocks.STONE_SLAB, 1, 3)); //Cobblestone Slab
 		GameRegistry.addRecipe(new ItemStack(Blocks.BRICK_BLOCK, 1),"S","S",'S',new ItemStack(Blocks.STONE_SLAB, 1, 4)); //Brick Slab
 		GameRegistry.addRecipe(new ItemStack(Blocks.NETHER_BRICK, 1),"S","S",'S',new ItemStack(Blocks.STONE_SLAB, 1, 6)); //Netherbrick Slab
-		
+
 		//-//-//Shapeless
 		//-//Items
 		//Misc
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.MAGMA_CREAM, 2), new ItemStack(Items.SLIME_BALL, 1), new ItemStack(Items.BLAZE_POWDER, 1));
-		
+
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneMix, 1), new ItemStack(Items.BONE, 1), new ItemStack(Items.BONE, 1), new ItemStack(Items.BONE, 1)); //Block Into Ingot
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ObsidianShard, 4), new ItemStack(Blocks.OBSIDIAN, 1));
-		
+
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.FLINT, 1), new ItemStack(Blocks.GRAVEL, 1)); //Gravel Into Flint
 
 		//Blocks Into Ingot
@@ -175,28 +175,27 @@ public class ModCrafting {
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.SteelIngot, 9), new ItemStack(ModBlocks.SteelBlock, 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneIngot, 9), new ItemStack(ModBlocks.BoneBlock, 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.FlintIngot, 9), new ItemStack(ModBlocks.FlintBlock, 1));
-		
+
 		//Compressed
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.COBBLESTONE, 9), new ItemStack(ModBlocks.CompressedCobblestone, 1, 0));
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.DIRT, 9), new ItemStack(ModBlocks.CompressedDirt, 1, 0));
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.SAND, 9), new ItemStack(ModBlocks.CompressedSand, 1, 0));
-		
+
 		for (int i = 0; i < 11; i++) {
 			GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedCobblestone, 9, i), new ItemStack(ModBlocks.CompressedCobblestone, 1, i+1));
 			GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedDirt, 9, i), new ItemStack(ModBlocks.CompressedDirt, 1, i+1));
 			GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.CompressedSand, 9, i), new ItemStack(ModBlocks.CompressedSand, 1, i+1));
 		}
-		
+
 		//-//Blocks
 		//Misc
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.HangingLantern, 1),new ItemStack(ModBlocks.GroundLantern, 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.GroundLantern, 1),new ItemStack(ModBlocks.HangingLantern, 1));
-		
+
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.SAND, 1),new ItemStack(Blocks.SAND, 1, 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.SAND, 1, 1),new ItemStack(Blocks.SAND, 1));
-		
+
 		//Wools
-		//White
 		for (int i = 0; i < 15; i++) {
 			if (i !=0) {
 				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 0 ), new ItemStack(Items.DYE, 1, 15),new ItemStack(Blocks.WOOL, 1, i));
@@ -247,7 +246,7 @@ public class ModCrafting {
 				GameRegistry.addShapelessRecipe(new ItemStack(Blocks.WOOL, 1, 15), new ItemStack(Items.DYE, 1, 0 ),new ItemStack(Blocks.WOOL, 1, i));
 			}
 		}
-		
+
 		//-//-//Smelting
 		//Misc
 		GameRegistry.addSmelting(Items.ROTTEN_FLESH, new ItemStack(Items.LEATHER), 0.1f);
