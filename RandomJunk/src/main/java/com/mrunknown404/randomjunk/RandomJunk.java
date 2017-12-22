@@ -27,7 +27,8 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import world.ModBiomeRegistry;
-import world.gen.ModWorldGenerator;
+import world.gen.DeadTree1Gen;
+import world.gen.OreGen;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS, guiFactory = Reference.GUI_FACTORY_CLASS)
 
@@ -49,13 +50,13 @@ public class RandomJunk {
 		MinecraftForge.EVENT_BUS.register(new PickupHandler());
 		
 		//Items/Blocks Init
-		ModItems.Init();
 		ModBlocks.Init();
+		ModItems.Init();
 		ModTools.Init();
 		ModArmor.Init();
 		
-		ModItems.Register();
 		ModBlocks.Register();
+		ModItems.Register();
 		ModTools.Register();
 		ModArmor.Register();
 		
@@ -76,7 +77,8 @@ public class RandomJunk {
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		
-		GameRegistry.registerWorldGenerator(new ModWorldGenerator(), 1);
+		GameRegistry.registerWorldGenerator(new DeadTree1Gen(), 1);
+		GameRegistry.registerWorldGenerator(new OreGen(), 0);
 		
 		ModBiomeRegistry.InitializeBiome();
 		ModBiomeRegistry.RegisterBiome();

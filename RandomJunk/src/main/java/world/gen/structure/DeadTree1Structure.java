@@ -1,25 +1,16 @@
 package world.gen.structure;
 
-
-
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Random;
 
 import com.mrunknown404.randomjunk.Reference;
 
-import java.util.Map.Entry;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.init.PotionTypes;
-import net.minecraft.item.ItemPotion;
-import net.minecraft.item.ItemStack;
-import net.minecraft.potion.PotionUtils;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityBrewingStand;
 import net.minecraft.tileentity.TileEntityChest;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.ResourceLocation;
@@ -33,13 +24,12 @@ import net.minecraft.world.gen.structure.template.PlacementSettings;
 import net.minecraft.world.gen.structure.template.Template;
 import net.minecraft.world.gen.structure.template.TemplateManager;
 import net.minecraft.world.storage.loot.LootTableList;
-import world.gen.ModWorldGenerator;
+import world.gen.DeadTree1Gen;
 
-public class DeadTree1WorldGen extends WorldGenerator {
-	 Random r2 = new Random();
+public class DeadTree1Structure extends WorldGenerator {
+	Random r2 = new Random();
 	
-  
-    int r;
+	int r;
 	@Override
 	public boolean generate(World world, Random rand, BlockPos position) {
 		WorldServer worldserver = (WorldServer) world;
@@ -47,13 +37,12 @@ public class DeadTree1WorldGen extends WorldGenerator {
 		TemplateManager templatemanager = worldserver.getStructureTemplateManager();
 		Template template = templatemanager.getTemplate(minecraftserver, new ResourceLocation(Reference.MOD_ID+":deadtree1"));
 		
-		if(template == null)
-		{
+		if (template == null) {
 			System.out.println("NO STRUCTURE");
 			return false;
 		}
 		
-		if(ModWorldGenerator.canSpawnHere(template, worldserver, position)) {
+		if (DeadTree1Gen.canSpawnHere(template, worldserver, position)) {
 			IBlockState iblockstate = world.getBlockState(position);
 			world.notifyBlockUpdate(position, iblockstate, iblockstate, 3);
 			

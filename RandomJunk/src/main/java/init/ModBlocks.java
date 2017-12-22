@@ -7,6 +7,8 @@ import blocks.Block_BoneBlock;
 import blocks.Block_CompressedCobblestone;
 import blocks.Block_CompressedDirt;
 import blocks.Block_CompressedSand;
+import blocks.Block_CopperBlock;
+import blocks.Block_CopperOre;
 import blocks.Block_EmptyJar;
 import blocks.Block_FlintBlock;
 import blocks.Block_GlowstoneTorch;
@@ -16,6 +18,8 @@ import blocks.Block_LapisTorch;
 import blocks.Block_ObsidianBlock;
 import blocks.Block_SandyDirt;
 import blocks.Block_SteelBlock;
+import blocks.Block_TinBlock;
+import blocks.Block_TinOre;
 import blocks.fences.Block_CobblestoneFence;
 import blocks.fences.Block_CobblestoneFenceGate;
 import blocks.fences.Block_MossyCobblestoneFence;
@@ -34,58 +38,68 @@ public class ModBlocks {
 
 	//Blocks
 	public static Block SandyDirt;
-	
+
 	public static Block ObsidianBlock;
 	public static Block SteelBlock;
 	public static Block BoneBlock;
 	public static Block FlintBlock;
-	
+	public static Block CopperBlock;
+	public static Block TinBlock;
+
+	public static Block CopperOre;
+	public static Block TinOre;
+
 	public static Block EmptyJar;
 	public static Block GroundLantern;
 	public static Block HangingLantern;
-	
+
 	public static Block GlowstoneTorch;
 	public static Block LapisTorch;
-	
+
 	public static Block CompressedCobblestone;
 	public static Block CompressedDirt;
 	public static Block CompressedSand;
-	
+
 	public static Block CobblestoneFence;
 	public static Block CobblestoneFenceGate;
-	
+
 	public static Block MossyCobblestoneFence;
 	public static Block MossyCobblestoneFenceGate;
-	
+
 	public static Block NetherBrickFenceGate;
-	
+
 	public static void Init() {
 		//Blocks
-		SandyDirt = new Block_SandyDirt();
-		
-		ObsidianBlock = new Block_ObsidianBlock();
-		SteelBlock = new Block_SteelBlock();
-		BoneBlock = new Block_BoneBlock();
-		FlintBlock = new Block_FlintBlock();
-		
-		EmptyJar = new Block_EmptyJar();
-		GroundLantern = new Block_GroundLantern();
-		HangingLantern = new Block_HangingLantern();
-		
-		GlowstoneTorch = new Block_GlowstoneTorch();
-		LapisTorch = new Block_LapisTorch();
-		
-		CompressedCobblestone = new Block_CompressedCobblestone();
-		CompressedDirt = new Block_CompressedDirt();
-		CompressedSand = new Block_CompressedSand();
-		
-		CobblestoneFence = new Block_CobblestoneFence();
-		CobblestoneFenceGate = new Block_CobblestoneFenceGate();
-		
-		MossyCobblestoneFence = new Block_MossyCobblestoneFence();
+		SandyDirt =                 new Block_SandyDirt();
+
+		ObsidianBlock =             new Block_ObsidianBlock();
+		SteelBlock =                new Block_SteelBlock();
+		BoneBlock =                 new Block_BoneBlock();
+		FlintBlock =                new Block_FlintBlock();
+		CopperBlock =               new Block_CopperBlock();
+		TinBlock =                  new Block_TinBlock();
+
+		CopperOre =                 new Block_CopperOre();
+		TinOre =                    new Block_TinOre();
+
+		EmptyJar =                  new Block_EmptyJar();
+		GroundLantern =             new Block_GroundLantern();
+		HangingLantern =            new Block_HangingLantern();
+
+		GlowstoneTorch =            new Block_GlowstoneTorch();
+		LapisTorch =                new Block_LapisTorch();
+
+		CompressedCobblestone =     new Block_CompressedCobblestone();
+		CompressedDirt =            new Block_CompressedDirt();
+		CompressedSand =            new Block_CompressedSand();
+
+		CobblestoneFence =          new Block_CobblestoneFence();
+		CobblestoneFenceGate =      new Block_CobblestoneFenceGate();
+
+		MossyCobblestoneFence =     new Block_MossyCobblestoneFence();
 		MossyCobblestoneFenceGate = new Block_MossyCobblestoneFenceGate();
-		
-		NetherBrickFenceGate = new Block_NetherBrickFenceGate();
+
+		NetherBrickFenceGate =      new Block_NetherBrickFenceGate();
 	}
 	public static void Register() {
 		//Register Blocks
@@ -95,6 +109,11 @@ public class ModBlocks {
 		RegisterBlock(SteelBlock);
 		RegisterBlock(BoneBlock);
 		RegisterBlock(FlintBlock);
+		RegisterBlock(CopperBlock);
+		RegisterBlock(TinBlock);
+		
+		RegisterBlock(CopperOre);
+		RegisterBlock(TinOre);
 		
 		RegisterBlock(EmptyJar);
 		RegisterBlock(GroundLantern);
@@ -139,6 +158,11 @@ public class ModBlocks {
 		RegisterRender(SteelBlock);
 		RegisterRender(BoneBlock);
 		RegisterRender(FlintBlock);
+		RegisterRender(CopperBlock);
+		RegisterRender(TinBlock);
+		
+		RegisterRender(CopperOre);
+		RegisterRender(TinOre);
 		
 		RegisterRender(EmptyJar);
 		RegisterRender(GroundLantern);

@@ -31,3 +31,6 @@ magma
 magenta
 cyan
 biomeid
+nuggets
+ingots
+overworld

@@ -4,7 +4,7 @@ public class Reference {
 	//Strings
 	public static final String MOD_ID = "randomjunk";
 	public static final String NAME = "RandomJunk!";
-	public static final String VERSION = "1.8.2-Beta";
+	public static final String VERSION = "1.9.0-Beta";
 	public static final String ACCEPTED_VERSIONS = "[1.11.2]";
 
 	public static final String GUI_FACTORY_CLASS = "com.mrunknown404.randomjunk.client.gui.GuiFactory";
@@ -22,7 +22,12 @@ public class Reference {
 		BONEBLOCK("BoneBlock","BoneBlock"),
 		FLINTBLOCK("FlintBlock","FlintBlock"),
 		STEELBLOCK("SteelBlock","SteelBlock"),
-
+		COPPERBLOCK("CopperBlock","CopperBlock"),
+		TINBLOCK("TinBlock","TinBlock"),
+		
+		COPPERORE("CopperOre","CopperOre"),
+		TINORE("TinOre","TinOre"),
+		
 		EMPTYJAR("EmptyJar","EmptyJar"),
 		GROUNDLANTERN("GroundLantern","GroundLantern"),
 		HANGINGLANTERN("HangingLantern","HangingLantern"),
@@ -128,6 +133,7 @@ public class Reference {
 
 		//Steel
 		STEELINGOT("SteelIngot","SteelIngot"),
+		STEELNUGGET("SteelNugget","SteelNugget"),
 
 		STEELSHOVEL("SteelShovel","SteelShovel"),
 		STEELPICKAXE("SteelPickaxe","SteelPickaxe"),
@@ -140,6 +146,34 @@ public class Reference {
 		STEELLEGGINGS("SteelLeggings","SteelLeggings"),
 		STEELBOOTS("SteelBoots","SteelBoots"),
 
+		COPPERINGOT("CopperIngot","CopperIngot"),
+		COPPERNUGGET("CopperNugget","CopperNugget"),
+
+		COPPERSHOVEL("CopperShovel","CopperShovel"),
+		COPPERPICKAXE("CopperPickaxe","CopperPickaxe"),
+		COPPERAXE("CopperAxe","CopperAxe"),
+		COPPERHOE("CopperHoe","CopperHoe"),
+		COPPERSWORD("CopperSword","CopperSword"),
+
+		COPPERHELMET("CopperHelmet","CopperHelmet"),
+		COPPERCHESTPLATE("CopperChestplate","CopperChestplate"),
+		COPPERLEGGINGS("CopperLeggings","CopperLeggings"),
+		COPPERBOOTS("CopperBoots","CopperBoots"),
+		
+		TININGOT("TinIngot","TinIngot"),
+		TINNUGGET("TinNugget","TinNugget"),
+
+		TINSHOVEL("TinShovel","TinShovel"),
+		TINPICKAXE("TinPickaxe","TinPickaxe"),
+		TINAXE("TinAxe","TinAxe"),
+		TINHOE("TinHoe","TinHoe"),
+		TINSWORD("TinSword","TinSword"),
+
+		TINHELMET("TinHelmet","TinHelmet"),
+		TINCHESTPLATE("TinChestplate","TinChestplate"),
+		TINLEGGINGS("TinLeggings","TinLeggings"),
+		TINBOOTS("TinBoots","TinBoots"),
+		
 		//Debug Tools
 		DEBUGPICKAXE("DebugPickaxe","DebugPickaxe");
 

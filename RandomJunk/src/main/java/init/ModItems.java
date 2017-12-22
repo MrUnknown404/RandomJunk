@@ -1,6 +1,5 @@
 package init;
 
-import net.minecraftforge.common.util.EnumHelper;
 import items.apples.Item_AppleApple;
 import items.apples.Item_BlazeApple;
 import items.apples.Item_ClayApple;
@@ -25,11 +24,15 @@ import items.apples.Item_RottenFleshApple;
 import items.apples.Item_SlimeApple;
 import items.boneitems.Item_BoneIngot;
 import items.boneitems.Item_BoneMix;
+import items.copperitems.Item_CopperIngot;
+import items.copperitems.Item_CopperNugget;
 import items.flintitems.Item_FlintIngot;
 import items.obsidianitems.Item_ObsidianIngot;
 import items.obsidianitems.Item_ObsidianShard;
 import items.steelitems.Item_SteelIngot;
-import net.minecraft.block.material.Material;
+import items.steelitems.Item_SteelNugget;
+import items.tinitems.Item_TinIngot;
+import items.tinitems.Item_TinNugget;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -61,57 +64,64 @@ public class ModItems {
 	public static Item RottenFleshApple;
 	public static Item SlimeApple;
 
-	//Obsidian Items
-	public static Item ObsidianIngot;
+	//Misc
 	public static Item ObsidianShard;
-
-	//Steel Items
-	public static Item SteelIngot;
-	
-	//Bone Items
-	public static Item BoneIngot;
 	public static Item BoneMix;
 
-	//Flint Items
+	//Ingots
+	public static Item ObsidianIngot;
+	public static Item SteelIngot;
+	public static Item CopperIngot;
+	public static Item BoneIngot;
+	public static Item TinIngot;
 	public static Item FlintIngot;
+	
+	//Nuggets
+	public static Item SteelNugget;
+	public static Item TinNugget;
+	public static Item CopperNugget;
 
 	public static void Init() {
 		//Apples
-		AppleApple = new Item_AppleApple();
-		BlazeApple = new Item_BlazeApple();
-		ClayApple = new Item_ClayApple();
-		CoalApple = new Item_CoalApple();
-		DiamondApple = new Item_DiamondApple();
-		EmeraldApple = new Item_EmeraldApple();
-		EnderPearlApple = new Item_EnderPearlApple();
-		FlintApple = new Item_FlintApple();
-		GlowstoneApple = new Item_GlowstoneApple();
-		GunpowderApple = new Item_GunpowderApple();
-		InkApple = new Item_InkApple();
-		IronApple = new Item_IronApple();
-		LapisApple = new Item_LapisApple();
-		LeatherApple = new Item_LeatherApple();
-		MagmaCreamApple = new Item_MagmaCreamApple();
-		ObsidianApple = new Item_ObsidianApple();
-		PaperApple = new Item_PaperApple();
-		PrismarineApple = new Item_PrismarineApple();
-		QuartzApple = new Item_QuartzApple();
-		RedstoneApple = new Item_RedstoneApple();
+		AppleApple =       new Item_AppleApple();
+		BlazeApple =       new Item_BlazeApple();
+		ClayApple =        new Item_ClayApple();
+		CoalApple =        new Item_CoalApple();
+		DiamondApple =     new Item_DiamondApple();
+		EmeraldApple =     new Item_EmeraldApple();
+		EnderPearlApple =  new Item_EnderPearlApple();
+		FlintApple =       new Item_FlintApple();
+		GlowstoneApple =   new Item_GlowstoneApple();
+		GunpowderApple =   new Item_GunpowderApple();
+		InkApple =         new Item_InkApple();
+		IronApple =        new Item_IronApple();
+		LapisApple =       new Item_LapisApple();
+		LeatherApple =     new Item_LeatherApple();
+		MagmaCreamApple =  new Item_MagmaCreamApple();
+		ObsidianApple =    new Item_ObsidianApple();
+		PaperApple =       new Item_PaperApple();
+		PrismarineApple =  new Item_PrismarineApple();
+		QuartzApple =      new Item_QuartzApple();
+		RedstoneApple =    new Item_RedstoneApple();
 		RottenFleshApple = new Item_RottenFleshApple();
-		SlimeApple = new Item_SlimeApple();
+		SlimeApple =       new Item_SlimeApple();
 
-		//Obsidian Things
-		ObsidianIngot = new Item_ObsidianIngot();
-		ObsidianShard = new Item_ObsidianShard();
+		//Misc
+		ObsidianShard =    new Item_ObsidianShard();
+		BoneMix =          new Item_BoneMix();
 
-		SteelIngot = new Item_SteelIngot();
-		
-		//Bone Things
-		BoneIngot = new Item_BoneIngot();
-		BoneMix = new Item_BoneMix();
+		//Ingots
+		ObsidianIngot =    new Item_ObsidianIngot();
+		SteelIngot =       new Item_SteelIngot();
+		CopperIngot =      new Item_CopperIngot();
+		BoneIngot =        new Item_BoneIngot();
+		TinIngot =         new Item_TinIngot();
+		FlintIngot =       new Item_FlintIngot();
 
-		//Flint Things
-		FlintIngot = new Item_FlintIngot();
+		//Nuggets
+		SteelNugget =      new Item_SteelNugget();
+		CopperNugget =     new Item_CopperNugget();
+		TinNugget =        new Item_TinNugget();
 
 	}
 	public static void Register() {
@@ -144,18 +154,19 @@ public class ModItems {
 		GameRegistry.register(ObsidianShard);
 		GameRegistry.register(BoneMix);
 		
-		//Obsidian Items
+		//Ingots
 		GameRegistry.register(ObsidianIngot);
-
-		//Steel Items
 		GameRegistry.register(SteelIngot);
-		
-		//Bone Items
 		GameRegistry.register(BoneIngot);
-
-		//Flint Items
+		GameRegistry.register(CopperIngot);
+		GameRegistry.register(TinIngot);
 		GameRegistry.register(FlintIngot);
-		
+
+		//Nuggets
+		GameRegistry.register(SteelNugget);
+		GameRegistry.register(CopperNugget);
+		GameRegistry.register(TinNugget);
+
 	}
 	public static void RegisterRenders() {
 		//-//Register Render Items
@@ -183,20 +194,23 @@ public class ModItems {
 		RegisterRender(RottenFleshApple);
 		RegisterRender(SlimeApple);
 
-		//Obsidian Items
-		RegisterRender(ObsidianIngot);
+		//Misc
 		RegisterRender(ObsidianShard);
-
-		//Steel Items
-		RegisterRender(SteelIngot);
-		
-		//Bone Items
-		RegisterRender(BoneIngot);
 		RegisterRender(BoneMix);
 
-		//Flint Items
+		//Ingots
+		RegisterRender(ObsidianIngot);
+		RegisterRender(SteelIngot);
+		RegisterRender(CopperIngot);
+		RegisterRender(BoneIngot);
+		RegisterRender(TinIngot);
 		RegisterRender(FlintIngot);
-		
+
+		//Nuggets
+		RegisterRender(SteelNugget);
+		RegisterRender(CopperNugget);
+		RegisterRender(TinNugget);
+
 	}
 	private static void RegisterRender(Item item) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));

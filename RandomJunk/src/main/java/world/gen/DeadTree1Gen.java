@@ -2,34 +2,18 @@ package world.gen;
 
 import java.util.Random;
 
-import com.mrunknown404.randomjunk.handlers.ConfigHandler;
-
 import init.ModBlocks;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockBush;
-import net.minecraft.block.BlockVine;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.PropertyBool;
-import net.minecraft.block.state.IBlockState;
-import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
-import net.minecraft.world.gen.feature.WorldGenBigMushroom;
-import net.minecraft.world.gen.feature.WorldGenBush;
-import net.minecraft.world.gen.feature.WorldGenLakes;
-import net.minecraft.world.gen.feature.WorldGenMinable;
-import net.minecraft.world.gen.feature.WorldGenVines;
-import net.minecraft.world.gen.feature.WorldGenWaterlily;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraft.world.gen.structure.template.Template;
 import net.minecraftforge.fml.common.IWorldGenerator;
-import world.ModBiomeRegistry;
-import world.gen.structure.DeadTree1WorldGen;
+import world.gen.structure.DeadTree1Structure;
 
-public class ModWorldGenerator extends WorldGenerator implements IWorldGenerator {
+public class DeadTree1Gen extends WorldGenerator implements IWorldGenerator {
 	
 	static Random rand2 = new Random();
 	
@@ -51,7 +35,7 @@ public class ModWorldGenerator extends WorldGenerator implements IWorldGenerator
 		if ((int) (Math.random() * 10) == 0) {
 			int y = getGroundFromAbove(world, blockX, blockZ);
 			BlockPos pos = new BlockPos(blockX, y, blockZ);
-			WorldGenerator structure = new DeadTree1WorldGen();
+			WorldGenerator structure = new DeadTree1Structure();
 			structure.generate(world, rand, pos);
 		}
 	}
@@ -59,7 +43,7 @@ public class ModWorldGenerator extends WorldGenerator implements IWorldGenerator
 	public static int getGroundFromAbove(World world, int x, int z) {
 		int y = 255;
 		boolean foundGround = false;
-		while(!foundGround && y-- >= 31) { //31
+		while (!foundGround && y-- >= 31) { //31
 			Block blockAt = world.getBlockState(new BlockPos(x,y,z)).getBlock();
 			foundGround = blockAt == ModBlocks.SandyDirt;
 		}

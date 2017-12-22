@@ -33,6 +33,26 @@ item.ObsidianAxe.name=Obsidian Axe
 item.ObsidianHoe.name=Obsidian Hoe
 item.ObsidianSword.name=Obsidian Sword
 
+//Steel
+item.SteelIngot.name=Steel Ingot
+item.SteelNugget.name=Steel Nugget
+
+item.SteelShovel.name=Steel Shovel
+item.SteelPickaxe.name=Steel Pickaxe
+item.SteelAxe.name=Steel Axe
+item.SteelHoe.name=Steel Hoe
+item.SteelSword.name=Steel Sword
+
+//Copper
+item.CopperIngot.name=Copper Ingot
+item.CopperNugget.name=Copper Nugget
+
+item.CopperShovel.name=Copper Shovel
+item.CopperPickaxe.name=Copper Pickaxe
+item.CopperAxe.name=Copper Axe
+item.CopperHoe.name=Copper Hoe
+item.CopperSword.name=Copper Sword
+
 //Bone
 item.BoneMix.name=Bone Mix
 item.BoneIngot.name=Bone Ingot
@@ -43,6 +63,16 @@ item.BoneAxe.name=Bone Axe
 item.BoneHoe.name=Bone Hoe
 item.BoneSword.name=Bone Sword
 
+//Tin
+item.TinIngot.name=Tin Ingot
+item.TinNugget.name=Tin Nugget
+
+item.TinShovel.name=Tin Shovel
+item.TinPickaxe.name=Tin Pickaxe
+item.TinAxe.name=Tin Axe
+item.TinHoe.name=Tin Hoe
+item.TinSword.name=Tin Sword
+
 //Flint
 item.FlintIngot.name=Flint Ingot
 
@@ -52,25 +82,21 @@ item.FlintAxe.name=Flint Axe
 item.FlintHoe.name=Flint Hoe
 item.FlintSword.name=Flint Sword
 
-//Steel
-item.SteelIngot.name=Steel Ingot
-
-item.SteelShovel.name=Steel Shovel
-item.SteelPickaxe.name=Steel Pickaxe
-item.SteelAxe.name=Steel Axe
-item.SteelHoe.name=Steel Hoe
-item.SteelSword.name=Steel Sword
-
 //Debug Items
 item.DebugPickaxe.name=Debug Pickaxe
 
 //-//Blocks
 tile.SandyDirt.name=Sandy Dirt
 
+tile.CopperOre.name=Copper Ore
+tile.TinOre.name=Tin Ore
+
 tile.ObsidianBlock.name=Block of Obsidian
-tile.BoneBlock.name=Block of Bone
-tile.FlintBlock.name=Block of Flint
 tile.SteelBlock.name=Block of Steel
+tile.CopperBlock.name=Block of Copper
+tile.BoneBlock.name=Block of Bone
+tile.TinBlock.name=Block of Tin
+tile.FlintBlock.name=Block of Flint
 
 tile.EmptyJar.name=Empty Jar
 tile.GroundLantern.name=Ground Lantern
@@ -133,23 +159,35 @@ item.ObsidianChestplate.name=Obsidian Chestplate
 item.ObsidianLeggings.name=Obsidian Leggings
 item.ObsidianBoots.name=Obsidian Boots
 
+//Steel
+item.SteelHelmet.name=Steel Helmet
+item.SteelChestplate.name=Steel Chestplate
+item.SteelLeggings.name=Steel Leggings
+item.SteelBoots.name=Steel Boots
+
+//Copper
+item.CopperHelmet.name=Copper Helmet
+item.CopperChestplate.name=Copper Chestplate
+item.CopperLeggings.name=Copper Leggings
+item.CopperBoots.name=Copper Boots
+
 //Bone
 item.BoneHelmet.name=Bone Helmet
 item.BoneChestplate.name=Bone Chestplate
 item.BoneLeggings.name=Bone Leggings
 item.BoneBoots.name=Bone Boots
 
+//Tin
+item.TinHelmet.name=Tin Helmet
+item.TinChestplate.name=Tin Chestplate
+item.TinLeggings.name=Tin Leggings
+item.TinBoots.name=Tin Boots
+
 //Flint
 item.FlintHelmet.name=Flint Helmet
 item.FlintChestplate.name=Flint Chestplate
 item.FlintLeggings.name=Flint Leggings
 item.FlintBoots.name=Flint Boots
-
-//Steel
-item.SteelHelmet.name=Steel Helmet
-item.SteelChestplate.name=Steel Chestplate
-item.SteelLeggings.name=Steel Leggings
-item.SteelBoots.name=Steel Boots
 
 //-//GUI
 //Creative Tabs
@@ -260,3 +298,15 @@ achievement.SteelIngot.desc=Smelt a Steel Ingot!
 
 achievement.SteelPickaxe=Durable Pickaxe
 achievement.SteelPickaxe.desc=Craft a Steel Pickaxe!
+
+achievement.CopperIngot=a Copper Ingot
+achievement.CopperIngot.desc=Smelt a Copper Ingot!
+
+achievement.CopperPickaxe=Copper Pickaxe
+achievement.CopperPickaxe.desc=Craft a Copper Pickaxe!
+
+achievement.TinIngot=a Weak Ingot
+achievement.TinIngot.desc=Smelt a Tin Ingot!
+
+achievement.TinPickaxe=a Weak Pickaxe
+achievement.TinPickaxe.desc=Craft a Tin Pickaxe!
