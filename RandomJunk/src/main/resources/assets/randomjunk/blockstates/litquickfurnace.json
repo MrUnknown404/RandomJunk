@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "randomjunk:litquickfurnace" },
+        "facing=south": { "model": "randomjunk:litquickfurnace", "y": 180 },
+        "facing=west":  { "model": "randomjunk:litquickfurnace", "y": 270 },
+        "facing=east":  { "model": "randomjunk:litquickfurnace", "y": 90 }
+    }
+}

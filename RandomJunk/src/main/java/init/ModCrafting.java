@@ -141,13 +141,15 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModArmor.FlintBoots, 1),         "I-I","I-I",       'I',"ingotFlint"));
 
 		//Nuggets Into Ingots
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.SteelIngot,1), "NNN","NNN","NNN",'N',"nuggetSteel"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.CopperIngot,1), "NNN","NNN","NNN",'N',"nuggetCopper"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.TinIngot,1), "NNN","NNN","NNN",'N',"nuggetTin"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.SteelIngot,1),  "NNN","NNN","NNN",         'N',"nuggetSteel"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.CopperIngot,1), "NNN","NNN","NNN",         'N',"nuggetCopper"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.TinIngot,1),    "NNN","NNN","NNN",         'N',"nuggetTin"));
 		
 		//-//Blocks
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.SandyDirt,4),"DS","SD", 'S', new ItemStack(Blocks.SAND, 1, 0), 'D', new ItemStack(Blocks.DIRT, 1, 0));
 
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.QuickFurnace,1),  "CRC","TFT","CGC", 'C', new ItemStack(ModBlocks.CompressedCobblestone, 1 , 0),'R',Items.REDSTONE,'T',"ingotTin",'F',Blocks.FURNACE,'G',Items.GLOWSTONE_DUST));
+		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.ObsidianBlock,1), "III","III","III",'I',"ingotObsidian"));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.SteelBlock,1),    "III","III","III",'I',"ingotSteel"));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.CopperBlock,1),   "III","III","III",'I',"ingotCopper"));
@@ -158,8 +160,8 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.EmptyJar, 1),      "W","G", 'W',Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, 'G',Blocks.GLASS);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.GroundLantern, 1), "T","I", 'T',Blocks.TORCH,                         'I',Items.IRON_INGOT);
 
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.GlowstoneTorch, 4), "G","S",'G',Items.GLOWSTONE_DUST,           'S',Items.STICK);
-		GameRegistry.addRecipe(new ItemStack(ModBlocks.LapisTorch, 4),     "G","S",'G',new ItemStack(Items.DYE, 1, 4), 'S',Items.STICK);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.GlowstoneTorch, 4), "G","S",'G',Items.GLOWSTONE_DUST,                 'S',Items.STICK);
+		GameRegistry.addRecipe(new ItemStack(ModBlocks.LapisTorch, 4),     "G","S",'G',new ItemStack(Items.DYE, 1, 4),       'S',Items.STICK);
 
 		GameRegistry.addRecipe(new ItemStack(Blocks.OBSIDIAN, 1),          "OO","OO", 'O',ModItems.ObsidianShard);
 		GameRegistry.addRecipe(new ItemStack(Blocks.WOOL, 1),              "SS","SS", 'S',Items.STRING);

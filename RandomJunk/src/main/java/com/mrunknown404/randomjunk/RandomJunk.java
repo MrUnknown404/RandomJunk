@@ -12,6 +12,7 @@ import init.ModArmor;
 import init.ModBlocks;
 import init.ModCrafting;
 import init.ModItems;
+import init.ModTileEntities;
 import init.ModTools;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
@@ -26,6 +27,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import tileentity.TileEntityQuickFurnace;
 import world.ModBiomeRegistry;
 import world.gen.DeadTree1Gen;
 import world.gen.OreGen;
@@ -50,13 +52,14 @@ public class RandomJunk {
 		MinecraftForge.EVENT_BUS.register(new PickupHandler());
 		
 		//Items/Blocks Init
-		ModBlocks.Init();
 		ModItems.Init();
+		ModBlocks.Init();
 		ModTools.Init();
 		ModArmor.Init();
+		ModTileEntities.init();
 		
-		ModBlocks.Register();
 		ModItems.Register();
+		ModBlocks.Register();
 		ModTools.Register();
 		ModArmor.Register();
 		

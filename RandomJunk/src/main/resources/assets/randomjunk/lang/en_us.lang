@@ -86,6 +86,9 @@ item.FlintSword.name=Flint Sword
 item.DebugPickaxe.name=Debug Pickaxe
 
 //-//Blocks
+tile.QuickFurnace.name=Quick Furnace
+tile.LitQuickFurnace.name=Lit Quick Furnace
+
 tile.SandyDirt.name=Sandy Dirt
 
 tile.CopperOre.name=Copper Ore
@@ -193,6 +196,9 @@ item.FlintBoots.name=Flint Boots
 //Creative Tabs
 itemGroup.Tab_RandomJunkItems=RandomJunk Items
 itemGroup.Tab_RandomJunkBlocks=RandomJunk Blocks
+
+//Containers
+container.quickfurnace=Quick Furnace
 
 //-//Achievements
 //Apples

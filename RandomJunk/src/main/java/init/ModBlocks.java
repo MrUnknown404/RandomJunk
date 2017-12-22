@@ -16,6 +16,7 @@ import blocks.Block_GroundLantern;
 import blocks.Block_HangingLantern;
 import blocks.Block_LapisTorch;
 import blocks.Block_ObsidianBlock;
+import blocks.Block_QuickFurnace;
 import blocks.Block_SandyDirt;
 import blocks.Block_SteelBlock;
 import blocks.Block_TinBlock;
@@ -68,6 +69,9 @@ public class ModBlocks {
 
 	public static Block NetherBrickFenceGate;
 
+	public static Block QuickFurnace;
+	public static Block LitQuickFurnace;
+
 	public static void Init() {
 		//Blocks
 		SandyDirt =                 new Block_SandyDirt();
@@ -100,7 +104,11 @@ public class ModBlocks {
 		MossyCobblestoneFenceGate = new Block_MossyCobblestoneFenceGate();
 
 		NetherBrickFenceGate =      new Block_NetherBrickFenceGate();
+		
+		QuickFurnace =              new Block_QuickFurnace(false);
+		LitQuickFurnace =           new Block_QuickFurnace(true);
 	}
+	
 	public static void Register() {
 		//Register Blocks
 		RegisterBlock(SandyDirt);
@@ -123,8 +131,8 @@ public class ModBlocks {
 		RegisterBlock(LapisTorch);
 		
 		RegisterBlock(CompressedCobblestone, new Item_Compressed(CompressedCobblestone));
-		RegisterBlock(CompressedDirt, new Item_Compressed(CompressedDirt));
-		RegisterBlock(CompressedSand, new Item_Compressed(CompressedSand));
+		RegisterBlock(CompressedDirt,        new Item_Compressed(CompressedDirt));
+		RegisterBlock(CompressedSand,        new Item_Compressed(CompressedSand));
 		
 		RegisterBlock(CobblestoneFence);
 		RegisterBlock(CobblestoneFenceGate);
@@ -134,6 +142,8 @@ public class ModBlocks {
 		
 		RegisterBlock(NetherBrickFenceGate);
 		
+		RegisterBlock(QuickFurnace);
+		RegisterBlock(LitQuickFurnace);
 	}
 	private static void RegisterBlock(Block block) {
 		GameRegistry.register(block);
@@ -178,6 +188,9 @@ public class ModBlocks {
 		RegisterRender(MossyCobblestoneFenceGate);
 		
 		RegisterRender(NetherBrickFenceGate);
+		
+		RegisterRender(QuickFurnace);
+		RegisterRender(LitQuickFurnace);
 		
 		for (int i = 0; i < EnumHandler.CompBlockTypes.values().length; i++) {
 			RegisterRender(CompressedCobblestone, i, "cobblestone_" + EnumHandler.CompBlockTypes.values()[i].getName());
