@@ -1,14 +1,8 @@
 package world.biome;
 
-import java.util.Random;
-
-import com.mrunknown404.randomjunk.Reference;
-
 import init.ModBlocks;
 import net.minecraft.entity.monster.EntityHusk;
-import net.minecraft.entity.passive.EntityRabbit;
 import net.minecraft.world.biome.Biome;
-
 
 public class Biome_Dead extends Biome {
 	
@@ -16,11 +10,19 @@ public class Biome_Dead extends Biome {
 		super(properties);
 		topBlock = ModBlocks.SandyDirt.getDefaultState();
 		fillerBlock = ModBlocks.SandyDirt.getDefaultState();
-
-		spawnableCreatureList.clear();
+		
 		theBiomeDecorator.treesPerChunk = -999;
 		theBiomeDecorator.deadBushPerChunk = 128;
+		theBiomeDecorator.generateLakes = false;
 		
+		spawnableCreatureList.clear();
 		spawnableCreatureList.add(new Biome.SpawnListEntry(EntityHusk.class, 4, 2, 3));
+		
+		properties.setBaseHeight(0.025F);
+		properties.setHeightVariation(0.015F);
+		properties.setTemperature(2.5F);
+		properties.setRainfall(0.0F);
+		properties.setRainDisabled();
+		properties.setWaterColor(5193500);
 	}
 }
