@@ -2,6 +2,8 @@ package world.gen;
 
 import java.util.Random;
 
+import com.mrunknown404.randomjunk.handlers.ConfigHandler;
+
 import init.ModBlocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -11,9 +13,8 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
-public class OreGen implements IWorldGenerator {
+public class OreGen implements IWorldGenerator{
 	
-	//
 	private WorldGenerator Tin_Overworld;
 	private WorldGenerator Copper_Overworld;
 	
@@ -41,8 +42,8 @@ public class OreGen implements IWorldGenerator {
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 		switch(world.provider.getDimension()) {
 			case 0: { //Overworld
-				this.runGenerator(Tin_Overworld, world, random, chunkX, chunkZ, 20, 0, 64);
-				this.runGenerator(Copper_Overworld, world, random, chunkX, chunkZ, 20, 0, 64);
+				this.runGenerator(Tin_Overworld, world, random, chunkX, chunkZ, ConfigHandler.OreGenTin, 0, 64);
+				this.runGenerator(Copper_Overworld, world, random, chunkX, chunkZ, ConfigHandler.OreGenCopper, 0, 64);
 			}
 			case -1: { //Nether
 				

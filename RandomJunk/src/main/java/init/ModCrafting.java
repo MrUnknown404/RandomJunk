@@ -31,6 +31,9 @@ public class ModCrafting {
 				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.NETHER_BRICK_FENCE, 6))) {
 					recipes.remove();
 				}
+				if (ItemStack.areItemStacksEqual(output, new ItemStack(Blocks.LADDER, 3))) {
+					recipes.remove();
+				}
 			}
 		}
 	}
@@ -146,6 +149,7 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.TinIngot,1),    "NNN","NNN","NNN",         'N',"nuggetTin"));
 		
 		//-//Blocks
+		GameRegistry.addRecipe(new ItemStack(Blocks.LADDER,8),"S-S","SSS","S-S",'S',Items.STICK);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.SandyDirt,4),"DS","SD", 'S', new ItemStack(Blocks.SAND, 1, 0), 'D', new ItemStack(Blocks.DIRT, 1, 0));
 
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.QuickFurnace,1),  "CRC","TFT","CGC", 'C', new ItemStack(ModBlocks.CompressedCobblestone, 1 , 0),'R',Items.REDSTONE,'T',"ingotTin",'F',Blocks.FURNACE,'G',Items.GLOWSTONE_DUST));

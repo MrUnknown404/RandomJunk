@@ -49,6 +49,7 @@ public class RandomJunk {
 		ConfigHandler.init(ConfigDir);
 		
 		MinecraftForge.EVENT_BUS.register(new ConfigHandler());
+		
 		MinecraftForge.EVENT_BUS.register(new PickupHandler());
 		
 		ModTileEntities.init();
@@ -204,6 +205,27 @@ public class RandomJunk {
 			ModTools.FlintHoe.setMaxDamage(1000000);
 			ModTools.FlintSword.setMaxDamage(1000000);
 			
+			//Steel
+			ModTools.SteelShovel.setMaxDamage(1000000);
+			ModTools.SteelPickaxe.setMaxDamage(1000000);
+			ModTools.SteelAxe.setMaxDamage(1000000);
+			ModTools.SteelHoe.setMaxDamage(1000000);
+			ModTools.SteelSword.setMaxDamage(1000000);
+			
+			//Copper
+			ModTools.CopperShovel.setMaxDamage(1000000);
+			ModTools.CopperPickaxe.setMaxDamage(1000000);
+			ModTools.CopperAxe.setMaxDamage(1000000);
+			ModTools.CopperHoe.setMaxDamage(1000000);
+			ModTools.CopperSword.setMaxDamage(1000000);
+			
+			//Tin
+			ModTools.TinShovel.setMaxDamage(1000000);
+			ModTools.TinPickaxe.setMaxDamage(1000000);
+			ModTools.TinAxe.setMaxDamage(1000000);
+			ModTools.TinHoe.setMaxDamage(1000000);
+			ModTools.TinSword.setMaxDamage(1000000);
+			
 			//-//Armor
 			//Obsidian
 			ModArmor.ObsidianHelmet.setMaxDamage(1000000);
@@ -222,6 +244,24 @@ public class RandomJunk {
 			ModArmor.FlintChestplate.setMaxDamage(1000000);
 			ModArmor.FlintLeggings.setMaxDamage(1000000);
 			ModArmor.FlintBoots.setMaxDamage(1000000);
+			
+			//Steel
+			ModArmor.SteelHelmet.setMaxDamage(1000000);
+			ModArmor.SteelChestplate.setMaxDamage(1000000);
+			ModArmor.SteelLeggings.setMaxDamage(1000000);
+			ModArmor.SteelBoots.setMaxDamage(1000000);
+			
+			//Copper
+			ModArmor.CopperHelmet.setMaxDamage(1000000);
+			ModArmor.CopperChestplate.setMaxDamage(1000000);
+			ModArmor.CopperLeggings.setMaxDamage(1000000);
+			ModArmor.CopperBoots.setMaxDamage(1000000);
+			
+			//Tin
+			ModArmor.TinHelmet.setMaxDamage(1000000);
+			ModArmor.TinChestplate.setMaxDamage(1000000);
+			ModArmor.TinLeggings.setMaxDamage(1000000);
+			ModArmor.TinBoots.setMaxDamage(1000000);
 		}
 	}
 }
