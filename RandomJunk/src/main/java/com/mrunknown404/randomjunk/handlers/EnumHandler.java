@@ -40,4 +40,35 @@ public class EnumHandler {
 			return getName();
 		}
 	}
+	
+	public static enum CrateWoodTypes implements IStringSerializable {
+		OAK("oak",0),
+		BIRCH("spruce",1),
+		SPRUCE("birch",2),
+		JUNGLE("jungle",3),
+		ACACIA("acacia",4),
+		DARKOAK("darkoak",5);
+		
+		private int ID;
+		private String name;
+		
+		private CrateWoodTypes(String name, int ID) {
+			this.ID = ID;
+			this.name= name;
+		}
+		
+		@Override
+		public String getName() {
+			return this.name;
+		}
+		
+		public int getID() {
+			return ID;
+		}
+		
+		@Override
+		public String toString() {
+			return getName();
+		}
+	}
 }

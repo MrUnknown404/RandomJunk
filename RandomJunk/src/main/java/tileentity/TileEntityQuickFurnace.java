@@ -85,7 +85,7 @@ public class TileEntityQuickFurnace extends TileEntityLockable implements ITicka
 	}
 
 	public String getName() {
-		return this.hasCustomName() ? this.furnaceCustomName : "container.quickfurnace";
+		return this.hasCustomName() ? this.furnaceCustomName : "container.QuickFurnace";
 	}
 
 	public boolean hasCustomName() {

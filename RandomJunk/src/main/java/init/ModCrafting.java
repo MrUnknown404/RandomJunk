@@ -173,6 +173,11 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(Blocks.NETHER_BRICK_FENCE, 3),           "FSF","FSF",'S',Items.STICK,'F',Blocks.NETHER_BRICK);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.NetherBrickFenceGate, 1),      "SFS","SFS",'S',Items.STICK,'F',Blocks.NETHER_BRICK);
 
+		//Crates
+		for (int i = 0; i < 7; i++) {
+			GameRegistry.addRecipe(new ItemStack(ModBlocks.WoodCrate,1 ,i ),       "WWW","WCW","WWW",'W',new ItemStack(Blocks.PLANKS,1,i),'C',Blocks.CHEST);
+		}
+
 		//Compressed Blocks
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCobblestone,1,0), "CCC","CCC","CCC",'C',Blocks.COBBLESTONE);
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedDirt,1,0),        "CCC","CCC","CCC",'C',Blocks.DIRT);

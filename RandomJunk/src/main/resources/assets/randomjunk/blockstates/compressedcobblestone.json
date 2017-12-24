@@ -1,16 +1,16 @@
 {
    "variants": {
-      "type=compressed_x1": {"model": "randomjunk:cobblestone_compressed_x1"},
-      "type=compressed_x2": {"model": "randomjunk:cobblestone_compressed_x2"},
-      "type=compressed_x3": {"model": "randomjunk:cobblestone_compressed_x3"},
-      "type=compressed_x4": {"model": "randomjunk:cobblestone_compressed_x4"},
-      "type=compressed_x5": {"model": "randomjunk:cobblestone_compressed_x5"},
-      "type=compressed_x6": {"model": "randomjunk:cobblestone_compressed_x6"},
-      "type=compressed_x7": {"model": "randomjunk:cobblestone_compressed_x7"},
-      "type=compressed_x8": {"model": "randomjunk:cobblestone_compressed_x8"},
-      "type=compressed_x9": {"model": "randomjunk:cobblestone_compressed_x9"},
-      "type=compressed_x10": {"model": "randomjunk:cobblestone_compressed_x10"},
-      "type=compressed_x11": {"model": "randomjunk:cobblestone_compressed_x11"},
-      "type=compressed_x12": {"model": "randomjunk:cobblestone_compressed_x12"}
+      "type=compressed_x1": {"model": "randomjunk:compressed/cobblestone_compressed_x1"},
+      "type=compressed_x2": {"model": "randomjunk:compressed/cobblestone_compressed_x2"},
+      "type=compressed_x3": {"model": "randomjunk:compressed/cobblestone_compressed_x3"},
+      "type=compressed_x4": {"model": "randomjunk:compressed/cobblestone_compressed_x4"},
+      "type=compressed_x5": {"model": "randomjunk:compressed/cobblestone_compressed_x5"},
+      "type=compressed_x6": {"model": "randomjunk:compressed/cobblestone_compressed_x6"},
+      "type=compressed_x7": {"model": "randomjunk:compressed/cobblestone_compressed_x7"},
+      "type=compressed_x8": {"model": "randomjunk:compressed/cobblestone_compressed_x8"},
+      "type=compressed_x9": {"model": "randomjunk:compressed/cobblestone_compressed_x9"},
+      "type=compressed_x10": {"model": "randomjunk:compressed/cobblestone_compressed_x10"},
+      "type=compressed_x11": {"model": "randomjunk:compressed/cobblestone_compressed_x11"},
+      "type=compressed_x12": {"model": "randomjunk:compressed/cobblestone_compressed_x12"}
    }
 }

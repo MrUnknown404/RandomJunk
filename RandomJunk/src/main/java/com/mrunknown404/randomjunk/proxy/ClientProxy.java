@@ -1,19 +1,25 @@
 package com.mrunknown404.randomjunk.proxy;
 
+import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
+import com.mrunknown404.randomjunk.client.gui.GuiHandler;
 
 import init.ModArmor;
 import init.ModBlocks;
 import init.ModItems;
+import init.ModTileEntities;
 import init.ModTools;
 import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 public class ClientProxy implements CommonProxy {
 
 	@Override
 	public void init() {
+		NetworkRegistry.INSTANCE.registerGuiHandler(RandomJunk.instance, new GuiHandler());
+		
 		ModItems.RegisterRenders();
 		ModBlocks.RegisterRenders();
 		ModArmor.RegisterRenders();
@@ -60,5 +66,13 @@ public class ClientProxy implements CommonProxy {
 				new ResourceLocation(Reference.MOD_ID, "sand_compressed_x10"),
 				new ResourceLocation(Reference.MOD_ID, "sand_compressed_x11"),
 				new ResourceLocation(Reference.MOD_ID, "sand_compressed_x12"));
+		
+		ModelBakery.registerItemVariants(Item.getItemFromBlock(ModBlocks.WoodCrate), 
+				new ResourceLocation(Reference.MOD_ID, "crate_oak"),
+				new ResourceLocation(Reference.MOD_ID, "crate_birch"),
+				new ResourceLocation(Reference.MOD_ID, "crate_spruce"),
+				new ResourceLocation(Reference.MOD_ID, "crate_jungle"),
+				new ResourceLocation(Reference.MOD_ID, "crate_acacia"),
+				new ResourceLocation(Reference.MOD_ID, "crate_darkoak"));
 	}
 }

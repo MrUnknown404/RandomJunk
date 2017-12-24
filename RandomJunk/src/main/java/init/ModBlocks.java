@@ -21,12 +21,13 @@ import blocks.Block_SandyDirt;
 import blocks.Block_SteelBlock;
 import blocks.Block_TinBlock;
 import blocks.Block_TinOre;
+import blocks.Block_WoodCrate;
 import blocks.fences.Block_CobblestoneFence;
 import blocks.fences.Block_CobblestoneFenceGate;
 import blocks.fences.Block_MossyCobblestoneFence;
 import blocks.fences.Block_MossyCobblestoneFenceGate;
 import blocks.fences.Block_NetherBrickFenceGate;
-import blocks.item.Item_Compressed;
+import blocks.item.Item_Metadata;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -71,6 +72,8 @@ public class ModBlocks {
 
 	public static Block QuickFurnace;
 	public static Block LitQuickFurnace;
+	
+	public static Block WoodCrate;
 
 	public static void Init() {
 		//Blocks
@@ -82,31 +85,33 @@ public class ModBlocks {
 		FlintBlock =                new Block_FlintBlock();
 		CopperBlock =               new Block_CopperBlock();
 		TinBlock =                  new Block_TinBlock();
-
+		
 		CopperOre =                 new Block_CopperOre();
 		TinOre =                    new Block_TinOre();
-
+		
 		EmptyJar =                  new Block_EmptyJar();
 		GroundLantern =             new Block_GroundLantern();
 		HangingLantern =            new Block_HangingLantern();
-
+		
 		GlowstoneTorch =            new Block_GlowstoneTorch();
 		LapisTorch =                new Block_LapisTorch();
-
+		
 		CompressedCobblestone =     new Block_CompressedCobblestone();
 		CompressedDirt =            new Block_CompressedDirt();
 		CompressedSand =            new Block_CompressedSand();
-
+		
 		CobblestoneFence =          new Block_CobblestoneFence();
 		CobblestoneFenceGate =      new Block_CobblestoneFenceGate();
 
 		MossyCobblestoneFence =     new Block_MossyCobblestoneFence();
 		MossyCobblestoneFenceGate = new Block_MossyCobblestoneFenceGate();
-
+		
 		NetherBrickFenceGate =      new Block_NetherBrickFenceGate();
 		
 		QuickFurnace =              new Block_QuickFurnace(false);
 		LitQuickFurnace =           new Block_QuickFurnace(true);
+		
+		WoodCrate =                 new Block_WoodCrate();
 	}
 	
 	public static void Register() {
@@ -123,16 +128,17 @@ public class ModBlocks {
 		RegisterBlock(CopperOre);
 		RegisterBlock(TinOre);
 		
+		RegisterBlock(QuickFurnace);
+		RegisterBlock(LitQuickFurnace);
+		
+		RegisterBlock(WoodCrate,             new Item_Metadata(WoodCrate));
+		
 		RegisterBlock(EmptyJar);
 		RegisterBlock(GroundLantern);
 		RegisterBlock(HangingLantern);
 		
 		RegisterBlock(GlowstoneTorch);
 		RegisterBlock(LapisTorch);
-		
-		RegisterBlock(CompressedCobblestone, new Item_Compressed(CompressedCobblestone));
-		RegisterBlock(CompressedDirt,        new Item_Compressed(CompressedDirt));
-		RegisterBlock(CompressedSand,        new Item_Compressed(CompressedSand));
 		
 		RegisterBlock(CobblestoneFence);
 		RegisterBlock(CobblestoneFenceGate);
@@ -142,8 +148,10 @@ public class ModBlocks {
 		
 		RegisterBlock(NetherBrickFenceGate);
 		
-		RegisterBlock(QuickFurnace);
-		RegisterBlock(LitQuickFurnace);
+		RegisterBlock(CompressedCobblestone, new Item_Metadata(CompressedCobblestone));
+		RegisterBlock(CompressedDirt,        new Item_Metadata(CompressedDirt));
+		RegisterBlock(CompressedSand,        new Item_Metadata(CompressedSand));
+		
 	}
 	private static void RegisterBlock(Block block) {
 		GameRegistry.register(block);
@@ -196,6 +204,9 @@ public class ModBlocks {
 			RegisterRender(CompressedCobblestone, i, "cobblestone_" + EnumHandler.CompBlockTypes.values()[i].getName());
 			RegisterRender(CompressedDirt, i, "dirt_" + EnumHandler.CompBlockTypes.values()[i].getName());
 			RegisterRender(CompressedSand, i, "sand_" + EnumHandler.CompBlockTypes.values()[i].getName());
+		}
+		for (int i = 0; i < EnumHandler.CrateWoodTypes.values().length; i++) {
+			RegisterRender(WoodCrate, i, "crate_" + EnumHandler.CrateWoodTypes.values()[i].getName());
 		}
 	}
 	

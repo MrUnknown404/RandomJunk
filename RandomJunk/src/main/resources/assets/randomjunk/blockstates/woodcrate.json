@@ -1,0 +1,10 @@
+{
+   "variants": {
+      "type=oak": {"model": "randomjunk:crates/crate_oak"},
+      "type=birch": {"model": "randomjunk:crates/crate_birch"},
+      "type=spruce": {"model": "randomjunk:crates/crate_spruce"},
+      "type=jungle": {"model": "randomjunk:crates/crate_jungle"},
+      "type=acacia": {"model": "randomjunk:crates/crate_acacia"},
+      "type=darkoak": {"model": "randomjunk:crates/crate_darkoak"}
+   }
+}

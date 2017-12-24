@@ -116,6 +116,13 @@ tile.MossyCobblestoneFenceGate.name=Mossy Cobblestone Fence Gate
 
 tile.NetherBrickFenceGate.name=Nether Brick Fence Gate
 
+tile.WoodCrate.oak.name=Oak Crate
+tile.WoodCrate.birch.name=Birch Crate
+tile.WoodCrate.spruce.name=Spruce Crate
+tile.WoodCrate.jungle.name=Jungle Crate
+tile.WoodCrate.acacia.name=Acacia Crate
+tile.WoodCrate.darkoak.name=Dark Oak Crate
+
 tile.CompressedCobblestone.compressed_x1.name=Compressed Cobblestone X1
 tile.CompressedCobblestone.compressed_x2.name=Compressed Cobblestone X2
 tile.CompressedCobblestone.compressed_x3.name=Compressed Cobblestone X3
@@ -198,7 +205,8 @@ itemGroup.Tab_RandomJunkItems=RandomJunk Items
 itemGroup.Tab_RandomJunkBlocks=RandomJunk Blocks
 
 //Containers
-container.quickfurnace=Quick Furnace
+container.QuickFurnace=Quick Furnace
+container.WoodCrate=Wood Crate
 
 //-//Achievements
 //Apples

@@ -34,3 +34,5 @@ biomeid
 nuggets
 ingots
 overworld
+itemstack
+stat

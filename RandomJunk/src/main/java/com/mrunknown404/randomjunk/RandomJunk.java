@@ -47,16 +47,17 @@ public class RandomJunk {
 		//Config
 		String ConfigDir = event.getModConfigurationDirectory().toString();
 		ConfigHandler.init(ConfigDir);
-		//FMLCommonHandler.instance().bus().register(new ConfigHandler());
+		
 		MinecraftForge.EVENT_BUS.register(new ConfigHandler());
 		MinecraftForge.EVENT_BUS.register(new PickupHandler());
 		
+		ModTileEntities.init();
 		//Items/Blocks Init
 		ModItems.Init();
 		ModBlocks.Init();
 		ModTools.Init();
 		ModArmor.Init();
-		ModTileEntities.init();
+		
 		
 		ModItems.Register();
 		ModBlocks.Register();
