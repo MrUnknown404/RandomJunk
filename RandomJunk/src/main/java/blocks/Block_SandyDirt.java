@@ -1,7 +1,6 @@
 package blocks;
 
 import com.mrunknown404.randomjunk.Reference;
-import com.sk89q.worldedit.util.Direction;
 
 import init.ModCreativeTabs;
 import net.minecraft.block.Block;
