@@ -6,4 +6,6 @@ import tileentity.TileEntityWoodCrate;
 
 public interface CommonProxy {
 	public void init();
+	
+
 }
