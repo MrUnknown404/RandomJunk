@@ -13,7 +13,7 @@ public class Block_CopperOre extends Block {
 	public Block_CopperOre() {
 		super(Material.ROCK);
 		//
-		setHardness(2.5f);
+		setHardness(3.5f);
 		setResistance(15.0f);
 		setHarvestLevel("pickaxe", 1);
 		setSoundType(SoundType.STONE);

@@ -62,16 +62,16 @@ public class AchievementHandler {
 	public static Achievement Achievement_ObsidianPickaxe = CreateAchievement("ObsidianPickaxe", -1, 3, ModTools.ObsidianPickaxe, Achievement_ObsidianIngot);
 	
 	//Steel Items
-	public static Achievement Achievement_SteelIngot = CreateAchievement("SteelIngot", -3, 5, ModItems.SteelIngot, null);
-	public static Achievement Achievement_SteelPickaxe = CreateAchievement("SteelPickaxe", -1, 5, ModTools.SteelPickaxe, Achievement_SteelIngot);
+	public static Achievement Achievement_SteelIngot = CreateAchievement("SteelIngot", 5, -1, ModItems.SteelIngot, null);
+	public static Achievement Achievement_SteelPickaxe = CreateAchievement("SteelPickaxe", 3, -1, ModTools.SteelPickaxe, Achievement_SteelIngot);
 	
 	//Tin Items
-	public static Achievement Achievement_CopperIngot = CreateAchievement("CopperIngot", -3, 7, ModItems.CopperIngot, null);
-	public static Achievement Achievement_CopperPickaxe = CreateAchievement("CopperPickaxe", -1, 7, ModTools.CopperPickaxe, Achievement_CopperIngot);
+	public static Achievement Achievement_CopperIngot = CreateAchievement("CopperIngot", 5, 1, ModItems.CopperIngot, null);
+	public static Achievement Achievement_CopperPickaxe = CreateAchievement("CopperPickaxe", 3, 1, ModTools.CopperPickaxe, Achievement_CopperIngot);
 	
 	//Copper Items
-	public static Achievement Achievement_TinIngot = CreateAchievement("TinIngot", -3, 9, ModItems.TinIngot, null);
-	public static Achievement Achievement_TinPickaxe = CreateAchievement("TinPickaxe", -1, 9, ModTools.TinPickaxe, Achievement_TinIngot);
+	public static Achievement Achievement_TinIngot = CreateAchievement("TinIngot", 5, 3, ModItems.TinIngot, null);
+	public static Achievement Achievement_TinPickaxe = CreateAchievement("TinPickaxe", 3, 3, ModTools.TinPickaxe, Achievement_TinIngot);
 	
 	//Create Achievements
 	public static void RegisterAchievements() {

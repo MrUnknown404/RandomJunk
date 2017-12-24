@@ -202,6 +202,7 @@ public class ModCrafting {
 		//-//-//Shapeless
 		//-//Items
 		//Misc
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.GRAVEL, 1), new ItemStack(Items.FLINT, 1), new ItemStack(Blocks.COBBLESTONE, 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.MAGMA_CREAM, 2), new ItemStack(Items.SLIME_BALL, 1), new ItemStack(Items.BLAZE_POWDER, 1));
 
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.BoneMix, 1), new ItemStack(Items.BONE, 1), new ItemStack(Items.BONE, 1), new ItemStack(Items.BONE, 1)); //Block Into Ingot

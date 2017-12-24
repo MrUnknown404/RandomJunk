@@ -19,8 +19,8 @@ public class GuiWoodCrate extends GuiContainer {
 	public GuiWoodCrate(IInventory playerInv, TileEntityWoodCrate te) {
 		super(new ContainerWoodCrate(playerInv, te));
 		
-		this.xSize = 175;
-		this.ySize = 221;
+		this.xSize = 176;
+		this.ySize = 222;
 		
 		this.te = te;
 		this.playerInv = playerInv;
