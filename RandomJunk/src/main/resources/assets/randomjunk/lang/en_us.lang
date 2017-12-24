@@ -208,6 +208,15 @@ itemGroup.Tab_RandomJunkBlocks=RandomJunk Blocks
 container.QuickFurnace=Quick Furnace
 container.WoodCrate=Wood Crate
 
+//Config
+config.General=General
+config.Debug=Debug
+config.WorldGen=WorldGen
+
+config.General.tooltip=A few random options
+config.Debug.tooltip=All debug options (Use at your own risk)
+config.WorldGen.tooltip=All options involving WorldGen (Use at your own risk)
+
 //-//Achievements
 //Apples
 achievement.GetApple=The Start...

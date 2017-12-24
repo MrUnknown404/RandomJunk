@@ -23,9 +23,9 @@ public class ModGUIConfig extends GuiConfig {
 	
 	private static List<IConfigElement> getConfigElements() {
 		List<IConfigElement> list = new ArrayList<IConfigElement>();
-		list.add(categoryElement(ConfigHandler.category_general, "General", "General"));
-		list.add(categoryElement(ConfigHandler.category_debug, "Debug", "Debug"));
-		list.add(categoryElement(ConfigHandler.category_worldgen, "WorldGen", "WorldGen"));
+		list.add(categoryElement(ConfigHandler.category_general, "General","config.General"));
+		list.add(categoryElement(ConfigHandler.category_debug, "Debug","config.Debug"));
+		list.add(categoryElement(ConfigHandler.category_worldgen, "WorldGen","config.WorldGen"));
 		return list;
 	}
 	

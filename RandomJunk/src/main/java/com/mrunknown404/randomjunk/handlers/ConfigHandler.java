@@ -18,6 +18,7 @@ public class ConfigHandler {
 	public static boolean MaxStack;
 	
 	public static int ModBiomeID_Dead;
+	public static int ModBiomeSpawnRate_Dead;
 	public static int OreGenCopper;
 	public static int OreGenTin;
 	
@@ -45,6 +46,7 @@ public class ConfigHandler {
 		
 		//biomeid
 		ModBiomeID_Dead = Config.getInt("ModBiomeID Dead", category_worldgen, 40, 40, 126, "Dead Biome ID (Can break existing Worlds)");
+		ModBiomeSpawnRate_Dead = Config.getInt("ModBiomeSpawnRate Dead", category_worldgen, 1, 1, 1000, "Dead Biome Spawn Rate (Can break existing Worlds)");
 		OreGenCopper = Config.getInt("Ore Gen Copper", category_worldgen, 20, 1, 100, "Change Copper Ore spawn rates (Can break existing Worlds)");
 		OreGenTin = Config.getInt("Ore Gen Tin", category_worldgen, 20, 1, 100, "Change Tin Ore spawn rates (Can break existing Worlds)");
 		
