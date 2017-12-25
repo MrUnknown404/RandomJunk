@@ -3,6 +3,7 @@ package init;
 import com.mrunknown404.randomjunk.Reference;
 import com.mrunknown404.randomjunk.handlers.EnumHandler;
 
+import blocks.Block_BigWoodCrate;
 import blocks.Block_BoneBlock;
 import blocks.Block_CompressedCobblestone;
 import blocks.Block_CompressedDirt;
@@ -74,6 +75,7 @@ public class ModBlocks {
 	public static Block LitQuickFurnace;
 	
 	public static Block WoodCrate;
+	public static Block BigWoodCrate;
 
 	public static void Init() {
 		//Blocks
@@ -112,6 +114,7 @@ public class ModBlocks {
 		LitQuickFurnace =           new Block_QuickFurnace(true);
 		
 		WoodCrate =                 new Block_WoodCrate();
+		BigWoodCrate =              new Block_BigWoodCrate();
 	}
 	
 	public static void Register() {
@@ -132,6 +135,7 @@ public class ModBlocks {
 		RegisterBlock(LitQuickFurnace);
 		
 		RegisterBlock(WoodCrate,             new Item_Metadata(WoodCrate));
+		RegisterBlock(BigWoodCrate,          new Item_Metadata(BigWoodCrate));
 		
 		RegisterBlock(EmptyJar);
 		RegisterBlock(GroundLantern);
@@ -207,6 +211,7 @@ public class ModBlocks {
 		}
 		for (int i = 0; i < EnumHandler.CrateWoodTypes.values().length; i++) {
 			RegisterRender(WoodCrate, i, "crate_" + EnumHandler.CrateWoodTypes.values()[i].getName());
+			RegisterRender(BigWoodCrate, i, "bigcrate_" + EnumHandler.CrateWoodTypes.values()[i].getName());
 		}
 	}
 	

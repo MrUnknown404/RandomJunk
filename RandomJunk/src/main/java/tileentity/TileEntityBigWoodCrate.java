@@ -19,10 +19,10 @@ import net.minecraftforge.event.entity.PlaySoundAtEntityEvent;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 
-public class TileEntityWoodCrate extends TileEntity implements ICapabilityProvider, ITickable {
+public class TileEntityBigWoodCrate extends TileEntity implements ICapabilityProvider, ITickable {
 	
 	private ItemStackHandler handler;
-
+	
 	@Override
 	public void readFromNBT(NBTTagCompound nbt) {
 		this.handler.deserializeNBT(nbt.getCompoundTag("ItemStackHandler"));
@@ -83,8 +83,8 @@ public class TileEntityWoodCrate extends TileEntity implements ICapabilityProvid
 		return super.hasCapability(capability, facing);
 	}
 	
-	public TileEntityWoodCrate() {
-		handler = new ItemStackHandler(54);
+	public TileEntityBigWoodCrate() {
+		handler = new ItemStackHandler(77);
 	}
 
 	@Override

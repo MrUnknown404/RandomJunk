@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "[1.11.2-v1.10.5-Beta]" //<-------------------------------------------------------------------------------------
+version = "[1.11.2-v1.11.0-Beta]" //----------------------------------------------------------
 group = "com.mrunknown404.randomjunk" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "RandomJunk!"
 

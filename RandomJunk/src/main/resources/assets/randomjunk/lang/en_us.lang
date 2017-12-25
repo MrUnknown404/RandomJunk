@@ -123,6 +123,13 @@ tile.WoodCrate.jungle.name=Jungle Crate
 tile.WoodCrate.acacia.name=Acacia Crate
 tile.WoodCrate.darkoak.name=Dark Oak Crate
 
+tile.BigWoodCrate.oak.name=Big Oak Crate
+tile.BigWoodCrate.birch.name=Big Birch Crate
+tile.BigWoodCrate.spruce.name=Big Spruce Crate
+tile.BigWoodCrate.jungle.name=Big Jungle Crate
+tile.BigWoodCrate.acacia.name=Big Acacia Crate
+tile.BigWoodCrate.darkoak.name=Big Dark Oak Crate
+
 tile.CompressedCobblestone.compressed_x1.name=Compressed Cobblestone X1
 tile.CompressedCobblestone.compressed_x2.name=Compressed Cobblestone X2
 tile.CompressedCobblestone.compressed_x3.name=Compressed Cobblestone X3
@@ -207,6 +214,7 @@ itemGroup.Tab_RandomJunkBlocks=RandomJunk Blocks
 //Containers
 container.QuickFurnace=Quick Furnace
 container.WoodCrate=Wood Crate
+container.BigWoodCrate=Big Wood Crate
 
 //Config
 config.General=General

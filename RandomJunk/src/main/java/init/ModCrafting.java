@@ -179,7 +179,8 @@ public class ModCrafting {
 
 		//Crates
 		for (int i = 0; i < 7; i++) {
-			GameRegistry.addRecipe(new ItemStack(ModBlocks.WoodCrate,1 ,i ),       "WWW","WCW","WWW",'W',new ItemStack(Blocks.PLANKS,1,i),'C',Blocks.CHEST);
+			GameRegistry.addRecipe(new ItemStack(ModBlocks.WoodCrate,1 ,i ),                        "WWW","WCW","WWW",'W',new ItemStack(Blocks.PLANKS,1,i),'C',Blocks.CHEST);
+			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.BigWoodCrate,1 ,i ), "IOI","OCO","IOI",'I',Items.IRON_INGOT,'O',"ingotCopper",'C',new ItemStack(ModBlocks.WoodCrate,1,i)));
 		}
 
 		//Compressed Blocks

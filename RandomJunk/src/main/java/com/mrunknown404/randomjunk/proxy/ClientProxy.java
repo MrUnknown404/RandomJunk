@@ -74,5 +74,13 @@ public class ClientProxy implements CommonProxy {
 				new ResourceLocation(Reference.MOD_ID, "crate_jungle"),
 				new ResourceLocation(Reference.MOD_ID, "crate_acacia"),
 				new ResourceLocation(Reference.MOD_ID, "crate_darkoak"));
+		
+		ModelBakery.registerItemVariants(Item.getItemFromBlock(ModBlocks.WoodCrate), 
+				new ResourceLocation(Reference.MOD_ID, "bigcrate_oak"),
+				new ResourceLocation(Reference.MOD_ID, "bigcrate_birch"),
+				new ResourceLocation(Reference.MOD_ID, "bigcrate_spruce"),
+				new ResourceLocation(Reference.MOD_ID, "bigcrate_jungle"),
+				new ResourceLocation(Reference.MOD_ID, "bigcrate_acacia"),
+				new ResourceLocation(Reference.MOD_ID, "bigcrate_darkoak"));
 	}
 }

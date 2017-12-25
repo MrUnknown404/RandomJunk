@@ -46,7 +46,7 @@ public class ModTools {
 
 	public static ToolMaterial MAT_OBSIDIAN = EnumHelper.addToolMaterial("MAT_OBSIDIAN",  4, 2341, 11.0f, 4.0f, 12);
 	public static ToolMaterial MAT_STEEL = EnumHelper.addToolMaterial("MAT_STEEL",        2, 320,  5.0F , 2.0F, 13);
-	public static ToolMaterial MAT_COPPER = EnumHelper.addToolMaterial("MAT_COPPER",      1, 180,  4.5F,  2.0F, 9);
+	public static ToolMaterial MAT_COPPER = EnumHelper.addToolMaterial("MAT_COPPER",      2, 180,  4.5F,  2.0F, 9);
 	public static ToolMaterial MAT_BONE = EnumHelper.addToolMaterial("MAT_BONE",          2, 333,  6.0f,  2.0f, 8);
 	public static ToolMaterial MAT_TIN = EnumHelper.addToolMaterial("MAT_TIN",            1, 166,  5.0F,  1.5F, 10);
 	public static ToolMaterial MAT_FLINT = EnumHelper.addToolMaterial("MAT_FLINT",        1, 156,  4.0f,  2.0f, 8);
