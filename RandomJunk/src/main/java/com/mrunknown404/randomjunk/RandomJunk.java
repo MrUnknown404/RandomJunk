@@ -83,7 +83,7 @@ public class RandomJunk {
 	public void postInit(FMLPostInitializationEvent event) {
 		
 		GameRegistry.registerWorldGenerator(new DeadTree1Gen(), 1);
-		GameRegistry.registerWorldGenerator(new OreGen(), 0);
+		GameRegistry.registerWorldGenerator(new OreGen(), 1);
 		
 		ModBiomeRegistry.InitializeBiome();
 		ModBiomeRegistry.RegisterBiome();

@@ -13,7 +13,7 @@ public class Block_TinOre extends Block {
 	public Block_TinOre() {
 		super(Material.ROCK);
 		//
-		setHardness(2.5f);
+		setHardness(2.25f);
 		setResistance(10.0f);
 		setHarvestLevel("pickaxe", 1);
 		setSoundType(SoundType.STONE);
