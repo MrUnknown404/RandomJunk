@@ -1,8 +1,6 @@
 package container;
 
 import invtweaks.api.container.ChestContainer;
-import invtweaks.api.container.ContainerSection;
-import invtweaks.api.container.ContainerSectionCallback;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
@@ -12,7 +10,6 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 import tileentity.TileEntityBigWoodCrate;
-import tileentity.TileEntityWoodCrate;
 
 @ChestContainer(rowSize = 11, showButtons = true, isLargeChest = true)
 public class ContainerBigWoodCrate extends Container {

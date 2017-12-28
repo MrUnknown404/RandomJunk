@@ -36,3 +36,5 @@ ingots
 overworld
 itemstack
 stat
+func
+hotbar

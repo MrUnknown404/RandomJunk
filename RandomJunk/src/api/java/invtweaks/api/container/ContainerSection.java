@@ -48,7 +48,7 @@ public enum ContainerSection {
      */
     CRAFTING_IN,
     /**
-     * The crafting input, for containters that store it internally
+     * The crafting input, for containers that store it internally
      */
     CRAFTING_IN_PERSISTENT,
     /**

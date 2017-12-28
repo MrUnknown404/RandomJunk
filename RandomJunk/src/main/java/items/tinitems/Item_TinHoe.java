@@ -1,6 +1,5 @@
 package items.tinitems;
 
-import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
 
 import net.minecraft.creativetab.CreativeTabs;

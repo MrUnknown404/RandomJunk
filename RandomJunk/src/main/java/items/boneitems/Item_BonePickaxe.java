@@ -1,6 +1,5 @@
 package items.boneitems;
 
-import com.mrunknown404.randomjunk.RandomJunk;
 import com.mrunknown404.randomjunk.Reference;
 import com.mrunknown404.randomjunk.handlers.AchievementHandler;
 

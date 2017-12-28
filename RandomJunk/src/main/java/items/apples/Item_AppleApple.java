@@ -4,12 +4,9 @@ import com.mrunknown404.randomjunk.Reference;
 import com.mrunknown404.randomjunk.handlers.AchievementHandler;
 
 import init.ModCreativeTabs;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 

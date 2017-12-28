@@ -1,8 +1,6 @@
 package com.mrunknown404.randomjunk.handlers;
 
 import init.ModItems;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.IFuelHandler;
 

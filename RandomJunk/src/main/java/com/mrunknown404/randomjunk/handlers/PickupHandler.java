@@ -2,10 +2,8 @@ package com.mrunknown404.randomjunk.handlers;
 
 import init.ModItems;
 import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.PlayerEvent.ItemPickupEvent;
 
 public class PickupHandler {
 	//Get Apple Achievement

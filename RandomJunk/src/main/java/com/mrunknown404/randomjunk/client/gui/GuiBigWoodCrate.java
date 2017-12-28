@@ -3,16 +3,12 @@ package com.mrunknown404.randomjunk.client.gui;
 import com.mrunknown404.randomjunk.Reference;
 
 import container.ContainerBigWoodCrate;
-import container.ContainerWoodCrate;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.util.ResourceLocation;
 import tileentity.TileEntityBigWoodCrate;
-import tileentity.TileEntityWoodCrate;
 
 public class GuiBigWoodCrate extends GuiContainer {
 

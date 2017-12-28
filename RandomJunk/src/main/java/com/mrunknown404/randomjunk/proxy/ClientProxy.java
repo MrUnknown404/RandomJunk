@@ -7,7 +7,6 @@ import com.mrunknown404.randomjunk.client.gui.GuiHandler;
 import init.ModArmor;
 import init.ModBlocks;
 import init.ModItems;
-import init.ModTileEntities;
 import init.ModTools;
 import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.item.Item;

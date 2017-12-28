@@ -1,11 +1,11 @@
 package com.mrunknown404.randomjunk;
 
 import com.mrunknown404.randomjunk.handlers.AchievementHandler;
+import com.mrunknown404.randomjunk.handlers.BlockHarvestHandler;
 import com.mrunknown404.randomjunk.handlers.ConfigHandler;
 import com.mrunknown404.randomjunk.handlers.FuelHandler;
 import com.mrunknown404.randomjunk.handlers.OreDictionaryHandler;
 import com.mrunknown404.randomjunk.handlers.PickupHandler;
-import com.mrunknown404.randomjunk.handlers.BlockHarvestHandler;
 import com.mrunknown404.randomjunk.proxy.CommonProxy;
 
 import init.ModArmor;
@@ -14,11 +14,8 @@ import init.ModCrafting;
 import init.ModItems;
 import init.ModTileEntities;
 import init.ModTools;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -27,7 +24,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import tileentity.TileEntityQuickFurnace;
 import world.ModBiomeRegistry;
 import world.gen.DeadTree1Gen;
 import world.gen.OreGen;

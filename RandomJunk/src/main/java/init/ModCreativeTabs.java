@@ -1,7 +1,5 @@
 package init;
 
-import com.mrunknown404.randomjunk.Reference;
-
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 

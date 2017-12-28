@@ -178,7 +178,7 @@ public class ModCrafting {
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.NetherBrickFenceGate, 1),      "SFS","SFS",'S',Items.STICK,'F',Blocks.NETHER_BRICK);
 
 		//Crates
-		for (int i = 0; i < 7; i++) {
+		for (int i = 0; i < 6; i++) {
 			GameRegistry.addRecipe(new ItemStack(ModBlocks.WoodCrate,1 ,i ),                        "WWW","WCW","WWW",'W',new ItemStack(Blocks.PLANKS,1,i),'C',Blocks.CHEST);
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.BigWoodCrate,1 ,i ), "IOI","OCO","IOI",'I',Items.IRON_INGOT,'O',"ingotCopper",'C',new ItemStack(ModBlocks.WoodCrate,1,i)));
 		}
@@ -309,7 +309,7 @@ public class ModCrafting {
 		GameRegistry.addSmelting(Items.IRON_INGOT,       new ItemStack(ModItems.SteelIngot),    0.2f);
 		GameRegistry.addSmelting(Items.field_191525_da,  new ItemStack(ModItems.SteelNugget),   0.0222f);
 		
-		GameRegistry.addSmelting(ModItems.ObsidianShard, new ItemStack(ModItems.ObsidianIngot), 0.35f);
+		GameRegistry.addSmelting(Blocks.OBSIDIAN,        new ItemStack(ModItems.ObsidianIngot), 0.35f);
 		GameRegistry.addSmelting(ModItems.BoneMix,       new ItemStack(ModItems.BoneIngot),     0.25f);
 		GameRegistry.addSmelting(Items.FLINT,            new ItemStack(ModItems.FlintIngot),    0.25f);
 	}

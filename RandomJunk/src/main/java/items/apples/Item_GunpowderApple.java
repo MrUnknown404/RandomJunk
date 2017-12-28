@@ -5,8 +5,8 @@ import com.mrunknown404.randomjunk.handlers.AchievementHandler;
 
 import init.ModCreativeTabs;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
@@ -27,24 +27,36 @@ public class Item_GunpowderApple extends ItemFood {
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {
 		super.onFoodEaten(itemStack, world, entity);
-		float var4 = 1.0F;
-		//Explosion Vars
-		int i = (int) (entity.prevPosX + (entity.posX - entity.prevPosX) * (double) var4);
-		int j = (int) (entity.prevPosY + (entity.posY - entity.prevPosY) * (double) var4 + 1.62D - (double) entity.getYOffset());
-		int k = (int) (entity.prevPosZ + (entity.posZ - entity.prevPosZ) * (double) var4);
-		
-		//Create Explosion
-		if (true) {
-			world.createExplosion((Entity) null, i, j, k, 5F, true);
+		if (!world.isRemote) {
+			float var4 = 1.0F;
+			//Explosion Vars
+			int i = (int) (entity.prevPosX + (entity.posX - entity.prevPosX) * (double) var4);
+			int j = (int) (entity.prevPosY + (entity.posY - entity.prevPosY) * (double) var4 + 1.62D - (double) entity.getYOffset());
+			int k = (int) (entity.prevPosZ + (entity.posZ - entity.prevPosZ) * (double) var4);
+			
+			//Create Explosion
+			if (true) {
+				world.createExplosion((Entity) null, i, j, k, 5F, true);
+			}
 		}
+	}
+	
+	public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving) {
+		ItemStack itemstack = super.onItemUseFinish(stack, worldIn, entityLiving);
+		if (!worldIn.isRemote) {
+			if (entityLiving instanceof EntityPlayer) {
+				((EntityPlayer)entityLiving).getCooldownTracker().setCooldown(this, 25);
+			}
+		}
+		return itemstack;
 	}
 	
 	//Achievement
 	@Override
 	public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn) {
 		super.onCreated(stack, worldIn, playerIn);
-		if (!playerIn.hasAchievement(AchievementHandler.Achievement_InkApple)) {
-			playerIn.addStat(AchievementHandler.Achievement_InkApple);
+		if (!playerIn.hasAchievement(AchievementHandler.Achievement_GunpowderApple)) {
+			playerIn.addStat(AchievementHandler.Achievement_GunpowderApple);
 		}
 	}
 }
