@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "W",
+        "G"
+    ],
+    "key": {
+        "W": {
+            "item": "minecraft:heavy_weighted_pressure_plate"
+        },
+        "G": {
+            "item": "minecraft:glass"
+        }
+    },
+    "result": {
+        "item": "randomjunk:emptyjar",
+        "count": 1
+    }
+}

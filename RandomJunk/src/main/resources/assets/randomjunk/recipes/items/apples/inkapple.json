@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XAX",
+        "XXX"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:apple"
+        },
+        "X": {
+            "item": "minecraft:dye",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "randomjunk:inkapple",
+        "count": 1
+    }
+}

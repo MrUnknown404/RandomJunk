@@ -1,0 +1,18 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "I I",
+        "III",
+        "III"
+    ],
+    "key": {
+        "I": {
+            "type": "forge:ore_dict",
+            "ore": "ingotSteel"
+        }
+    },
+    "result": {
+        "item": "randomjunk:steelchestplate",
+        "count": 1
+    }
+}

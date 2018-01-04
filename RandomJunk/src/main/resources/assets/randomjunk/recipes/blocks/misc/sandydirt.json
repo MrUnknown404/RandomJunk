@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DS",
+        "SD"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:sand",
+            "data": 0
+        },
+        "D": {
+            "item": "minecraft:dirt",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "randomjunk:sandydirt",
+        "count": 4
+    }
+}

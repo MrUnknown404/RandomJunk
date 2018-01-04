@@ -216,7 +216,7 @@ public class ModBlocks {
 	}
 	
 	private static void RegisterRender(Block block, int meta, String fileName) {
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), meta, new ModelResourceLocation(new ResourceLocation(Reference.MOD_ID, fileName), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher() .register(Item.getItemFromBlock(block), meta, new ModelResourceLocation(new ResourceLocation(Reference.MOD_ID, fileName), "inventory"));
 	}
 	
 	private static void RegisterRender(Block block) {

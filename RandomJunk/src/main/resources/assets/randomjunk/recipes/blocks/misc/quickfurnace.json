@@ -1,0 +1,31 @@
+{
+    "type": "forge:ore_shaped",
+    "pattern": [
+        "CRC",
+        "TFT",
+        "CGC"
+    ],
+    "key": {
+        "C": {
+            "item": "randomjunk:compressedcobblestone",
+            "data": 0
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "F": {
+            "item": "minecraft:furnace"
+        },
+        "G": {
+            "item": "minecraft:glowstone_dust"
+        },
+        "T": {
+            "type": "forge:ore_dict",
+            "ore": "ingotTin"
+        }
+    },
+    "result": {
+        "item": "randomjunk:quickfurnace",
+        "count": 1
+    }
+}

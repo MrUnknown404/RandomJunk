@@ -2,6 +2,7 @@ package com.mrunknown404.randomjunk;
 
 import com.mrunknown404.randomjunk.handlers.BlockHarvestHandler;
 import com.mrunknown404.randomjunk.handlers.ConfigHandler;
+import com.mrunknown404.randomjunk.handlers.CraftingHandler;
 import com.mrunknown404.randomjunk.handlers.OreDictionaryHandler;
 import com.mrunknown404.randomjunk.handlers.PickupHandler;
 import com.mrunknown404.randomjunk.proxy.CommonProxy;
@@ -59,6 +60,9 @@ public class RandomJunk {
 		ModArmor.Register();
 		
 		OreDictionaryHandler.RegisterOreDictionary();
+		
+		//Crafting
+		CraftingHandler.removeRecipes();
 	}
 	
 	@EventHandler
@@ -74,10 +78,6 @@ public class RandomJunk {
 		
 		ModBiomeRegistry.InitializeBiome();
 		ModBiomeRegistry.RegisterBiome();
-		
-		//Crafting Init
-		//ModCrafting.UnregisterRecipes();
-		//ModCrafting.RegisterRecipes();
 		
 		MinecraftForge.EVENT_BUS.register(new BlockHarvestHandler());
 		

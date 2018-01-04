@@ -38,3 +38,4 @@ itemstack
 stat
 func
 hotbar
+biome

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "XXX",
+        "XAX",
+        "XXX"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:apple"
+        },
+        "X": {
+            "item": "minecraft:magma_cream"
+        }
+    },
+    "result": {
+        "item": "randomjunk:magmacreamapple",
+        "count": 1
+    }
+}

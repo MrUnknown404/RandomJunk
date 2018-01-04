@@ -1,16 +1,20 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "AAA",
-        "AAA",
-        "AAA"
+        "XXX",
+        "XAX",
+        "XXX"
     ],
     "key": {
         "A": {
             "item": "minecraft:apple"
+        },
+        "X": {
+            "item": "minecraft:clay_ball"
         }
     },
     "result": {
-        "item": "randomjunk:appleapple"
+        "item": "randomjunk:clayapple",
+        "count": 1
     }
 }
