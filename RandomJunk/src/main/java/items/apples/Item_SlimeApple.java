@@ -1,7 +1,6 @@
 package items.apples;
 
 import com.mrunknown404.randomjunk.Reference;
-import com.mrunknown404.randomjunk.handlers.AchievementHandler;
 
 import init.ModCreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
@@ -40,15 +39,6 @@ public class Item_SlimeApple extends ItemFood {
 				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.JUMP_BOOST, 60*20, 1)); //Time In Seconds * Tickspeed
 				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 60*20, 0)); //Time In Seconds * Tickspeed
 			}
-		}
-	}
-	
-	//Achievement
-	@Override
-	public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn) {
-		super.onCreated(stack, worldIn, playerIn);
-		if (!playerIn.hasAchievement(AchievementHandler.Achievement_SlimeApple)) {
-			playerIn.addStat(AchievementHandler.Achievement_SlimeApple);
 		}
 	}
 }

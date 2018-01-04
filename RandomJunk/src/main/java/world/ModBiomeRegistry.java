@@ -8,6 +8,7 @@ import net.minecraft.world.biome.BiomeProvider;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeDictionary.Type;
 import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import world.biome.Biome_Dead;
 
 public class ModBiomeRegistry {
@@ -18,7 +19,8 @@ public class ModBiomeRegistry {
 	
 	public static void InitializeBiome() {
 		Dead_Biome = new Biome_Dead(new BiomeProperties("Dead Biome"));
-		Biome.registerBiome(Dead_BiomeID, "Dead Biome", Dead_Biome);
+		//Biome.registerBiome(Dead_BiomeID, "Dead Biome", Dead_Biome);
+		ForgeRegistries.BIOMES.register(Dead_Biome);
 	}
 	
 	public static void RegisterBiome() {

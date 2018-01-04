@@ -68,7 +68,6 @@ public class Block_WoodCrate extends Block implements IMetaBlockName, ITileEntit
 		return this.getDefaultState().withProperty(TYPE, CrateWoodTypes.values()[meta]);
 	}
 	
-	@Override
 	public void getSubBlocks(Item itemIn, CreativeTabs tab, NonNullList<ItemStack> list) {
 		for(int i = 0; i < CrateWoodTypes.values().length; i++) {
 			list.add(new ItemStack(itemIn, 1, i));

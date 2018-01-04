@@ -1,16 +1,13 @@
 package com.mrunknown404.randomjunk;
 
-import com.mrunknown404.randomjunk.handlers.AchievementHandler;
 import com.mrunknown404.randomjunk.handlers.BlockHarvestHandler;
 import com.mrunknown404.randomjunk.handlers.ConfigHandler;
-import com.mrunknown404.randomjunk.handlers.FuelHandler;
 import com.mrunknown404.randomjunk.handlers.OreDictionaryHandler;
 import com.mrunknown404.randomjunk.handlers.PickupHandler;
 import com.mrunknown404.randomjunk.proxy.CommonProxy;
 
 import init.ModArmor;
 import init.ModBlocks;
-import init.ModCrafting;
 import init.ModItems;
 import init.ModTileEntities;
 import init.ModTools;
@@ -61,18 +58,12 @@ public class RandomJunk {
 		ModTools.Register();
 		ModArmor.Register();
 		
-		//Fuel
-		GameRegistry.registerFuelHandler(new FuelHandler());
-		
-		//Achievements
-		AchievementHandler.RegisterAchievements();	
+		OreDictionaryHandler.RegisterOreDictionary();
 	}
 	
 	@EventHandler
 	public void Init(FMLInitializationEvent event) {
 		proxy.init();
-		
-		OreDictionaryHandler.RegisterOreDictionary();
 	}
 	
 	@EventHandler
@@ -85,8 +76,8 @@ public class RandomJunk {
 		ModBiomeRegistry.RegisterBiome();
 		
 		//Crafting Init
-		ModCrafting.UnregisterRecipes();
-		ModCrafting.RegisterRecipes();
+		//ModCrafting.UnregisterRecipes();
+		//ModCrafting.RegisterRecipes();
 		
 		MinecraftForge.EVENT_BUS.register(new BlockHarvestHandler());
 		

@@ -38,6 +38,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModTools {
@@ -140,50 +141,50 @@ public class ModTools {
 	}
 	public static void Register() {
 		//Obsidian
-		GameRegistry.register(ObsidianShovel);
-		GameRegistry.register(ObsidianPickaxe);
-		GameRegistry.register(ObsidianAxe);
-		GameRegistry.register(ObsidianHoe);
-		GameRegistry.register(ObsidianSword);
+		ForgeRegistries.ITEMS.register(ObsidianShovel);
+		ForgeRegistries.ITEMS.register(ObsidianPickaxe);
+		ForgeRegistries.ITEMS.register(ObsidianAxe);
+		ForgeRegistries.ITEMS.register(ObsidianHoe);
+		ForgeRegistries.ITEMS.register(ObsidianSword);
 		
 		//Steel
-		GameRegistry.register(SteelShovel);
-		GameRegistry.register(SteelPickaxe);
-		GameRegistry.register(SteelAxe);
-		GameRegistry.register(SteelHoe);
-		GameRegistry.register(SteelSword);
+		ForgeRegistries.ITEMS.register(SteelShovel);
+		ForgeRegistries.ITEMS.register(SteelPickaxe);
+		ForgeRegistries.ITEMS.register(SteelAxe);
+		ForgeRegistries.ITEMS.register(SteelHoe);
+		ForgeRegistries.ITEMS.register(SteelSword);
 		
 		//Copper
-		GameRegistry.register(CopperShovel);
-		GameRegistry.register(CopperPickaxe);
-		GameRegistry.register(CopperAxe);
-		GameRegistry.register(CopperHoe);
-		GameRegistry.register(CopperSword);
+		ForgeRegistries.ITEMS.register(CopperShovel);
+		ForgeRegistries.ITEMS.register(CopperPickaxe);
+		ForgeRegistries.ITEMS.register(CopperAxe);
+		ForgeRegistries.ITEMS.register(CopperHoe);
+		ForgeRegistries.ITEMS.register(CopperSword);
 		
 		//Bone
-		GameRegistry.register(BoneShovel);
-		GameRegistry.register(BonePickaxe);
-		GameRegistry.register(BoneAxe);
-		GameRegistry.register(BoneHoe);
-		GameRegistry.register(BoneSword);
+		ForgeRegistries.ITEMS.register(BoneShovel);
+		ForgeRegistries.ITEMS.register(BonePickaxe);
+		ForgeRegistries.ITEMS.register(BoneAxe);
+		ForgeRegistries.ITEMS.register(BoneHoe);
+		ForgeRegistries.ITEMS.register(BoneSword);
 		
 		//Tin
-		GameRegistry.register(TinShovel);
-		GameRegistry.register(TinPickaxe);
-		GameRegistry.register(TinAxe);
-		GameRegistry.register(TinHoe);
-		GameRegistry.register(TinSword);
+		ForgeRegistries.ITEMS.register(TinShovel);
+		ForgeRegistries.ITEMS.register(TinPickaxe);
+		ForgeRegistries.ITEMS.register(TinAxe);
+		ForgeRegistries.ITEMS.register(TinHoe);
+		ForgeRegistries.ITEMS.register(TinSword);
 		
 		//Flint
-		GameRegistry.register(FlintShovel);
-		GameRegistry.register(FlintPickaxe);
-		GameRegistry.register(FlintAxe);
-		GameRegistry.register(FlintHoe);
-		GameRegistry.register(FlintSword);
+		ForgeRegistries.ITEMS.register(FlintShovel);
+		ForgeRegistries.ITEMS.register(FlintPickaxe);
+		ForgeRegistries.ITEMS.register(FlintAxe);
+		ForgeRegistries.ITEMS.register(FlintHoe);
+		ForgeRegistries.ITEMS.register(FlintSword);
 		
 		//Debug Items
 		if (ConfigHandler.DebugItems == true) {
-			GameRegistry.register(DebugPickaxe);
+			ForgeRegistries.ITEMS.register(DebugPickaxe);
 		}
 		
 	}

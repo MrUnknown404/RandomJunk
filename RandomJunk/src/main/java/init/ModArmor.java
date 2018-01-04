@@ -34,6 +34,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModArmor {
@@ -129,40 +130,40 @@ public class ModArmor {
 	}
 	public static void Register() {
 		//Obsidian
-		GameRegistry.register(ObsidianHelmet);
-		GameRegistry.register(ObsidianChestplate);
-		GameRegistry.register(ObsidianLeggings);
-		GameRegistry.register(ObsidianBoots);
+		ForgeRegistries.ITEMS.register(ObsidianHelmet);
+		ForgeRegistries.ITEMS.register(ObsidianChestplate);
+		ForgeRegistries.ITEMS.register(ObsidianLeggings);
+		ForgeRegistries.ITEMS.register(ObsidianBoots);
 		
 		//Steel
-		GameRegistry.register(SteelHelmet);
-		GameRegistry.register(SteelChestplate);
-		GameRegistry.register(SteelLeggings);
-		GameRegistry.register(SteelBoots);
+		ForgeRegistries.ITEMS.register(SteelHelmet);
+		ForgeRegistries.ITEMS.register(SteelChestplate);
+		ForgeRegistries.ITEMS.register(SteelLeggings);
+		ForgeRegistries.ITEMS.register(SteelBoots);
 		
 		//Copper
-		GameRegistry.register(CopperHelmet);
-		GameRegistry.register(CopperChestplate);
-		GameRegistry.register(CopperLeggings);
-		GameRegistry.register(CopperBoots);
+		ForgeRegistries.ITEMS.register(CopperHelmet);
+		ForgeRegistries.ITEMS.register(CopperChestplate);
+		ForgeRegistries.ITEMS.register(CopperLeggings);
+		ForgeRegistries.ITEMS.register(CopperBoots);
 		
 		//Bone
-		GameRegistry.register(BoneHelmet);
-		GameRegistry.register(BoneChestplate);
-		GameRegistry.register(BoneLeggings);
-		GameRegistry.register(BoneBoots);
+		ForgeRegistries.ITEMS.register(BoneHelmet);
+		ForgeRegistries.ITEMS.register(BoneChestplate);
+		ForgeRegistries.ITEMS.register(BoneLeggings);
+		ForgeRegistries.ITEMS.register(BoneBoots);
 		
 		//Tin
-		GameRegistry.register(TinHelmet);
-		GameRegistry.register(TinChestplate);
-		GameRegistry.register(TinLeggings);
-		GameRegistry.register(TinBoots);
+		ForgeRegistries.ITEMS.register(TinHelmet);
+		ForgeRegistries.ITEMS.register(TinChestplate);
+		ForgeRegistries.ITEMS.register(TinLeggings);
+		ForgeRegistries.ITEMS.register(TinBoots);
 		
 		//Flint
-		GameRegistry.register(FlintHelmet);
-		GameRegistry.register(FlintChestplate);
-		GameRegistry.register(FlintLeggings);
-		GameRegistry.register(FlintBoots);
+		ForgeRegistries.ITEMS.register(FlintHelmet);
+		ForgeRegistries.ITEMS.register(FlintChestplate);
+		ForgeRegistries.ITEMS.register(FlintLeggings);
+		ForgeRegistries.ITEMS.register(FlintBoots);
 
 	}
 	public static void RegisterRenders() {

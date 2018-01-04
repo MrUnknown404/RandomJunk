@@ -5,7 +5,7 @@ public class Reference {
 	public static final String MOD_ID = "randomjunk";
 	public static final String NAME = "RandomJunk!";
 	public static final String VERSION = "1.11.2-Beta";
-	public static final String ACCEPTED_VERSIONS = "[1.11.2]";
+	public static final String ACCEPTED_VERSIONS = "[1.12.2]";
 
 	public static final String GUI_FACTORY_CLASS = "com.mrunknown404.randomjunk.client.gui.GuiFactory";
 
@@ -13,6 +13,20 @@ public class Reference {
 	public static final String CLIENT_PROXY_CLASS = "com.mrunknown404.randomjunk.proxy.ClientProxy";
 	public static final String SERVER_PROXY_CLASS = "com.mrunknown404.randomjunk.proxy.ServerProxy";
 
+	public static enum RandomJunkBiomes {
+		DEADBIOME("DeadBiome","DeadBiome");
+		
+		private String registryName;
+		
+		RandomJunkBiomes(String unlocalizedName, String registryName) {
+			this.registryName = registryName;
+		}
+		
+		public String getRegistryName() {
+			return registryName;
+		}
+	}
+	
 	//Blocks
 	public static enum RandomJunkBlocks {
 		QUICKFURNACE("QuickFurnace","QuickFurnace"),

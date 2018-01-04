@@ -36,7 +36,7 @@ import items.tinitems.Item_TinNugget;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class ModItems {
 
@@ -127,45 +127,45 @@ public class ModItems {
 	public static void Register() {
 		//-//Register Items
 		//Apples
-		GameRegistry.register(AppleApple);
-		GameRegistry.register(BlazeApple);
-		GameRegistry.register(ClayApple);
-		GameRegistry.register(CoalApple);
-		GameRegistry.register(DiamondApple);
-		GameRegistry.register(EmeraldApple);
-		GameRegistry.register(EnderPearlApple);
-		GameRegistry.register(FlintApple);
-		GameRegistry.register(GlowstoneApple);
-		GameRegistry.register(GunpowderApple);
-		GameRegistry.register(InkApple);
-		GameRegistry.register(IronApple);
-		GameRegistry.register(LapisApple);
-		GameRegistry.register(LeatherApple);
-		GameRegistry.register(MagmaCreamApple);
-		GameRegistry.register(ObsidianApple);
-		GameRegistry.register(PaperApple);
-		GameRegistry.register(PrismarineApple);
-		GameRegistry.register(QuartzApple);
-		GameRegistry.register(RedstoneApple);
-		GameRegistry.register(RottenFleshApple);
-		GameRegistry.register(SlimeApple);
+		ForgeRegistries.ITEMS.register(AppleApple);
+		ForgeRegistries.ITEMS.register(BlazeApple);
+		ForgeRegistries.ITEMS.register(ClayApple);
+		ForgeRegistries.ITEMS.register(CoalApple);
+		ForgeRegistries.ITEMS.register(DiamondApple);
+		ForgeRegistries.ITEMS.register(EmeraldApple);
+		ForgeRegistries.ITEMS.register(EnderPearlApple);
+		ForgeRegistries.ITEMS.register(FlintApple);
+		ForgeRegistries.ITEMS.register(GlowstoneApple);
+		ForgeRegistries.ITEMS.register(GunpowderApple);
+		ForgeRegistries.ITEMS.register(InkApple);
+		ForgeRegistries.ITEMS.register(IronApple);
+		ForgeRegistries.ITEMS.register(LapisApple);
+		ForgeRegistries.ITEMS.register(LeatherApple);
+		ForgeRegistries.ITEMS.register(MagmaCreamApple);
+		ForgeRegistries.ITEMS.register(ObsidianApple);
+		ForgeRegistries.ITEMS.register(PaperApple);
+		ForgeRegistries.ITEMS.register(PrismarineApple);
+		ForgeRegistries.ITEMS.register(QuartzApple);
+		ForgeRegistries.ITEMS.register(RedstoneApple);
+		ForgeRegistries.ITEMS.register(RottenFleshApple);
+		ForgeRegistries.ITEMS.register(SlimeApple);
 
 		//Misc
-		GameRegistry.register(ObsidianShard);
-		GameRegistry.register(BoneMix);
+		ForgeRegistries.ITEMS.register(ObsidianShard);
+		ForgeRegistries.ITEMS.register(BoneMix);
 		
 		//Ingots
-		GameRegistry.register(ObsidianIngot);
-		GameRegistry.register(SteelIngot);
-		GameRegistry.register(BoneIngot);
-		GameRegistry.register(CopperIngot);
-		GameRegistry.register(TinIngot);
-		GameRegistry.register(FlintIngot);
+		ForgeRegistries.ITEMS.register(ObsidianIngot);
+		ForgeRegistries.ITEMS.register(SteelIngot);
+		ForgeRegistries.ITEMS.register(BoneIngot);
+		ForgeRegistries.ITEMS.register(CopperIngot);
+		ForgeRegistries.ITEMS.register(TinIngot);
+		ForgeRegistries.ITEMS.register(FlintIngot);
 
 		//Nuggets
-		GameRegistry.register(SteelNugget);
-		GameRegistry.register(CopperNugget);
-		GameRegistry.register(TinNugget);
+		ForgeRegistries.ITEMS.register(SteelNugget);
+		ForgeRegistries.ITEMS.register(CopperNugget);
+		ForgeRegistries.ITEMS.register(TinNugget);
 
 	}
 	public static void RegisterRenders() {

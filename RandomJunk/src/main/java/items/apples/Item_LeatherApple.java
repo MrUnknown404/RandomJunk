@@ -1,7 +1,6 @@
 package items.apples;
 
 import com.mrunknown404.randomjunk.Reference;
-import com.mrunknown404.randomjunk.handlers.AchievementHandler;
 
 import init.ModCreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
@@ -41,15 +40,6 @@ public class Item_LeatherApple extends ItemFood {
 				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.ABSORPTION,		60*20, 1)); //Time In Seconds * Tickspeed
 				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.REGENERATION,	10*20, 1)); //Time In Seconds * Tickspeed
 			}
-		}
-	}
-	
-	//Achievement
-	@Override
-	public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn) {
-		super.onCreated(stack, worldIn, playerIn);
-		if (!playerIn.hasAchievement(AchievementHandler.Achievement_LeatherApple)) {
-			playerIn.addStat(AchievementHandler.Achievement_LeatherApple);
 		}
 	}
 }

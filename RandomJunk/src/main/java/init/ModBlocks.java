@@ -35,7 +35,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class ModBlocks {
 
@@ -158,17 +158,17 @@ public class ModBlocks {
 		
 	}
 	private static void RegisterBlock(Block block) {
-		GameRegistry.register(block);
+		ForgeRegistries.BLOCKS.register(block);
 		
 		ItemBlock item = new ItemBlock(block);
-		GameRegistry.register(item.setRegistryName(block.getRegistryName()));
+		ForgeRegistries.ITEMS.register(item.setRegistryName(block.getRegistryName()));
 	}
 	
 	private static void RegisterBlock(Block block, ItemBlock itemBlock) {
 		block.setCreativeTab(ModCreativeTabs.TabRandomJunkBlocks);
 		
-		GameRegistry.register(block);
-		GameRegistry.register(itemBlock.setRegistryName(block.getRegistryName()));
+		ForgeRegistries.BLOCKS.register(block);
+		ForgeRegistries.ITEMS.register(itemBlock.setRegistryName(block.getRegistryName()));
 	}
 	
 	public static void RegisterRenders() {

@@ -12,10 +12,9 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 public class ModCrafting {
-
+	/*
 	//Remove Recipes
 	public static void UnregisterRecipes() {
-		//Magma Cream
 		Iterator recipes = CraftingManager.getInstance().getRecipeList().iterator();
 		while (recipes.hasNext()) {
 		ItemStack output = ((IRecipe) recipes.next()).getRecipeOutput();
@@ -313,4 +312,6 @@ public class ModCrafting {
 		GameRegistry.addSmelting(ModItems.BoneMix,       new ItemStack(ModItems.BoneIngot),     0.25f);
 		GameRegistry.addSmelting(Items.FLINT,            new ItemStack(ModItems.FlintIngot),    0.25f);
 	}
+	*/
+	
 }

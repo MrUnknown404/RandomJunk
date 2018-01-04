@@ -35,7 +35,7 @@ public class GuiWoodCrate extends GuiContainer {
 	@Override
 	protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
 		String s = I18n.format("container.WoodCrate");
-		this.mc.fontRendererObj.drawString(s, 8, 6, 4210752);
-		this.mc.fontRendererObj.drawString(this.playerInv.getDisplayName().getFormattedText(), 8, 129, 4210752);
+		this.mc.fontRenderer.drawString(s, 8, 6, 4210752);
+		this.mc.fontRenderer.drawString(this.playerInv.getDisplayName().getFormattedText(), 8, 129, 4210752);
 	}
 }

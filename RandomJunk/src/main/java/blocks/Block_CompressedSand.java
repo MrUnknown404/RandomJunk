@@ -54,7 +54,6 @@ public class Block_CompressedSand extends Block implements IMetaBlockName {
 		return this.getDefaultState().withProperty(TYPE, CompBlockTypes.values()[meta]);
 	}
 	
-	@Override
 	public void getSubBlocks(Item itemIn, CreativeTabs tab, NonNullList<ItemStack> list) {
 		for(int i = 0; i < CompBlockTypes.values().length; i++) {
 			list.add(new ItemStack(itemIn, 1, i));

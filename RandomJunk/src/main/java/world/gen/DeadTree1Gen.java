@@ -6,7 +6,6 @@ import init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraft.world.gen.structure.template.Template;
@@ -17,9 +16,7 @@ public class DeadTree1Gen extends WorldGenerator implements IWorldGenerator {
 	
 	static Random rand2 = new Random();
 	
-	@Override
-	public void generate(Random rand, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator,
-		IChunkProvider chunkProvider) {
+	public void generate(Random rand, int chunkX, int chunkZ, World world, IChunkProvider chunkProvider) {
 			int blockX = chunkX * 16;
 			int blockZ = chunkZ * 16;
 			
@@ -76,5 +73,10 @@ public class DeadTree1Gen extends WorldGenerator implements IWorldGenerator {
 	@Override
 	public boolean generate(World worldIn, Random rand, BlockPos position) {
 		return false;
+	}
+
+	@Override
+	public void generate(Random random, int chunkX, int chunkZ, World world, net.minecraft.world.gen.IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
+		
 	}
 }
