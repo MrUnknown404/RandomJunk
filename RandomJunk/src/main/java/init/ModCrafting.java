@@ -4,19 +4,6 @@ package init;
 	//TO DO
 	//TO DO
 	//TO DO
-
-	GameRegistry.addRecipe(new ItemStack(ModBlocks.GroundLantern, 1), "T","I", 'T',Blocks.TORCH,                         'I',Items.IRON_INGOT);
-
-	GameRegistry.addRecipe(new ItemStack(ModBlocks.GlowstoneTorch, 4), "G","S",'G',Items.GLOWSTONE_DUST,                 'S',Items.STICK);
-	GameRegistry.addRecipe(new ItemStack(ModBlocks.LapisTorch, 4),     "G","S",'G',new ItemStack(Items.DYE, 1, 4),       'S',Items.STICK);
-
-	GameRegistry.addRecipe(new ItemStack(Blocks.OBSIDIAN, 1),          "OO","OO", 'O',ModItems.ObsidianShard);
-	GameRegistry.addRecipe(new ItemStack(Blocks.WOOL, 1),              "SS","SS", 'S',Items.STRING);
-
-	GameRegistry.addRecipe(new ItemStack(ModBlocks.CobblestoneFence, 3),          "FSF","FSF",'S',Items.STICK,'F',Blocks.COBBLESTONE);
-	GameRegistry.addRecipe(new ItemStack(ModBlocks.CobblestoneFenceGate, 1),      "SFS","SFS",'S',Items.STICK,'F',Blocks.COBBLESTONE);
-	GameRegistry.addRecipe(new ItemStack(ModBlocks.MossyCobblestoneFence, 3),     "FSF","FSF",'S',Items.STICK,'F',Blocks.MOSSY_COBBLESTONE);
-	GameRegistry.addRecipe(new ItemStack(ModBlocks.MossyCobblestoneFenceGate, 1), "SFS","SFS",'S',Items.STICK,'F',Blocks.MOSSY_COBBLESTONE);
 	GameRegistry.addRecipe(new ItemStack(Blocks.NETHER_BRICK_FENCE, 3),           "FSF","FSF",'S',Items.STICK,'F',Blocks.NETHER_BRICK);
 	GameRegistry.addRecipe(new ItemStack(ModBlocks.NetherBrickFenceGate, 1),      "SFS","SFS",'S',Items.STICK,'F',Blocks.NETHER_BRICK);
 

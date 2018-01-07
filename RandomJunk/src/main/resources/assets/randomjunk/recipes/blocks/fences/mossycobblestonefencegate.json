@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SXS",
+        "SXS"
+    ],
+    "key": {
+        "X": {
+            "item": "minecraft:mossy_cobblestone"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "randomjunk:mossycobblestonefencegate",
+        "count": 1
+    }
+}
