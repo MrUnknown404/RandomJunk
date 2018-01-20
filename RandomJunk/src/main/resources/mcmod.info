@@ -3,13 +3,13 @@
   "modid": "randomjunk",
   "name": "RandomJunk!",
   "description": "Adds Random Junk!",
-  "version": "1.11.2-Beta",
+  "version": "1.0.0-Alpha",
   "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",
   "authorList": ["-Unknown-"],
   "credits": "",
-  "logoFile": "templogo.png",
+  "logoFile": "",
   "screenshots": [],
   "dependencies": []
 }

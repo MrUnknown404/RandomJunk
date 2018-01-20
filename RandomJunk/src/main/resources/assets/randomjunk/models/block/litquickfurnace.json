@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable",
-    "textures": {
-        "top": "randomjunk:blocks/quickfurnace/quickfurnace_top",
-        "front": "randomjunk:blocks/quickfurnace/quickfurnace_front_on",
-        "side": "randomjunk:blocks/quickfurnace/quickfurnace_side"
-    }
-}

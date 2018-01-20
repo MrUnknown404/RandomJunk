@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "randomjunk:items/bone/bone_sword"
-     }
-}
