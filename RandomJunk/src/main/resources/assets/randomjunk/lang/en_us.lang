@@ -1,2 +1,7 @@
+//-//Items
 //Apples
 item.apple_apple.name=Apple Apple
+
+//-//Blocks
+//Misc
+tile.sandydirt.name=Sandy Dirt

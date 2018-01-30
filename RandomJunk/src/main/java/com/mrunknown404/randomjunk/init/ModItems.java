@@ -12,6 +12,6 @@ public class ModItems {
 	
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
-	//Apples
+	//--> String name, CreativeTabs tab
 	public static final Item APPLE_APPLE = new ItemBase("apple_apple", CreativeTabs.MISC);
 }
