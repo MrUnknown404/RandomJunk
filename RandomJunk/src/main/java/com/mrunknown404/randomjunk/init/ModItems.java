@@ -8,6 +8,7 @@ import com.mrunknown404.randomjunk.items.apples.Apple_Blaze;
 import com.mrunknown404.randomjunk.items.apples.Apple_Clay;
 import com.mrunknown404.randomjunk.items.apples.Apple_Coal;
 import com.mrunknown404.randomjunk.items.apples.Apple_Diamond;
+import com.mrunknown404.randomjunk.items.apples.Apple_Emerald;
 import com.mrunknown404.randomjunk.items.apples.Apple_EnderPearl;
 import com.mrunknown404.randomjunk.items.apples.Apple_Flint;
 import com.mrunknown404.randomjunk.items.apples.Apple_Glowstone;
