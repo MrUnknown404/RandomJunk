@@ -39,3 +39,4 @@ stat
 func
 hotbar
 biome
+pickaxes

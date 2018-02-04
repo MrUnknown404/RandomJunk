@@ -24,6 +24,26 @@ item.redstoneapple.name=Redstone Apple
 item.rottenfleshapple.name=Rotten Apple
 item.slimeapple.name=Slime Apple
 
+//Misc
+item.bonemix.name=Bone Mix
+item.boneingot.name=Bone Ingot
+
+//-//Tools
+//Shovels
+item.boneshovel.name=Bone Shovel
+
+//Pickaxes
+item.bonepickaxe.name=Bone Pickaxe
+
+//Axes
+item.boneaxe.name=Bone Axe
+
+//Hoes
+item.bonehoe.name=Bone Hoe
+
+//Swords
+item.bonesword.name=Bone Sword
+
 //-//-//Blocks
 //Misc
 tile.sandydirt.name=Sandy Dirt
