@@ -1,28 +1,28 @@
 //-//-//Items
 //-//Items
 //Apples
-item.apple_apple.name=Apple Apple
-item.apple_blaze.name=Blaze Apple
-item.apple_clay.name=Clay Apple
-item.apple_coal.name=Coal Apple
-item.apple_diamond.name=Diamond Apple
-item.apple_emerald.name=Emerald Apple
-item.apple_enderpearl.name=Ender Pearl Apple
-item.apple_flint.name=Flint Apple
-item.apple_glowstone.name=Glowstone Apple
-item.apple_gunpowder.name=Gunpowder Apple
-item.apple_ink.name=Ink Apple
-item.apple_iron.name=Iron Apple
-item.apple_lapis.name=Lapis Apple
-item.apple_leather.name=Leather Apple
-item.apple_magmacream.name=Magma Cream Apple
-item.apple_obsidian.name=Obsidian Apple
-item.apple_paper.name=Paper Apple
-item.apple_prismarine.name=Prismarine Apple
-item.apple_quartz.name=Quartz Apple
-item.apple_redstone.name=Redstone Apple
-item.apple_rottenflesh.name=Rotten Apple
-item.apple_slime.name=Slime Apple
+item.appleapple.name=Apple Apple
+item.blazeapple.name=Blaze Apple
+item.clayapple.name=Clay Apple
+item.coalapple.name=Coal Apple
+item.diamondapple.name=Diamond Apple
+item.emeraldapple.name=Emerald Apple
+item.enderpearlapple.name=Ender Pearl Apple
+item.flintapple.name=Flint Apple
+item.glowstoneapple.name=Glowstone Apple
+item.gunpowderapple.name=Gunpowder Apple
+item.inkapple.name=Ink Apple
+item.ironapple.name=Iron Apple
+item.lapisapple.name=Lapis Apple
+item.leatherapple.name=Leather Apple
+item.magmacreamapple.name=Magma Cream Apple
+item.obsidianapple.name=Obsidian Apple
+item.paperapple.name=Paper Apple
+item.prismarineapple.name=Prismarine Apple
+item.quartzapple.name=Quartz Apple
+item.redstoneapple.name=Redstone Apple
+item.rottenfleshapple.name=Rotten Apple
+item.slimeapple.name=Slime Apple
 
 //-//-//Blocks
 //Misc
