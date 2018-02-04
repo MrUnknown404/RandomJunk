@@ -10,15 +10,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
-public class Apple_Blaze extends ItemFoodBase {
+public class Apple_Coal extends ItemFoodBase {
 
-	public Apple_Blaze(String name, CreativeTabs tab, int amount, float saturation, boolean isWolfFood, boolean isAlwaysEdible) {
+	public Apple_Coal(String name, CreativeTabs tab, int amount, float saturation, boolean isWolfFood, boolean isAlwaysEdible) {
 		super(name, tab, amount, saturation, isWolfFood, isAlwaysEdible);
 	}
-
+	
 	@Override
 	public int getItemBurnTime(ItemStack itemStack) {
-		return 9600;
+		return 12800;
 	}
 	
 	protected void onFoodEaten(ItemStack itemStack, World world, EntityPlayer entity) {
@@ -26,10 +26,10 @@ public class Apple_Blaze extends ItemFoodBase {
 
 		if (true) {
 			if (entity instanceof EntityLivingBase) {
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 120*20, 0)); //Time In Seconds * Tickspeed
-				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 120*20, 0)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 20*20, 0)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 20*20, 1)); //Time In Seconds * Tickspeed
+				((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 20*20, 1)); //Time In Seconds * Tickspeed
 			}
 		}
 	}
-	
 }
