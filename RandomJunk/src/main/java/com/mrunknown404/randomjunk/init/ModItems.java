@@ -3,10 +3,13 @@ package com.mrunknown404.randomjunk.init;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.mrunknown404.randomjunk.items.ItemAxeBase;
 import com.mrunknown404.randomjunk.items.ItemBase;
 import com.mrunknown404.randomjunk.items.ItemFoodBase;
+import com.mrunknown404.randomjunk.items.ItemHoeBase;
 import com.mrunknown404.randomjunk.items.ItemPickaxeBase;
 import com.mrunknown404.randomjunk.items.ItemShovelBase;
+import com.mrunknown404.randomjunk.items.ItemSwordBase;
 import com.mrunknown404.randomjunk.items.apples.Apple_Blaze;
 import com.mrunknown404.randomjunk.items.apples.Apple_Clay;
 import com.mrunknown404.randomjunk.items.apples.Apple_Coal;
@@ -36,12 +39,14 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems {
 
-	public static ToolMaterial MAT_OBSIDIAN = EnumHelper.addToolMaterial("MAT_OBSIDIAN",  4, 2341, 11.0f, 4.0f, 12);
-	public static ToolMaterial MAT_STEEL = EnumHelper.addToolMaterial("MAT_STEEL",        2, 320,  5.0F , 2.0F, 13);
-	public static ToolMaterial MAT_COPPER = EnumHelper.addToolMaterial("MAT_COPPER",      2, 180,  4.5F,  2.0F, 9);
-	public static ToolMaterial MAT_BONE = EnumHelper.addToolMaterial("MAT_BONE",          2, 333,  6.0f,  2.0f, 8);
-	public static ToolMaterial MAT_TIN = EnumHelper.addToolMaterial("MAT_TIN",            1, 166,  5.0F,  1.5F, 10);
-	public static ToolMaterial MAT_FLINT = EnumHelper.addToolMaterial("MAT_FLINT",        1, 156,  4.0f,  2.0f, 8);
+	public static ToolMaterial MAT_OBSIDIAN = EnumHelper.addToolMaterial("MAT_OBSIDIAN", 4, 2341, 11.0f, 4.0f, 12);
+	public static ToolMaterial MAT_STEEL = EnumHelper.addToolMaterial("MAT_STEEL", 2, 320,  5.0F , 2.0F, 13);
+	public static ToolMaterial MAT_COPPER = EnumHelper.addToolMaterial("MAT_COPPER", 2, 180,  4.5F,  2.0F, 9);
+	public static ToolMaterial MAT_BONE = EnumHelper.addToolMaterial("MAT_BONE", 2, 333,  6.0f,  2.0f, 8);
+	public static ToolMaterial MAT_TIN = EnumHelper.addToolMaterial("MAT_TIN", 1, 166,  5.0F,  1.5F, 10);
+	public static ToolMaterial MAT_FLINT = EnumHelper.addToolMaterial("MAT_FLINT", 1, 156,  4.0f,  2.0f, 8);
+	
+	public static ToolMaterial MAT_DEBUG = EnumHelper.addToolMaterial("MAT_DEBUG", 5, -1, 500.0f, 99.0f, 0);
 	
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
@@ -72,22 +77,39 @@ public class ModItems {
 	
 	//Misc
 	public static final Item BONEMIX = new ItemBase("bonemix", ModCreativeTabs.TabRandomJunkItems);
+	public static final Item OBSIDIANSHARD = new ItemBase("obsidianshard", ModCreativeTabs.TabRandomJunkItems);
+	public static final Item NUGGET_COPPER = new ItemBase("coppernugget", ModCreativeTabs.TabRandomJunkItems);
+	public static final Item NUGGET_STEEL = new ItemBase("steelnugget", ModCreativeTabs.TabRandomJunkItems);
+	public static final Item NUGGET_TIN = new ItemBase("tinnugget", ModCreativeTabs.TabRandomJunkItems);
+	
 	public static final Item INGOT_BONE = new ItemBase("boneingot", ModCreativeTabs.TabRandomJunkItems);
+	public static final Item INGOT_COPPER = new ItemBase("copperingot", ModCreativeTabs.TabRandomJunkItems);
+	public static final Item INGOT_FLINT = new ItemBase("flintingot", ModCreativeTabs.TabRandomJunkItems);
+	public static final Item INGOT_OBSIDIAN = new ItemBase("obsidianingot", ModCreativeTabs.TabRandomJunkItems);
+	public static final Item INGOT_STEEL = new ItemBase("steelingot", ModCreativeTabs.TabRandomJunkItems);
+	public static final Item INGOT_TIN = new ItemBase("tiningot", ModCreativeTabs.TabRandomJunkItems);
 	
 	//-//Tools
 	//Shovels
 	public static final Item SHOVEL_BONE = new ItemShovelBase("boneshovel", CreativeTabs.TOOLS, MAT_BONE);
+	public static final Item SHOVEL_COPPER = new ItemShovelBase("coppershovel", CreativeTabs.TOOLS, MAT_COPPER);
+	public static final Item SHOVEL_FLINT = new ItemShovelBase("flintshovel", CreativeTabs.TOOLS, MAT_FLINT);
+	public static final Item SHOVEL_OBSIDIAN = new ItemShovelBase("obsidianshovel", CreativeTabs.TOOLS, MAT_OBSIDIAN);
+	public static final Item SHOVEL_STEEL = new ItemShovelBase("steelshovel", CreativeTabs.TOOLS, MAT_STEEL);
+	public static final Item SHOVEL_TIN = new ItemShovelBase("tinshovel", CreativeTabs.TOOLS, MAT_TIN);
 	
 	//Pickaxes
 	public static final Item PICKAXE_BONE = new ItemPickaxeBase("bonepickaxe", CreativeTabs.TOOLS, MAT_BONE);
 	
+	public static final Item PICKAXE_DEBUG = new ItemPickaxeBase("debugpickaxe", CreativeTabs.TOOLS, MAT_DEBUG);
+	
 	//Axes
-	public static final Item AXE_BONE = new ItemPickaxeBase("boneaxe", CreativeTabs.TOOLS, MAT_BONE);
+	public static final Item AXE_BONE = new ItemAxeBase("boneaxe", CreativeTabs.TOOLS, MAT_BONE, 8.0f, -3.2f);
 	
 	//Hoes
-	public static final Item HOE_BONE = new ItemPickaxeBase("bonehoe", CreativeTabs.TOOLS, MAT_BONE);
+	public static final Item HOE_BONE = new ItemHoeBase("bonehoe", CreativeTabs.TOOLS, MAT_BONE);
 	
 	//Swords
-	public static final Item SWORD_BONE = new ItemPickaxeBase("bonesword", CreativeTabs.COMBAT, MAT_BONE);
+	public static final Item SWORD_BONE = new ItemSwordBase("bonesword", CreativeTabs.COMBAT, MAT_BONE);
 	
 }

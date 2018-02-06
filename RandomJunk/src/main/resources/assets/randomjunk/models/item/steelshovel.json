@@ -1,0 +1,6 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "randomjunk:items/steel/steel_shovel"
+	}
+}

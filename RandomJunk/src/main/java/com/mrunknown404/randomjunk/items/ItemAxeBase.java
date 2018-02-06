@@ -9,8 +9,8 @@ import net.minecraft.item.ItemAxe;
 
 public class ItemAxeBase extends ItemAxe implements IHasModel {
 
-	public ItemAxeBase(String name, CreativeTabs tab, ToolMaterial material) {
-		super(material);
+	public ItemAxeBase(String name, CreativeTabs tab, ToolMaterial material, float damage, float speed) {
+		super(material, damage, speed);
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(tab);

@@ -26,14 +26,30 @@ item.slimeapple.name=Slime Apple
 
 //Misc
 item.bonemix.name=Bone Mix
+item.obsidianshard.name=Obsidian Shard
+item.coppernugget.name=Copper Nugget
+item.steelnugget.name=Steel Nugget
+item.tinnugget.name=Tin Nugget
 item.boneingot.name=Bone Ingot
+item.copperingot.name=Copper Ingot
+item.flintingot.name=Flint Ingot
+item.obsidianingot.name=Obsidian Ingot
+item.steelingot.name=Steel Ingot
+item.tiningot.name=Tin Ingot
 
 //-//Tools
 //Shovels
 item.boneshovel.name=Bone Shovel
+item.coppershovel.name=Copper Shovel
+item.flintshovel.name=Flint Shovel
+item.obsidianshovel.name=Obsidian Shovel
+item.steelshovel.name=Steel Shovel
+item.tinshovel.name=Tin Shovel
 
 //Pickaxes
 item.bonepickaxe.name=Bone Pickaxe
+
+item.debugpickaxe.name=Pickaxe
 
 //Axes
 item.boneaxe.name=Bone Axe
